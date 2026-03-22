@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Services",
+    "description": "Brodsky Law PLLC handles uncontested divorce, contested divorce, child support, and spousal maintenance in New York. Flat fees, payment plans, licensed attorney."
+  },
+  "hero": {
+    "sectionLabel": "Practice Areas",
+    "title": "New York divorce and family law services.",
+    "lead": "Whether your divorce is straightforward or complex, we have the expertise and experience to handle it, at fees that are transparent from the start."
+  },
+  "notSure": {
+    "sectionLabel": "Not sure where to start?",
+    "heading": "Every situation is different. We'll help you figure it out.",
+    "body": "Not sure whether your divorce will be contested, or what will happen with child support? Fill out a brief intake form and we'll review your situation, explain your options, and provide a clear quote at no obligation.",
+    "primaryCta": "Get a Free Case Estimate",
+    "secondaryCta": "Call 646-444-3120"
+  }
+}

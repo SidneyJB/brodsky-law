@@ -1,19 +1,7 @@
 import Link from "next/link";
+import site from "@/content/site.json";
 
-const services = [
-  { href: "/services/uncontested-divorce", label: "Uncontested Divorce" },
-  { href: "/services/contested-divorce", label: "Contested Divorce" },
-  { href: "/services/child-support", label: "Child Support" },
-  { href: "/services/spousal-maintenance", label: "Spousal Maintenance" },
-];
-
-const firm = [
-  { href: "/about", label: "About Us" },
-  { href: "/process", label: "How It Works" },
-  { href: "/order", label: "Order" },
-  { href: "/contact", label: "Contact" },
-  { href: "/privacy-policy", label: "Privacy Policy" },
-];
+const { footer } = site;
 
 export default function Footer() {
   return (
@@ -24,30 +12,30 @@ export default function Footer() {
           <div>
             <div style={{ marginBottom: "1rem" }}>
               <div style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", lineHeight: 1.1, color: "var(--color-canvas)" }}>
-                Brodsky Law
+                {footer.firmName}
               </div>
               <div style={{ fontSize: "0.625rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", marginTop: "2px" }}>
-                PLLC
+                {footer.firmSuffix}
               </div>
             </div>
             <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: "280px" }}>
-              Affordable, experienced New York divorce representation. We make the process clear, efficient, and as stress-free as possible.
+              {footer.tagline}
             </p>
             <div style={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-              <a href="tel:6464443120" style={{ fontSize: "0.9375rem", fontWeight: 500, color: "var(--color-canvas)", letterSpacing: "0.02em" }}>
-                646-444-3120
+              <a href={`tel:${footer.phoneTel}`} style={{ fontSize: "0.9375rem", fontWeight: 500, color: "var(--color-canvas)", letterSpacing: "0.02em" }}>
+                {footer.phoneDisplay}
               </a>
-              <span style={{ fontSize: "0.8125rem", color: "rgba(255,255,255,0.45)" }}>Call or text anytime</span>
+              <span style={{ fontSize: "0.8125rem", color: "rgba(255,255,255,0.45)" }}>{footer.callHint}</span>
             </div>
           </div>
 
           {/* Services col */}
           <div>
             <h4 style={{ fontSize: "0.75rem", fontFamily: "var(--font-sans)", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", marginBottom: "1.25rem" }}>
-              Services
+              {footer.servicesHeading}
             </h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-              {services.map((s) => (
+              {footer.services.map((s) => (
                 <li key={s.href}>
                   <Link href={s.href} className="footer-link">
                     {s.label}
@@ -60,10 +48,10 @@ export default function Footer() {
           {/* Firm col */}
           <div>
             <h4 style={{ fontSize: "0.75rem", fontFamily: "var(--font-sans)", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", marginBottom: "1.25rem" }}>
-              Firm
+              {footer.firmHeading}
             </h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-              {firm.map((f) => (
+              {footer.firmLinks.map((f) => (
                 <li key={f.href}>
                   <Link href={f.href} className="footer-link">
                     {f.label}
@@ -76,10 +64,10 @@ export default function Footer() {
 
         <div style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid rgba(255,255,255,0.1)", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
           <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.35)", lineHeight: 1.6 }}>
-            &copy; {new Date().getFullYear()} Brodsky Law PLLC. All rights reserved. Attorney advertising. The information on this website does not constitute legal advice and does not establish an attorney-client relationship. Past results do not guarantee future outcomes.
+            &copy; {new Date().getFullYear()} {footer.copyright}
           </p>
           <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.35)" }}>
-            Licensed in New York State.
+            {footer.licensedLine}
           </p>
         </div>
       </div>

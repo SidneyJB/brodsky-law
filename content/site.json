@@ -1,0 +1,72 @@
+{
+  "layout": {
+    "titleDefault": "Brodsky Law PLLC | New York Divorce Attorney",
+    "titleTemplate": "%s | Brodsky Law PLLC",
+    "description": "Affordable, flat-fee New York divorce representation. Uncontested divorce from $895. Licensed attorney, payment plans available. Call 646-444-3120.",
+    "keywords": [
+      "New York divorce attorney",
+      "uncontested divorce NYC",
+      "affordable divorce lawyer",
+      "flat fee divorce",
+      "Brodsky Law",
+      "child support",
+      "spousal maintenance"
+    ],
+    "openGraphDescription": "Affordable, flat-fee New York divorce representation. Uncontested divorce from $895. Licensed attorney, payment plans available.",
+    "openGraphUrl": "https://www.brodskydivorcelaw.com",
+    "openGraphSiteName": "Brodsky Law PLLC",
+    "openGraphTitle": "Brodsky Law PLLC | New York Divorce Attorney"
+  },
+  "labels": {
+    "allServices": "All Services",
+    "otherServices": "Other Services"
+  },
+  "serviceDetailPage": {
+    "ctaPrimaryLabel": "Get Started",
+    "ctaSecondaryLabel": "Free Estimate"
+  },
+  "headerNav": [
+    { "href": "/", "label": "Home" },
+    { "href": "/services", "label": "Services" },
+    { "href": "/process", "label": "How It Works" },
+    { "href": "/about", "label": "About" },
+    { "href": "/contact", "label": "Contact" }
+  ],
+  "headerCta": {
+    "href": "/order",
+    "label": "Start Your Divorce"
+  },
+  "footer": {
+    "firmName": "Brodsky Law",
+    "firmSuffix": "PLLC",
+    "tagline": "Affordable, experienced New York divorce representation. We make the process clear, efficient, and as stress-free as possible.",
+    "phoneDisplay": "646-444-3120",
+    "phoneTel": "6464443120",
+    "callHint": "Call or text anytime",
+    "servicesHeading": "Services",
+    "firmHeading": "Firm",
+    "copyright": "Brodsky Law PLLC. All rights reserved. Attorney advertising. The information on this website does not constitute legal advice and does not establish an attorney-client relationship. Past results do not guarantee future outcomes.",
+    "licensedLine": "Licensed in New York State.",
+    "services": [
+      { "href": "/services/uncontested-divorce", "label": "Uncontested Divorce" },
+      { "href": "/services/contested-divorce", "label": "Contested Divorce" },
+      { "href": "/services/child-support", "label": "Child Support" },
+      { "href": "/services/spousal-maintenance", "label": "Spousal Maintenance" }
+    ],
+    "firmLinks": [
+      { "href": "/about", "label": "About Us" },
+      { "href": "/process", "label": "How It Works" },
+      { "href": "/order", "label": "Order" },
+      { "href": "/contact", "label": "Contact" },
+      { "href": "/privacy-policy", "label": "Privacy Policy" }
+    ]
+  },
+  "ctaBannerDefaults": {
+    "heading": "Ready to move forward?",
+    "subtext": "Get your case started today. Payment plans available, as little as $400 down.",
+    "primaryLabel": "Start Your Divorce",
+    "primaryHref": "/order",
+    "secondaryLabel": "Free Case Estimate",
+    "secondaryHref": "/contact"
+  }
+}

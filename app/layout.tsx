@@ -1,30 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import site from "@/content/site.json";
+
+const { layout } = site;
 
 export const metadata: Metadata = {
   title: {
-    default: "Brodsky Law PLLC | New York Divorce Attorney",
-    template: "%s | Brodsky Law PLLC",
+    default: layout.titleDefault,
+    template: layout.titleTemplate,
   },
-  description:
-    "Affordable, flat-fee New York divorce representation. Uncontested divorce from $895. Licensed attorney, payment plans available. Call 646-444-3120.",
-  keywords: [
-    "New York divorce attorney",
-    "uncontested divorce NYC",
-    "affordable divorce lawyer",
-    "flat fee divorce",
-    "Brodsky Law",
-    "child support",
-    "spousal maintenance",
-  ],
+  description: layout.description,
+  keywords: layout.keywords,
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.brodskydivorcelaw.com",
-    siteName: "Brodsky Law PLLC",
-    title: "Brodsky Law PLLC | New York Divorce Attorney",
-    description:
-      "Affordable, flat-fee New York divorce representation. Uncontested divorce from $895. Licensed attorney, payment plans available.",
+    url: layout.openGraphUrl,
+    siteName: layout.openGraphSiteName,
+    title: layout.openGraphTitle,
+    description: layout.openGraphDescription,
   },
 };
 

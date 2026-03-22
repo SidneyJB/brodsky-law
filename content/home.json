@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "sectionLabel": "New York Divorce Attorney",
+    "eyebrow": "Affordable. Reliable. Responsive.",
+    "title": "$895 New York Divorce",
+    "lead": "Flat-fee uncontested divorce with real attorney representation, clear pricing, and payment plans. Licensed in New York State.",
+    "disclaimer": "* Plus court fees. Price for uncontested divorce. Children, property, and/or support may add fees, always quoted upfront.",
+    "primaryCta": "Start Your Divorce",
+    "secondaryCta": "Free Case Estimate",
+    "callIntro": "Or call / text:",
+    "phoneDisplay": "646-444-3120",
+    "portraitName": "Jonah Brodsky",
+    "portraitRole": "Managing Attorney",
+    "portraitAlt": "Jonah Brodsky, Managing Attorney"
+  },
+  "valuePropsSection": {
+    "label": "Why Brodsky Law",
+    "heading": "Divorce does not have to be overwhelming or unaffordable."
+  },
+  "valueProps": [
+    {
+      "icon": "tag",
+      "title": "Payment plans available",
+      "body": "Get your case started with as little as $400 down. If you make less than your spouse, the law may require them to pay your legal fees; ask us how this works. Uncontested divorce from $895 plus court fees, quoted clearly upfront."
+    },
+    {
+      "icon": "shield",
+      "title": "Contested divorce? We have you covered.",
+      "body": "If your divorce becomes contested, you'll have an experienced litigator on your side to help fight for your rights. Whether it's about children, money, or property, we provide expert negotiation guidance and stand up for you throughout the court process if necessary."
+    },
+    {
+      "icon": "badge-check",
+      "title": "Licensed New York attorney",
+      "body": "You'll have a real lawyer on your side. Unlike non-lawyer divorce services, you get the legal advice and guidance you expect and deserve. Jonah Brodsky is personally on your case, and if things get messy, you'll have us on your side."
+    }
+  ],
+  "pricingStrip": {
+    "amount": "$895",
+    "suffix": "uncontested divorce*",
+    "footnote": "* Plus court fees. Price for uncontested divorce. Children, property, and/or support may add fees, always quoted upfront.",
+    "cta": "Get Your Quote"
+  },
+  "servicesSection": {
+    "label": "Our Services",
+    "heading": "From uncontested filings to full litigation."
+  },
+  "processSection": {
+    "label": "The Process",
+    "heading": "Four simple steps to finalize your divorce.",
+    "steps": [
+      {
+        "title": "Fill out our intake form",
+        "body": "Tell us about your situation online. Takes about 5 minutes."
+      },
+      {
+        "title": "We review and quote",
+        "body": "We contact you with pricing, timeline, and payment options, usually the same day."
+      },
+      {
+        "title": "We file and coordinate",
+        "body": "Once payment is received, we file the Summons and coordinate signature of all papers."
+      },
+      {
+        "title": "Final judgment issued",
+        "body": "After your spouse signs and we file the final package, the court issues your Judgment of Divorce."
+      }
+    ],
+    "detailsLink": "See full process details →"
+  },
+  "testimonialsSection": {
+    "label": "Client Feedback",
+    "heading": "Trusted by New Yorkers navigating difficult transitions.",
+    "items": [
+      {
+        "quote": "The process was clearer and smoother than I expected. Jonah kept me informed every step of the way.",
+        "author": "Client, Manhattan"
+      },
+      {
+        "quote": "I was nervous about the cost, but the flat fee and payment plan made this manageable. Highly recommend.",
+        "author": "Client, Brooklyn"
+      },
+      {
+        "quote": "When my spouse refused to cooperate, they knew exactly what to do. I felt protected throughout.",
+        "author": "Client, Queens"
+      }
+    ]
+  },
+  "ctaBanner": {
+    "heading": "Ready to move forward?",
+    "subtext": "Get your case started today. Payment plans available, as little as $400 down.",
+    "primaryLabel": "Start Your Divorce",
+    "secondaryLabel": "Free Case Estimate"
+  }
+}

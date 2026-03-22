@@ -7,6 +7,7 @@ import CTABanner from "../../../components/CTABanner";
 import SectionFadeIn from "../../../components/SectionFadeIn";
 import { services, getServiceBySlug } from "../../../lib/services";
 import type { ServiceIconKey } from "../../../lib/services";
+import site from "@/content/site.json";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -40,15 +41,16 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   const HeroIcon = iconMap[service.icon];
   const others = services.filter((s) => s.slug !== slug);
+  const { allServices, otherServices } = site.labels;
+  const cta = site.serviceDetailPage;
 
   return (
     <PageLayout>
-      {/* Hero */}
       <section style={{ background: "var(--color-canvas-soft)", padding: "6rem 0 5rem", borderBottom: "1px solid var(--color-border)" }}>
         <div className="container" style={{ maxWidth: "760px" }}>
           <SectionFadeIn>
             <Link href="/services" style={{ display: "inline-flex", alignItems: "center", gap: "0.375rem", fontSize: "0.8125rem", fontWeight: 500, color: "var(--color-ink-muted)", marginBottom: "1.5rem", textDecoration: "none" }}>
-              <ChevronLeft size={14} strokeWidth={2} /> All Services
+              <ChevronLeft size={14} strokeWidth={2} /> {allServices}
             </Link>
             <div style={{ marginBottom: "1.25rem", color: "var(--color-ink)" }}>
               <HeroIcon size={36} strokeWidth={1.25} />
@@ -63,7 +65,6 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Content sections */}
       <section style={{ padding: "5rem 0", background: "var(--color-canvas)" }}>
         <div className="container" style={{ maxWidth: "780px" }}>
           {service.sections.map((section, i) => (
@@ -81,11 +82,10 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Related services */}
       <section style={{ padding: "4rem 0", background: "var(--color-canvas-soft)", borderTop: "1px solid var(--color-border)" }}>
         <div className="container">
           <SectionFadeIn>
-            <p className="section-label" style={{ marginBottom: "1.5rem" }}>Other Services</p>
+            <p className="section-label" style={{ marginBottom: "1.5rem" }}>{otherServices}</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
               {others.map((s) => {
                 const ChipIcon = iconMap[s.icon];
@@ -107,8 +107,8 @@ export default async function ServiceDetailPage({ params }: Props) {
       <CTABanner
         heading={service.ctaHeading}
         subtext={service.ctaSubtext}
-        primaryLabel="Get Started"
-        secondaryLabel="Free Estimate"
+        primaryLabel={cta.ctaPrimaryLabel}
+        secondaryLabel={cta.ctaSecondaryLabel}
       />
     </PageLayout>
   );

@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Privacy Policy",
+    "description": "Privacy policy for Brodsky Law PLLC's website."
+  },
+  "title": "Privacy Policy",
+  "lastUpdatedPrefix": "Last updated:",
+  "sections": [
+    {
+      "heading": "Information We Collect",
+      "body": "When you use our website or submit an inquiry form, we may collect personal information you voluntarily provide, including your name, email address, phone number, and a description of your legal matter. We do not collect sensitive personal information beyond what you choose to share in your inquiry."
+    },
+    {
+      "heading": "How We Use Your Information",
+      "body": "We use the information you provide solely to respond to your inquiry, provide legal services if an attorney-client relationship is established, and communicate with you about your matter. We do not sell, rent, or share your personal information with third parties for marketing purposes."
+    },
+    {
+      "heading": "No Attorney-Client Relationship",
+      "body": "Submitting a form or contacting us through this website does not establish an attorney-client relationship. Do not transmit information you consider confidential until an attorney-client relationship has been formally established through a signed retainer agreement."
+    },
+    {
+      "heading": "Cookies and Analytics",
+      "body": "Our website may use basic analytics tools (such as aggregate traffic data) to understand how visitors use the site. We do not use third-party advertising trackers. You may disable cookies in your browser settings, though this may affect site functionality."
+    },
+    {
+      "heading": "Data Security",
+      "body": "We take reasonable technical measures to protect information submitted through our website. However, no internet transmission is completely secure. Please contact us by phone if you have concerns about transmitting sensitive details."
+    },
+    {
+      "heading": "Contact",
+      "body": "If you have questions about this privacy policy or our data practices, contact us at 646-444-3120 or through our contact form."
+    }
+  ]
+}

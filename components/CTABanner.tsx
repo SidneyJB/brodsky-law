@@ -1,4 +1,7 @@
 import Link from "next/link";
+import site from "@/content/site.json";
+
+const d = site.ctaBannerDefaults;
 
 interface CTABannerProps {
   heading?: string;
@@ -12,12 +15,12 @@ interface CTABannerProps {
 }
 
 export default function CTABanner({
-  heading = "Ready to move forward?",
-  subtext = "Get your case started today. Payment plans available, as little as $400 down.",
-  primaryLabel = "Start Your Divorce",
-  primaryHref = "/order",
-  secondaryLabel = "Free Case Estimate",
-  secondaryHref = "/contact",
+  heading = d.heading,
+  subtext = d.subtext,
+  primaryLabel = d.primaryLabel,
+  primaryHref = d.primaryHref,
+  secondaryLabel = d.secondaryLabel,
+  secondaryHref = d.secondaryHref,
   phone = true,
   dark = true,
 }: CTABannerProps) {

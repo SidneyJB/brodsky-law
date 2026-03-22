@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Start Your Case",
+    "description": "Start your New York divorce with Brodsky Law PLLC. Complete your order online with clear pricing and payment plan options."
+  },
+  "hero": {
+    "sectionLabel": "Order",
+    "title": "Start your divorce online.",
+    "leadBeforeEstimateLink": "Complete the steps below to get your case started. Prefer to talk through options first? ",
+    "estimateLinkText": "Request a free case estimate",
+    "leadMiddle": " or call ",
+    "phoneDisplay": "646-444-3120",
+    "leadAfter": "."
+  },
+  "placeholder": {
+    "bodyBeforeContactLink": "Order form coming soon. For a free estimate in the meantime, use our ",
+    "contactLinkText": "contact page",
+    "bodyAfter": "."
+  }
+}

@@ -3,14 +3,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import site from "@/content/site.json";
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/process", label: "How It Works" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-];
+const navLinks = site.headerNav;
+const headerCta = site.headerCta;
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,8 +23,18 @@ export default function Header() {
     setMenuOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [menuOpen]);
+
   return (
     <header
+      className="site-header"
       style={{
         position: "fixed",
         top: 0,
@@ -41,19 +47,28 @@ export default function Header() {
         transition: "border-color 0.3s ease",
       }}
     >
-      <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: "4rem" }}>
+      <div
+        className="container header-bar"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: "0.75rem",
+          minHeight: "4rem",
+        }}
+      >
         {/* Wordmark */}
-        <Link href="/" style={{ display: "flex", flexDirection: "column", gap: "0" }}>
-          <span style={{ fontFamily: "var(--font-serif)", fontSize: "1.125rem", color: "var(--color-ink)", lineHeight: 1.1 }}>
+        <Link href="/" className="header-wordmark" style={{ display: "flex", flexDirection: "column", gap: 0, minWidth: 0, flexShrink: 1 }}>
+          <span className="header-wordmark-title" style={{ fontFamily: "var(--font-serif)", color: "var(--color-ink)", lineHeight: 1.1 }}>
             Brodsky Law
           </span>
-          <span style={{ fontFamily: "var(--font-sans)", fontSize: "0.625rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-ink-muted)", lineHeight: 1 }}>
+          <span className="header-wordmark-sub" style={{ fontFamily: "var(--font-sans)", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-ink-muted)", lineHeight: 1 }}>
             PLLC
           </span>
         </Link>
 
-        {/* Desktop nav */}
-        <nav style={{ display: "flex", alignItems: "center", gap: "2rem" }} className="desktop-nav">
+        {/* Desktop nav — display toggled only in <style> (inline display would override) */}
+        <nav className="desktop-nav">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -71,24 +86,27 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Link href="/order" className="btn-primary" style={{ padding: "0.5rem 1.25rem", fontSize: "0.8125rem" }}>
-            Start Your Divorce
+          <Link href={headerCta.href} className="btn-primary" style={{ padding: "0.5rem 1.25rem", fontSize: "0.8125rem" }}>
+            {headerCta.label}
           </Link>
         </nav>
 
         {/* Mobile hamburger */}
         <button
+          type="button"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
           className="mobile-menu-btn"
           style={{
             background: "none",
             border: "none",
             cursor: "pointer",
-            padding: "0.5rem",
-            display: "flex",
-            flexDirection: "column",
-            gap: "5px",
+            padding: "0.625rem",
+            marginRight: "-0.25rem",
+            flexShrink: 0,
+            minWidth: "2.75rem",
+            minHeight: "2.75rem",
           }}
         >
           <span style={{ display: "block", width: "22px", height: "1.5px", background: "var(--color-ink)", transition: "transform 0.2s ease, opacity 0.2s ease", transform: menuOpen ? "rotate(45deg) translate(4.5px, 4.5px)" : "none" }} />
@@ -99,29 +117,68 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div style={{ background: "var(--color-canvas)", borderTop: "1px solid var(--color-border)", padding: "1.5rem" }}>
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              style={{ display: "block", padding: "0.75rem 0", fontWeight: 500, fontSize: "1rem", borderBottom: "1px solid var(--color-border)", color: "var(--color-ink)" }}
-            >
-              {link.label}
+        <div
+          className="mobile-nav-panel"
+          style={{
+            background: "var(--color-canvas)",
+            borderTop: "1px solid var(--color-border)",
+            boxShadow: "0 12px 24px rgba(0,0,0,0.06)",
+            maxHeight: "min(32rem, calc(100dvh - 4rem - env(safe-area-inset-bottom, 0px)))",
+            overflowY: "auto",
+            WebkitOverflowScrolling: "touch",
+          }}
+        >
+          <div className="container" style={{ paddingTop: "0.5rem", paddingBottom: "calc(1.25rem + env(safe-area-inset-bottom, 0px))" }}>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="mobile-nav-link"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  minHeight: "3rem",
+                  padding: "0.625rem 0",
+                  fontWeight: 500,
+                  fontSize: "1.0625rem",
+                  borderBottom: "1px solid var(--color-border)",
+                  color: pathname === link.href ? "var(--color-ink)" : "var(--color-ink-light)",
+                }}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link href={headerCta.href} className="btn-primary" style={{ display: "block", textAlign: "center", marginTop: "1.25rem", width: "100%", padding: "0.875rem 1rem" }}>
+              {headerCta.label}
             </Link>
-          ))}
-          <Link href="/order" className="btn-primary" style={{ display: "block", textAlign: "center", marginTop: "1.25rem" }}>
-            Start Your Divorce
-          </Link>
-          <a href="tel:6464443120" style={{ display: "block", textAlign: "center", marginTop: "0.75rem", color: "var(--color-ink-light)", fontSize: "0.875rem" }}>
-            Call 646-444-3120
-          </a>
+            <a href={`tel:${site.footer.phoneTel}`} style={{ display: "block", textAlign: "center", marginTop: "1rem", padding: "0.5rem", color: "var(--color-ink-light)", fontSize: "0.9375rem" }}>
+              Call {site.footer.phoneDisplay}
+            </a>
+          </div>
         </div>
       )}
 
       <style>{`
-        .desktop-nav { display: none; }
-        .mobile-menu-btn { display: flex; }
-        @media (min-width: 768px) {
+        .header-wordmark-title {
+          font-size: clamp(1rem, 4.2vw, 1.125rem);
+        }
+        .header-wordmark-sub {
+          font-size: clamp(0.5625rem, 2.8vw, 0.625rem);
+        }
+        .desktop-nav {
+          display: none;
+          align-items: center;
+          gap: clamp(1rem, 2vw, 2rem);
+          flex-shrink: 0;
+        }
+        .mobile-menu-btn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+        }
+        @media (min-width: 1024px) {
           .desktop-nav { display: flex; }
           .mobile-menu-btn { display: none; }
         }

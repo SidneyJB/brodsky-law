@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "title": "How It Works",
+    "description": "Learn how the New York divorce process works with Brodsky Law PLLC, from intake to final judgment. Clear steps for uncontested and contested cases."
+  },
+  "hero": {
+    "sectionLabel": "The Process",
+    "title": "How your divorce works, step by step.",
+    "lead": "We've streamlined the process as much as New York law allows. Here's exactly what to expect from intake to final judgment."
+  },
+  "uncontested": {
+    "sectionLabel": "Uncontested Divorce",
+    "heading": "When both spouses agree, this is the path.",
+    "steps": [
+      {
+        "title": "Fill out our intake form",
+        "description": "Complete our quick online form with basic details about your situation (about 5 minutes). The more context you provide, the faster we can move."
+      },
+      {
+        "title": "We review and follow up",
+        "description": "We'll review your information and contact you if we have any questions. We'll also discuss payment arrangements and provide your exact quote."
+      },
+      {
+        "title": "Payment and filing",
+        "description": "Once your payment (or first installment) is received, we prepare and file the Summons With Notice with the court, which can happen as quickly as the same day."
+      },
+      {
+        "title": "Papers sent to your spouse",
+        "description": "We send the divorce papers to your spouse via your chosen method: in person (with clear instructions for someone you trust), by email, or by mail."
+      },
+      {
+        "title": "Signed papers returned",
+        "description": "After your spouse signs, you'll sign the final documents. We handle this by email or mail; no office visit required."
+      },
+      {
+        "title": "Final filing and judgment",
+        "description": "We prepare and file the complete divorce document package with the court. After that, it's a matter of waiting for the court to issue the Judgment of Divorce. Timeline varies by county and caseload."
+      }
+    ]
+  },
+  "sidebar": {
+    "paymentPlans": {
+      "title": "Payment plans",
+      "body": "Get started with as little as $400 down. We structure payment to make legal help accessible.",
+      "cta": "Ask about payment options"
+    },
+    "spouseFees": {
+      "title": "Spouse paying legal fees?",
+      "bodyBeforeLink": "If you earn less than your spouse, New York law may require them to contribute to your legal costs. ",
+      "linkText": "Ask us how this works.",
+      "bodyAfterLink": ""
+    },
+    "missingSpouse": {
+      "title": "Can't find your spouse?",
+      "body": "Even if you don't know where your spouse lives or works, we can still finalize your divorce using alternative service methods authorized by New York courts."
+    }
+  },
+  "contestedSection": {
+    "sectionLabel": "If Things Get Complicated",
+    "heading": "What happens when the divorce becomes contested?",
+    "intro": "A divorce that starts as uncontested can become contested at any point. Here are the most common scenarios and how we handle them."
+  },
+  "contestedScenarios": [
+    {
+      "title": "Spouse refuses to sign",
+      "body": "If your spouse won't sign the papers, we have two options: we provide clear instructions for a friend or family member to formally serve them, or we hire a professional process server. Once formally served, your spouse is required to respond within a set time limit."
+    },
+    {
+      "title": "Spouse ignores the papers (default)",
+      "body": "If your spouse is served but takes no action (does not sign and does not retain an attorney), we can proceed to finalize the divorce as a 'default' after waiting 40 days. A default proceeding is still a valid, final divorce."
+    },
+    {
+      "title": "Spouse retains an attorney",
+      "body": "If your spouse files a Notice of Appearance through their attorney, the case is now officially contested. At that point, we continue your representation under a signed retainer agreement and deploy our full litigation capability (negotiation, discovery, court appearances) on your behalf."
+    },
+    {
+      "title": "Can't locate your spouse",
+      "body": "If you genuinely don't know where your spouse lives or works and have no way to contact them, we can still get your divorce finalized. New York courts permit alternative methods of service in these situations, such as publication. Contact us for details specific to your circumstances."
+    }
+  ],
+  "ctaBanner": {
+    "heading": "Questions about the process?",
+    "subtext": "We'll walk you through exactly what applies to your situation, with no cost and no commitment.",
+    "primaryLabel": "Get a Free Estimate",
+    "secondaryLabel": "Call 646-444-3120"
+  }
+}

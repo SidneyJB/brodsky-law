@@ -2,26 +2,16 @@
 
 import { useState } from "react";
 
-const scenarios = [
-  {
-    title: "Spouse refuses to sign",
-    body: "If your spouse won't sign the papers, we have two options: we provide clear instructions for a friend or family member to formally serve them, or we hire a professional process server. Once formally served, your spouse is required to respond within a set time limit.",
-  },
-  {
-    title: "Spouse ignores the papers (default)",
-    body: "If your spouse is served but takes no action (does not sign and does not retain an attorney), we can proceed to finalize the divorce as a 'default' after waiting 40 days. A default proceeding is still a valid, final divorce.",
-  },
-  {
-    title: "Spouse retains an attorney",
-    body: "If your spouse files a Notice of Appearance through their attorney, the case is now officially contested. At that point, we continue your representation under a signed retainer agreement and deploy our full litigation capability (negotiation, discovery, court appearances) on your behalf.",
-  },
-  {
-    title: "Can't locate your spouse",
-    body: "If you genuinely don't know where your spouse lives or works and have no way to contact them, we can still get your divorce finalized. New York courts permit alternative methods of service in these situations, such as publication. Contact us for details specific to your circumstances.",
-  },
-];
+export interface ContestScenario {
+  title: string;
+  body: string;
+}
 
-export default function ContestSection() {
+interface ContestSectionProps {
+  scenarios: ContestScenario[];
+}
+
+export default function ContestSection({ scenarios }: ContestSectionProps) {
   const [open, setOpen] = useState<number | null>(null);
 
   return (

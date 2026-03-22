@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Contact: Free Case Estimate",
+    "description": "Contact Brodsky Law PLLC for a free, no-obligation case estimate. Tell us about your situation and we'll respond with options, pricing, and timeline, usually the same day."
+  },
+  "hero": {
+    "sectionLabel": "Get in Touch",
+    "title": "Free case estimate. No obligation.",
+    "lead": "Tell us a bit about your situation and we'll reply with estimated costs, timeline, payment options, and any questions we have, usually within a few hours."
+  },
+  "formSectionTitle": "Tell us about your case",
+  "servedCallout": {
+    "heading": "Have you been served?",
+    "body": "If you've received divorce papers, time limits apply. Call us right away.",
+    "buttonLabel": "Call 646-444-3120"
+  },
+  "quickFactsHeading": "Quick facts",
+  "quickFacts": [
+    { "label": "Phone / Text", "value": "646-444-3120", "href": "tel:6464443120" },
+    { "label": "Uncontested Divorce", "value": "From $895 + court fees" },
+    { "label": "Payment Plans", "value": "As little as $400 down" },
+    { "label": "Response Time", "value": "Usually same business day" },
+    { "label": "Licensed in", "value": "New York State" }
+  ],
+  "sidebarDisclaimer": "The information provided on this website does not constitute legal advice and does not create an attorney-client relationship. Contacting us through this form does not establish an attorney-client relationship. Do not send confidential information until an attorney-client relationship has been established.",
+  "form": {
+    "labels": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "caseType": "What brings you here?",
+      "details": "Tell us about your situation"
+    },
+    "placeholders": {
+      "phone": "(___) ___-____",
+      "details": "Briefly describe your situation. The more context you provide, the better we can help."
+    },
+    "caseTypePlaceholder": "Select a topic…",
+    "caseTypes": [
+      "Uncontested Divorce",
+      "Contested Divorce",
+      "Child Support",
+      "Spousal Maintenance",
+      "I'm not sure; need guidance"
+    ],
+    "errors": {
+      "firstName": "First name is required.",
+      "lastName": "Last name is required.",
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Please enter a valid email address.",
+      "phone": "Phone number is required.",
+      "caseType": "Please select a case type.",
+      "details": "Please briefly describe your situation."
+    },
+    "formDisclaimer": "Submitting this form does not establish an attorney-client relationship. Do not include confidential information until an attorney-client relationship has been established.",
+    "submitLabel": "Send Message",
+    "successTitle": "Thank you, {firstName}.",
+    "successBody": "We've received your information and will be in touch shortly, usually within a few hours. If your matter is urgent, please call or text us directly at ",
+    "successPhoneDisplay": "646-444-3120"
+  }
+}
