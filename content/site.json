@@ -46,7 +46,6 @@
     "servicesHeading": "Services",
     "firmHeading": "Firm",
     "copyright": "Brodsky Law PLLC. All rights reserved. Attorney advertising. The information on this website does not constitute legal advice and does not establish an attorney-client relationship. Past results do not guarantee future outcomes.",
-    "licensedLine": "Licensed in New York State.",
     "services": [
       { "href": "/services/uncontested-divorce", "label": "Uncontested Divorce" },
       { "href": "/services/contested-divorce", "label": "Contested Divorce" },

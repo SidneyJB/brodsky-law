@@ -34,30 +34,30 @@ export default function CTABanner({
 
   return (
     <section style={{ background: bg, padding: "5rem 0" }}>
-      <div className="container" style={{ textAlign: "center", maxWidth: "640px" }}>
+      <div className="container" style={{ textAlign: "justify", maxWidth: "640px" }}>
         <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", color: fg, marginBottom: "1rem" }}>
           {heading}
         </h2>
         <p style={{ fontSize: "1.0625rem", color: fgMuted, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           {subtext}
         </p>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "flex-start", alignItems: "center" }}>
           <Link
             href={primaryHref}
-            style={{ display: "inline-flex", alignItems: "center", background: btnBg, color: btnFg, fontFamily: "var(--font-sans)", fontSize: "0.9375rem", fontWeight: 500, padding: "0.875rem 2rem", borderRadius: "var(--radius-sm)", textDecoration: "none", transition: "opacity 0.2s" }}
+            style={{ display: "inline-flex", alignItems: "center", textAlign: "justify", background: btnBg, color: btnFg, fontFamily: "var(--font-sans)", fontSize: "0.9375rem", fontWeight: 500, padding: "0.875rem 2rem", borderRadius: "var(--radius-sm)", textDecoration: "none", transition: "opacity 0.2s" }}
           >
             {primaryLabel}
           </Link>
           <Link
             href={secondaryHref}
-            style={{ display: "inline-flex", alignItems: "center", background: "transparent", color: altFg, fontFamily: "var(--font-sans)", fontSize: "0.9375rem", fontWeight: 500, padding: "0.875rem 2rem", borderRadius: "var(--radius-sm)", border: `1.5px solid ${altBorder}`, textDecoration: "none", transition: "border-color 0.2s" }}
+            style={{ display: "inline-flex", alignItems: "center", textAlign: "justify", background: "transparent", color: altFg, fontFamily: "var(--font-sans)", fontSize: "0.9375rem", fontWeight: 500, padding: "0.875rem 2rem", borderRadius: "var(--radius-sm)", border: `1.5px solid ${altBorder}`, textDecoration: "none", transition: "border-color 0.2s" }}
           >
             {secondaryLabel}
           </Link>
           {phone && (
             <a
               href="tel:6464443120"
-              style={{ fontSize: "0.875rem", color: fgMuted, textDecoration: "none", width: "100%", marginTop: "0.5rem" }}
+              style={{ fontSize: "0.875rem", color: fgMuted, textDecoration: "none", width: "100%", marginTop: "0.5rem", textAlign: "justify", display: "block" }}
             >
               Or call / text: <strong style={{ color: fg }}>646-444-3120</strong>
             </a>

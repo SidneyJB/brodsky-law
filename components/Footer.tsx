@@ -62,12 +62,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid rgba(255,255,255,0.1)", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+        <div style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
           <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.35)", lineHeight: 1.6 }}>
             &copy; {new Date().getFullYear()} {footer.copyright}
-          </p>
-          <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.35)" }}>
-            {footer.licensedLine}
           </p>
         </div>
       </div>

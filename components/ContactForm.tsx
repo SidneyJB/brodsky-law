@@ -96,7 +96,7 @@ export default function ContactForm() {
   if (submitted) {
     const title = formCopy.successTitle.replace("{firstName}", data.firstName);
     return (
-      <div style={{ textAlign: "center", padding: "3rem 2rem", background: "var(--color-canvas-soft)", borderRadius: "var(--radius-lg)", border: "1px solid var(--color-border)" }}>
+      <div style={{ textAlign: "justify", padding: "3rem 2rem", background: "var(--color-canvas-soft)", borderRadius: "var(--radius-lg)", border: "1px solid var(--color-border)" }}>
         <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>✓</div>
         <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "1.5rem", marginBottom: "0.75rem" }}>{title}</h3>
         <p style={{ color: "var(--color-ink-light)", lineHeight: 1.7 }}>

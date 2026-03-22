@@ -52,12 +52,12 @@ export default function OrderPage() {
                 border: "1px dashed var(--color-border)",
                 background: "var(--color-canvas-soft)",
                 display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                alignItems: "stretch",
+                justifyContent: "flex-start",
                 padding: "2rem",
               }}
             >
-              <p style={{ fontSize: "0.9375rem", color: "var(--color-ink-muted)", textAlign: "center", maxWidth: "36ch", lineHeight: 1.7 }}>
+              <p style={{ fontSize: "0.9375rem", color: "var(--color-ink-muted)", textAlign: "justify", maxWidth: "36ch", lineHeight: 1.7, marginInline: "auto" }}>
                 {placeholder.bodyBeforeContactLink}
                 <Link href="/contact" style={{ color: "var(--color-ink)", fontWeight: 500 }}>
                   {placeholder.contactLinkText}

@@ -63,7 +63,7 @@ export default function HomePage() {
                   priority
                 />
               </div>
-              <div style={{ marginTop: "0.75rem", textAlign: "center" }}>
+              <div style={{ marginTop: "0.75rem", textAlign: "justify" }}>
                 <div style={{ fontFamily: "var(--font-serif)", fontSize: "0.9rem", color: "var(--color-ink)" }}>{hero.portraitName}</div>
                 <div style={{ fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--color-ink-muted)", marginTop: "2px" }}>{hero.portraitRole}</div>
               </div>

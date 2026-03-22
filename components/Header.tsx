@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import site from "@/content/site.json";
@@ -57,13 +58,29 @@ export default function Header() {
           minHeight: "4rem",
         }}
       >
-        {/* Wordmark */}
-        <Link href="/" className="header-wordmark" style={{ display: "flex", flexDirection: "column", gap: 0, minWidth: 0, flexShrink: 1 }}>
-          <span className="header-wordmark-title" style={{ fontFamily: "var(--font-serif)", color: "var(--color-ink)", lineHeight: 1.1 }}>
-            Brodsky Law
-          </span>
-          <span className="header-wordmark-sub" style={{ fontFamily: "var(--font-sans)", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-ink-muted)", lineHeight: 1 }}>
-            PLLC
+        {/* Wordmark + Liberty silhouette (PNG, see public/images/CREDITS.txt) */}
+        <Link
+          href="/"
+          className="header-brand"
+          style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5rem", minWidth: 0, flexShrink: 1, textDecoration: "none" }}
+        >
+          <Image
+            src="/images/lady-liberty-silhouette.png"
+            alt=""
+            width={28}
+            height={48}
+            className="header-liberty-img"
+            style={{ flexShrink: 0, objectFit: "contain", opacity: 0.92 }}
+            priority
+            aria-hidden
+          />
+          <span className="header-wordmark" style={{ display: "flex", flexDirection: "column", gap: 0, minWidth: 0 }}>
+            <span className="header-wordmark-title" style={{ fontFamily: "var(--font-serif)", color: "var(--color-ink)", lineHeight: 1.1 }}>
+              Brodsky Law
+            </span>
+            <span className="header-wordmark-sub" style={{ fontFamily: "var(--font-sans)", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-ink-muted)", lineHeight: 1 }}>
+              PLLC
+            </span>
           </span>
         </Link>
 
@@ -148,10 +165,10 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link href={headerCta.href} className="btn-primary" style={{ display: "block", textAlign: "center", marginTop: "1.25rem", width: "100%", padding: "0.875rem 1rem" }}>
+            <Link href={headerCta.href} className="btn-primary" style={{ display: "block", textAlign: "justify", marginTop: "1.25rem", width: "100%", padding: "0.875rem 1rem" }}>
               {headerCta.label}
             </Link>
-            <a href={`tel:${site.footer.phoneTel}`} style={{ display: "block", textAlign: "center", marginTop: "1rem", padding: "0.5rem", color: "var(--color-ink-light)", fontSize: "0.9375rem" }}>
+            <a href={`tel:${site.footer.phoneTel}`} style={{ display: "block", textAlign: "justify", marginTop: "1rem", padding: "0.5rem", color: "var(--color-ink-light)", fontSize: "0.9375rem" }}>
               Call {site.footer.phoneDisplay}
             </a>
           </div>
@@ -159,6 +176,10 @@ export default function Header() {
       )}
 
       <style>{`
+        .header-liberty-img {
+          width: clamp(22px, 5.5vw, 28px);
+          height: auto;
+        }
         .header-wordmark-title {
           font-size: clamp(1rem, 4.2vw, 1.125rem);
         }

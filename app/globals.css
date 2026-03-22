@@ -38,6 +38,15 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Typing stays natural; everything else inherits justify from body */
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  text-align: start;
 }
 
 h1, h2, h3, h4 {
@@ -79,6 +88,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: justify;
   background: var(--color-ink);
   color: var(--color-canvas);
   font-family: var(--font-sans);
@@ -102,6 +112,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: justify;
   background: transparent;
   color: var(--color-ink);
   font-family: var(--font-sans);
