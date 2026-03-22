@@ -42,6 +42,8 @@
     "tagline": "Affordable, experienced New York divorce representation. We make the process clear, efficient, and as stress-free as possible.",
     "phoneDisplay": "646-444-3120",
     "phoneTel": "6464443120",
+    "emailDisplay": "contact@brodskydivorcelaw.com",
+    "emailMailto": "mailto:contact@brodskydivorcelaw.com",
     "callHint": "Call or text anytime",
     "servicesHeading": "Services",
     "firmHeading": "Firm",
@@ -50,7 +52,7 @@
       { "href": "/services/uncontested-divorce", "label": "Uncontested Divorce" },
       { "href": "/services/contested-divorce", "label": "Contested Divorce" },
       { "href": "/services/child-support", "label": "Child Support" },
-      { "href": "/services/spousal-maintenance", "label": "Spousal Maintenance" }
+      { "href": "/services/spousal-maintenance", "label": "Spousal\u00A0Maintenance" }
     ],
     "firmLinks": [
       { "href": "/about", "label": "About Us" },

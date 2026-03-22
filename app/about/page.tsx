@@ -16,17 +16,17 @@ export default function AboutPage() {
 
   return (
     <PageLayout>
-      <section style={{ background: "var(--color-canvas-soft)", padding: "6rem 0 5rem", borderBottom: "1px solid var(--color-border)" }}>
+      <section className="about-hero-prose" style={{ background: "var(--color-canvas-soft)", padding: "6rem 0 5rem", borderBottom: "1px solid var(--color-border)" }}>
         <div className="container" style={{ maxWidth: "760px" }}>
           <SectionFadeIn>
             <p className="section-label" style={{ marginBottom: "1.5rem" }}>{hero.sectionLabel}</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4vw, 3.25rem)", color: "var(--color-ink)", marginBottom: "1.5rem", lineHeight: 1.1 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4vw, 3.25rem)", color: "var(--color-ink)", marginBottom: "1.5rem", lineHeight: 1.15 }}>
               {hero.title}
             </h1>
-            <p style={{ fontSize: "clamp(1rem, 1.5vw, 1.125rem)", color: "var(--color-ink-light)", lineHeight: 1.8, maxWidth: "54ch" }}>
+            <p style={{ fontSize: "clamp(1rem, 1.5vw, 1.125rem)", color: "var(--color-ink-light)", lineHeight: 1.75, maxWidth: "54ch" }}>
               {hero.paragraph1}
             </p>
-            <p style={{ fontSize: "clamp(1rem, 1.5vw, 1.125rem)", color: "var(--color-ink-light)", lineHeight: 1.8, maxWidth: "54ch", marginTop: "1.25rem" }}>
+            <p style={{ fontSize: "clamp(1rem, 1.5vw, 1.125rem)", color: "var(--color-ink-light)", lineHeight: 1.75, maxWidth: "54ch", marginTop: "1.25rem" }}>
               {hero.paragraph2}
             </p>
           </SectionFadeIn>
@@ -70,9 +70,12 @@ export default function AboutPage() {
                       <p key={i} style={{ fontSize: "0.9375rem", color: "var(--color-ink-light)", lineHeight: 1.75 }}>{p}</p>
                     ))}
                   </div>
-                  <div style={{ marginTop: "1.75rem", paddingTop: "1.25rem", borderTop: "1px solid var(--color-border)" }}>
+                  <div style={{ marginTop: "1.75rem", paddingTop: "1.25rem", borderTop: "1px solid var(--color-border)", display: "flex", flexDirection: "column", gap: "0.35rem" }}>
                     <a href={`tel:${bio.phoneDisplay.replace(/\D/g, "")}`} style={{ fontFamily: "var(--font-sans)", fontSize: "0.9375rem", fontWeight: 500, color: "var(--color-ink)" }}>
                       {bio.phoneDisplay}
+                    </a>
+                    <a href={bio.emailMailto} style={{ fontFamily: "var(--font-sans)", fontSize: "0.9375rem", fontWeight: 500, color: "var(--color-ink)", wordBreak: "break-all" }}>
+                      {bio.emailDisplay}
                     </a>
                   </div>
                 </div>
@@ -127,6 +130,10 @@ export default function AboutPage() {
       />
 
       <style>{`
+        .about-hero-prose h1,
+        .about-hero-prose p {
+          text-align: left;
+        }
         @media (min-width: 768px) {
           .mission-grid { grid-template-columns: 1fr 1fr !important; }
         }

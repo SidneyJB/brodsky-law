@@ -22,7 +22,7 @@
       },
       {
         "title": "Payment and filing",
-        "description": "Once your payment (or first installment) is received, we prepare and file the Summons With Notice with the court, which can happen as quickly as the same day."
+        "description": "Once your payment (or first installment) is received, we prepare and file the Summons With Notice with the court, which can happen as quickly as the same day. Representation is subject to a signed retainer agreement."
       },
       {
         "title": "Papers sent to your spouse",
@@ -30,11 +30,11 @@
       },
       {
         "title": "Signed papers returned",
-        "description": "After your spouse signs, you'll sign the final documents. We handle this by email or mail; no office visit required."
+        "description": "After your spouse signs, you'll sign the final documents. If you prefer not to meet in our office, we will take care of this by mail or email."
       },
       {
         "title": "Final filing and judgment",
-        "description": "We prepare and file the complete divorce document package with the court. After that, it's a matter of waiting for the court to issue the Judgment of Divorce. Timeline varies by county and caseload."
+        "description": "We prepare and file the complete divorce document package with the court. After that, it's a matter of waiting for the court to issue the Judgment of Divorce. Timeline varies by county and court caseload."
       }
     ]
   },
@@ -58,7 +58,7 @@
   "contestedSection": {
     "sectionLabel": "If Things Get Complicated",
     "heading": "What happens when the divorce becomes contested?",
-    "intro": "A divorce that starts as uncontested can become contested at any point. Here are the most common scenarios and how we handle them."
+    "intro": "A divorce that starts as uncontested can become contested at any point. All matters that become contested are subject to a new, signed retainer agreement. Here are the most common scenarios and how we handle them."
   },
   "contestedScenarios": [
     {

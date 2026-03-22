@@ -15,7 +15,7 @@
     "paragraphs": [
       "For too many New Yorkers, quality legal representation has been out of reach: not because the need wasn't there, but because traditional law firm billing models made it prohibitive. Brodsky Law was founded to change that dynamic.",
       "We serve clients facing uncontested divorces who want a licensed attorney, not a document mill, at a price they can actually afford. And when cases become complicated, we have the litigation experience to see them through.",
-      "Every client gets the same thing: transparency, responsiveness, and an attorney who is actually paying attention to their case."
+      "Every client receives transparency, responsiveness, and an attorney who is actually paying attention to their case."
     ]
   },
   "bio": {
@@ -23,10 +23,12 @@
     "roleLine": "Managing Attorney",
     "imageAlt": "Jonah Brodsky, Managing Attorney at Brodsky Law PLLC",
     "paragraphs": [
-      "Jonah Brodsky is the managing attorney of Brodsky Law PLLC and a licensed New York attorney with experience in both transactional divorce matters and contested litigation. He founded the firm to make quality legal representation more accessible to ordinary New Yorkers.",
-      "When you retain Brodsky Law, you are working directly with Jonah, not a paralegal or an intake coordinator. He handles your case personally, from the initial filing through to the final judgment."
+      "Jonah Brodsky is the managing attorney of Brodsky Law PLLC and an experienced litigator licensed in New York, New Jersey, and Pennsylvania. He founded the firm to make quality legal representation, whether inside or outside the courthouse, more accessible to ordinary New Yorkers.",
+      "When you retain Brodsky Law, you are working with Jonah directly. He will personally see your case through from start to finish."
     ],
-    "phoneDisplay": "646-444-3120"
+    "phoneDisplay": "646-444-3120",
+    "emailDisplay": "contact@brodskydivorcelaw.com",
+    "emailMailto": "mailto:contact@brodskydivorcelaw.com"
   },
   "valuesSection": {
     "sectionLabel": "Our Values",

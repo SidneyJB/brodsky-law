@@ -5,7 +5,14 @@ export default function PageLayout({ children }: { children: React.ReactNode }) 
   return (
     <>
       <Header />
-      <main style={{ paddingTop: "4rem" }}>{children}</main>
+      <main
+        style={{
+          paddingTop: "var(--site-header-offset)",
+          background: "var(--color-canvas-soft)",
+        }}
+      >
+        {children}
+      </main>
       <Footer />
     </>
   );

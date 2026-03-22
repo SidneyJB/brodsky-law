@@ -2,6 +2,8 @@ import Link from "next/link";
 import site from "@/content/site.json";
 
 const { footer } = site;
+const emailMailto = footer.emailMailto ?? "";
+const emailDisplay = footer.emailDisplay ?? "";
 
 export default function Footer() {
   return (
@@ -10,13 +12,13 @@ export default function Footer() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "3rem" }} className="footer-grid">
           {/* Brand col */}
           <div>
-            <div style={{ marginBottom: "1rem" }}>
-              <div style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", lineHeight: 1.1, color: "var(--color-canvas)" }}>
+            <div style={{ marginBottom: "1rem", display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "baseline", gap: "0.4rem" }}>
+              <span style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", lineHeight: 1.1, color: "var(--color-canvas)" }}>
                 {footer.firmName}
-              </div>
-              <div style={{ fontSize: "0.625rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", marginTop: "2px" }}>
+              </span>
+              <span style={{ fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", lineHeight: 1 }}>
                 {footer.firmSuffix}
-              </div>
+              </span>
             </div>
             <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: "280px" }}>
               {footer.tagline}
@@ -25,6 +27,11 @@ export default function Footer() {
               <a href={`tel:${footer.phoneTel}`} style={{ fontSize: "0.9375rem", fontWeight: 500, color: "var(--color-canvas)", letterSpacing: "0.02em" }}>
                 {footer.phoneDisplay}
               </a>
+              {emailMailto ? (
+                <a href={emailMailto} style={{ fontSize: "0.875rem", fontWeight: 500, color: "rgba(255,255,255,0.85)", wordBreak: "break-all" }}>
+                  {emailDisplay}
+                </a>
+              ) : null}
               <span style={{ fontSize: "0.8125rem", color: "rgba(255,255,255,0.45)" }}>{footer.callHint}</span>
             </div>
           </div>
