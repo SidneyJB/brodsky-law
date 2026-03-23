@@ -33,7 +33,7 @@
     { "href": "/contact", "label": "Contact" }
   ],
   "headerCta": {
-    "href": "/order",
+    "href": "/contact",
     "label": "Start Your Divorce"
   },
   "footer": {
@@ -57,7 +57,6 @@
     "firmLinks": [
       { "href": "/about", "label": "About Us" },
       { "href": "/process", "label": "How It Works" },
-      { "href": "/order", "label": "Order" },
       { "href": "/contact", "label": "Contact" },
       { "href": "/privacy-policy", "label": "Privacy Policy" }
     ]
@@ -66,7 +65,7 @@
     "heading": "Ready to move forward?",
     "subtext": "Get your case started today. Payment plans available, as little as $400 down.",
     "primaryLabel": "Start Your Divorce",
-    "primaryHref": "/order",
+    "primaryHref": "/contact",
     "secondaryLabel": "Free Case Estimate",
     "secondaryHref": "/contact"
   }

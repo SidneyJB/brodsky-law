@@ -50,7 +50,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
-                <Link href="/order" className="btn-primary" style={{ fontSize: "1.0625rem", padding: "1rem 2.5rem" }}>
+                <Link href="/contact" className="btn-primary" style={{ fontSize: "1.0625rem", padding: "1rem 2.5rem" }}>
                   {hero.primaryCta}
                 </Link>
                 <Link href="/contact" className="btn-secondary" style={{ fontSize: "1.0625rem", padding: "1rem 2.5rem" }}>

@@ -46,7 +46,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <PageLayout>
-      <div className="service-detail-prose">
+      <>
         <section style={{ background: "var(--color-canvas-soft)", padding: "6rem 0 5rem", borderBottom: "1px solid var(--color-border)" }}>
           <div className="container" style={{ maxWidth: "760px" }}>
             <SectionFadeIn>
@@ -111,7 +111,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           primaryLabel={cta.ctaPrimaryLabel}
           secondaryLabel={cta.ctaSecondaryLabel}
         />
-      </div>
+      </>
     </PageLayout>
   );
 }

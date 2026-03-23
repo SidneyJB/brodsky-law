@@ -175,13 +175,13 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link href={headerCta.href} className="btn-primary" style={{ display: "block", textAlign: "justify", marginTop: "1.25rem", width: "100%", padding: "0.875rem 1rem" }}>
+            <Link href={headerCta.href} className="btn-primary" style={{ display: "block", textAlign: "center", marginTop: "1.25rem", width: "100%", padding: "0.875rem 1rem" }}>
               {headerCta.label}
             </Link>
-            <a href={`tel:${phoneTel}`} style={{ display: "block", textAlign: "justify", marginTop: "1rem", padding: "0.5rem", color: "var(--color-ink-light)", fontSize: "0.9375rem" }}>
+            <a href={`tel:${phoneTel}`} style={{ display: "block", textAlign: "center", marginTop: "1rem", padding: "0.5rem", color: "var(--color-ink-light)", fontSize: "0.9375rem" }}>
               Call {phoneDisplay}
             </a>
-            <a href={emailMailto} style={{ display: "block", textAlign: "justify", marginTop: "0.35rem", padding: "0.5rem", color: "var(--color-ink-light)", fontSize: "0.9375rem", wordBreak: "break-all" }}>
+            <a href={emailMailto} style={{ display: "block", textAlign: "center", marginTop: "0.35rem", padding: "0.5rem", color: "var(--color-ink-light)", fontSize: "0.9375rem", wordBreak: "break-all" }}>
               {emailDisplay}
             </a>
           </div>

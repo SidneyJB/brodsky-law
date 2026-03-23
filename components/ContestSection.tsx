@@ -25,7 +25,7 @@ export default function ContestSection({ scenarios }: ContestSectionProps) {
           >
             <button
               onClick={() => setOpen(isOpen ? null : i)}
-              style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.25rem 1.5rem", background: "none", border: "none", cursor: "pointer", textAlign: "justify", gap: "1rem" }}
+              style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.25rem 1.5rem", background: "none", border: "none", cursor: "pointer", textAlign: "left", gap: "1rem" }}
               aria-expanded={isOpen}
             >
               <span style={{ fontFamily: "var(--font-serif)", fontSize: "1.0625rem", color: "var(--color-ink)" }}>{s.title}</span>

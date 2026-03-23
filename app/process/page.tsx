@@ -64,7 +64,7 @@ export default function ProcessPage() {
                   <p style={{ fontSize: "0.9375rem", color: "var(--color-ink-light)", lineHeight: 1.75, marginBottom: "1.25rem" }}>
                     {sidebar.paymentPlans.body}
                   </p>
-                  <Link href="/order" className="btn-secondary" style={{ fontSize: "0.875rem", padding: "0.625rem 1.25rem" }}>
+                  <Link href="/contact" className="btn-secondary" style={{ fontSize: "0.875rem", padding: "0.625rem 1.25rem" }}>
                     {sidebar.paymentPlans.cta}
                   </Link>
                 </div>

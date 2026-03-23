@@ -42,11 +42,10 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
 }
 
-/* Typing stays natural; everything else inherits justify from body */
+/* Form controls stay start-aligned */
 input:not([type="checkbox"]):not([type="radio"]),
 textarea,
 select {
@@ -92,7 +91,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
   background: var(--color-ink);
   color: var(--color-canvas);
   font-family: var(--font-sans);
@@ -116,7 +115,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
   background: transparent;
   color: var(--color-ink);
   font-family: var(--font-sans);
@@ -146,9 +145,3 @@ img {
   color: var(--color-ink-muted);
 }
 
-/* Service detail: avoid justified body text on long legal copy */
-.service-detail-prose h1,
-.service-detail-prose h2,
-.service-detail-prose p {
-  text-align: left;
-}
