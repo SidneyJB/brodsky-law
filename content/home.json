@@ -36,8 +36,9 @@
   ],
   "pricingStrip": {
     "amount": "$895",
-    "suffix": "uncontested divorce*",
-    "footnote": "* Court fees. Price for uncontested divorce. Children, property, and/or support may add fees, always quoted upfront.",
+    "title": "uncontested divorce",
+    "plusCourtFees": "Plus court fees",
+    "footnote": "Price for uncontested divorce. Children, property, and/or support may add fees, always quoted upfront.",
     "cta": "Get Your Quote"
   },
   "servicesSection": {

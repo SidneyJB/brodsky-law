@@ -123,9 +123,14 @@ export default function HomePage() {
       <SectionFadeIn>
         <section style={{ background: "var(--color-canvas-warm)", borderTop: "1px solid var(--color-border)", borderBottom: "1px solid var(--color-border)", padding: "3.5rem 0" }}>
           <div className="container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1.5rem" }}>
-            <div>
-              <span style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4vw, 3rem)", color: "var(--color-ink)" }}>{pricingStrip.amount}</span>
-              <span style={{ fontFamily: "var(--font-sans)", fontSize: "1rem", color: "var(--color-ink-light)", marginLeft: "0.75rem" }}>{pricingStrip.suffix}</span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem", minWidth: "min(100%, 280px)" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", columnGap: "0.5rem", rowGap: "0.15rem" }}>
+                <span style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4vw, 3rem)", color: "var(--color-ink)" }}>{pricingStrip.amount}</span>
+                <span style={{ fontFamily: "var(--font-sans)", fontSize: "1rem", color: "var(--color-ink-light)" }}>{pricingStrip.title}</span>
+              </div>
+              <p style={{ fontFamily: "var(--font-sans)", fontSize: "1rem", fontWeight: 500, color: "var(--color-ink-light)", margin: 0 }}>
+                {pricingStrip.plusCourtFees}
+              </p>
             </div>
             <p style={{ fontSize: "0.875rem", color: "var(--color-ink-muted)", maxWidth: "40ch", lineHeight: 1.6 }}>
               {pricingStrip.footnote}
