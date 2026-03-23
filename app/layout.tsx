@@ -5,6 +5,7 @@ import site from "@/content/site.json";
 const { layout } = site;
 
 export const metadata: Metadata = {
+  metadataBase: new URL(layout.openGraphUrl),
   title: {
     default: layout.titleDefault,
     template: layout.titleTemplate,
@@ -16,6 +17,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: layout.openGraphUrl,
     siteName: layout.openGraphSiteName,
+    title: layout.openGraphTitle,
+    description: layout.openGraphDescription,
+  },
+  twitter: {
+    card: "summary_large_image",
     title: layout.openGraphTitle,
     description: layout.openGraphDescription,
   },

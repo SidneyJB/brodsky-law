@@ -61,30 +61,38 @@ export default function Header() {
           paddingBottom: "1.125rem",
         }}
       >
-        <Link
-          href="/"
+        <div
           className="header-brand"
-          style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.75rem", minWidth: 0, flexShrink: 1, textDecoration: "none" }}
+          style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.75rem", minWidth: 0, flexShrink: 1 }}
         >
-          <Image
-            src="/images/lady-liberty-silhouette.png"
-            alt=""
-            width={40}
-            height={69}
-            className="header-liberty-img"
-            style={{ flexShrink: 0, objectFit: "contain", opacity: 0.92 }}
-            priority
-            aria-hidden
-          />
-          <span className="header-brand-text" style={{ display: "flex", flexDirection: "column", gap: "0.5rem", minWidth: 0, alignItems: "flex-start" }}>
-            <span className="header-wordmark" style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "baseline", gap: "0.4rem", minWidth: 0 }}>
-              <span className="header-wordmark-title" style={{ fontFamily: "var(--font-serif)", color: "var(--color-ink)", lineHeight: 1.1 }}>
-                Brodsky Law
+          <Link
+            href="/"
+            className="header-brand-mark"
+            style={{ display: "flex", flexShrink: 0, alignItems: "center", textDecoration: "none" }}
+            aria-label="Brodsky Law PLLC home"
+          >
+            <Image
+              src="/images/lady-liberty-silhouette.png"
+              alt=""
+              width={40}
+              height={69}
+              className="header-liberty-img"
+              style={{ objectFit: "contain", opacity: 0.92 }}
+              priority
+              aria-hidden
+            />
+          </Link>
+          <div className="header-brand-text" style={{ display: "flex", flexDirection: "column", gap: "0.5rem", minWidth: 0, alignItems: "flex-start" }}>
+            <Link href="/" className="header-wordmark-link" style={{ textDecoration: "none", color: "inherit", alignSelf: "stretch" }}>
+              <span className="header-wordmark" style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "baseline", gap: "0.4rem", minWidth: 0 }}>
+                <span className="header-wordmark-title" style={{ fontFamily: "var(--font-serif)", color: "var(--color-ink)", lineHeight: 1.1 }}>
+                  Brodsky Law
+                </span>
+                <span className="header-wordmark-sub" style={{ fontFamily: "var(--font-sans)", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-ink-muted)", lineHeight: 1 }}>
+                  PLLC
+                </span>
               </span>
-              <span className="header-wordmark-sub" style={{ fontFamily: "var(--font-sans)", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-ink-muted)", lineHeight: 1 }}>
-                PLLC
-              </span>
-            </span>
+            </Link>
             <span className="header-contact" style={{ display: "flex", flexDirection: "column", gap: "0.125rem" }}>
               <a href={`tel:${phoneTel}`} className="header-contact-link" style={{ fontFamily: "var(--font-sans)", fontWeight: 500, color: "var(--color-ink)", lineHeight: 1.35 }}>
                 {phoneDisplay}
@@ -93,8 +101,8 @@ export default function Header() {
                 {emailDisplay}
               </a>
             </span>
-          </span>
-        </Link>
+          </div>
+        </div>
 
         <nav className="desktop-nav">
           {navLinks.map((link) => (
