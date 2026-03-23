@@ -54,6 +54,8 @@
     },
     "formDisclaimer": "Submitting this form does not establish an attorney-client relationship. Do not include confidential information until an attorney-client relationship has been established.",
     "submitLabel": "Send Message",
+    "submittingLabel": "Sending…",
+    "submitError": "Something went wrong and we could not send your message. Please try again or call us at 646-444-3120.",
     "successTitle": "Thank you, {firstName}.",
     "successBody": "We've received your information and will be in touch shortly, usually within a few hours. If your matter is urgent, please call or text us directly at ",
     "successPhoneDisplay": "646-444-3120"

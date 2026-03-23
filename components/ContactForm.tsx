@@ -77,20 +77,36 @@ export default function ContactForm() {
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const set = (field: keyof FormData) => (ev: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setData((prev) => ({ ...prev, [field]: ev.target.value }));
     if (errors[field]) setErrors((prev) => ({ ...prev, [field]: undefined }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const errs = validate(data);
     if (Object.keys(errs).length > 0) {
       setErrors(errs);
       return;
     }
-    setSubmitted(true);
+    setSubmitError(null);
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("submit failed");
+      setSubmitted(true);
+    } catch {
+      setSubmitError(formCopy.submitError);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -155,8 +171,14 @@ export default function ContactForm() {
         {formCopy.formDisclaimer}
       </p>
 
-      <button type="submit" className="btn-primary" style={{ alignSelf: "flex-start", padding: "0.875rem 2.25rem" }}>
-        {formCopy.submitLabel}
+      {submitError && (
+        <p role="alert" style={{ ...errorStyle, marginTop: 0 }}>
+          {submitError}
+        </p>
+      )}
+
+      <button type="submit" disabled={submitting} className="btn-primary" style={{ alignSelf: "flex-start", padding: "0.875rem 2.25rem", opacity: submitting ? 0.7 : 1 }}>
+        {submitting ? formCopy.submittingLabel : formCopy.submitLabel}
       </button>
 
       <style>{`
