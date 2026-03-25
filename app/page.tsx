@@ -85,10 +85,10 @@ export default function HomePage() {
 
       <style>{`
         .hero-inner { display: flex; flex-direction: column; gap: 2.5rem; }
-        .hero-portrait-wrap { display: none; }
+        .hero-portrait-wrap { align-self: center; }
         @media (min-width: 700px) {
           .hero-inner { flex-direction: row; align-items: center; }
-          .hero-portrait-wrap { display: block !important; margin-left: auto; }
+          .hero-portrait-wrap { align-self: auto; margin-left: auto; }
           .hero-portrait-wrap > div:last-child { margin-inline: 0; }
           .hero-portrait-wrap > div:first-child { margin-inline: 0; }
         }
