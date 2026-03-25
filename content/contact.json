@@ -41,7 +41,8 @@
       "Contested Divorce",
       "Child Support",
       "Spousal\u00A0Maintenance",
-      "I'm not sure; need guidance"
+      "I'm not sure; need guidance",
+      "Other Legal Questions"
     ],
     "errors": {
       "firstName": "First name is required.",

@@ -41,15 +41,17 @@ export default function CTABanner({
         <p style={{ fontSize: "1.0625rem", color: fgMuted, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           {subtext}
         </p>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "flex-start", alignItems: "center" }}>
+        <div className="cta-banner-actions" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "flex-start", alignItems: "center" }}>
           <Link
             href={primaryHref}
+            className="cta-banner-btn"
             style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", textAlign: "center", background: btnBg, color: btnFg, fontFamily: "var(--font-sans)", fontSize: "0.9375rem", fontWeight: 500, padding: "0.875rem 2rem", borderRadius: "var(--radius-sm)", textDecoration: "none", transition: "opacity 0.2s" }}
           >
             {primaryLabel}
           </Link>
           <Link
             href={secondaryHref}
+            className="cta-banner-btn"
             style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", textAlign: "center", background: "transparent", color: altFg, fontFamily: "var(--font-sans)", fontSize: "0.9375rem", fontWeight: 500, padding: "0.875rem 2rem", borderRadius: "var(--radius-sm)", border: `1.5px solid ${altBorder}`, textDecoration: "none", transition: "border-color 0.2s" }}
           >
             {secondaryLabel}
@@ -64,6 +66,12 @@ export default function CTABanner({
           )}
         </div>
       </div>
+      <style>{`
+        @media (max-width: 699px) {
+          .cta-banner-actions { flex-direction: column; align-items: stretch; }
+          .cta-banner-actions .cta-banner-btn { width: 100%; box-sizing: border-box; }
+        }
+      `}</style>
     </section>
   );
 }

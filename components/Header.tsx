@@ -8,6 +8,7 @@ import site from "@/content/site.json";
 
 const navLinks = site.headerNav;
 const headerCta = site.headerCta;
+const headerSecondaryCta = site.headerSecondaryCta;
 const { phoneDisplay, phoneTel, emailDisplay, emailMailto } = site.footer;
 
 export default function Header() {
@@ -125,6 +126,9 @@ export default function Header() {
           <Link href={headerCta.href} className="btn-primary" style={{ padding: "0.625rem 1.35rem", fontSize: "0.875rem" }}>
             {headerCta.label}
           </Link>
+          <Link href={headerSecondaryCta.href} className="btn-secondary" style={{ padding: "0.625rem 1.1rem", fontSize: "0.8125rem", whiteSpace: "nowrap" }}>
+            {headerSecondaryCta.label}
+          </Link>
         </nav>
 
         <button
@@ -185,6 +189,9 @@ export default function Header() {
             ))}
             <Link href={headerCta.href} className="btn-primary" style={{ display: "block", textAlign: "center", marginTop: "1.25rem", width: "100%", padding: "0.875rem 1rem" }}>
               {headerCta.label}
+            </Link>
+            <Link href={headerSecondaryCta.href} className="btn-secondary" style={{ display: "block", textAlign: "center", marginTop: "0.75rem", width: "100%", padding: "0.875rem 1rem" }}>
+              {headerSecondaryCta.label}
             </Link>
             <a href={`tel:${phoneTel}`} style={{ display: "block", textAlign: "center", marginTop: "1rem", padding: "0.5rem", color: "var(--color-ink-light)", fontSize: "0.9375rem" }}>
               Call {phoneDisplay}

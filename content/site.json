@@ -36,6 +36,10 @@
     "href": "/contact",
     "label": "Start Your Divorce"
   },
+  "headerSecondaryCta": {
+    "href": "/contact",
+    "label": "Other Legal Questions?"
+  },
   "footer": {
     "firmName": "Brodsky Law",
     "firmSuffix": "PLLC",

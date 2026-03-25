@@ -49,7 +49,7 @@ export default function HomePage() {
                   {hero.disclaimer}
                 </p>
               </div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
+              <div className="hero-cta-row" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
                 <Link href="/contact" className="btn-primary" style={{ fontSize: "1.0625rem", padding: "1rem 2.5rem" }}>
                   {hero.primaryCta}
                 </Link>
@@ -86,6 +86,12 @@ export default function HomePage() {
       <style>{`
         .hero-inner { display: flex; flex-direction: column; gap: 2.5rem; }
         .hero-portrait-wrap { align-self: center; }
+        @media (max-width: 699px) {
+          .hero-cta-row { flex-direction: column; align-items: stretch; }
+          .hero-cta-row :is(a.btn-primary, a.btn-secondary) { width: 100%; box-sizing: border-box; }
+          .home-pricing-bar { flex-direction: column; align-items: stretch !important; }
+          .home-pricing-bar > .btn-primary { width: 100%; box-sizing: border-box; }
+        }
         @media (min-width: 700px) {
           .hero-inner { flex-direction: row; align-items: center; }
           .hero-portrait-wrap { align-self: auto; margin-left: auto; }
@@ -122,7 +128,7 @@ export default function HomePage() {
 
       <SectionFadeIn>
         <section style={{ background: "var(--color-canvas-warm)", borderTop: "1px solid var(--color-border)", borderBottom: "1px solid var(--color-border)", padding: "3.5rem 0" }}>
-          <div className="container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1.5rem" }}>
+          <div className="container home-pricing-bar" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1.5rem" }}>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem", minWidth: "min(100%, 280px)" }}>
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", columnGap: "0.5rem", rowGap: "0.15rem" }}>
                 <span style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4vw, 3rem)", color: "var(--color-ink)" }}>{pricingStrip.amount}</span>
