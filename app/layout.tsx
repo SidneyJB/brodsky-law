@@ -35,18 +35,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-18038979712"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
-        <Script id="gtag-init" strategy="afterInteractive">{`
+        <Script id="gtag-init" strategy="beforeInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-18038979712');
         `}</Script>
+      </head>
+      <body>
+        {children}
       </body>
     </html>
   );

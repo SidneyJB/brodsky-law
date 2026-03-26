@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import contact from "@/content/contact.json";
 
 interface FormData {
@@ -68,7 +67,6 @@ const labelStyle: React.CSSProperties = {
 };
 
 export default function ContactForm() {
-  const router = useRouter();
   const [data, setData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -104,7 +102,7 @@ export default function ContactForm() {
       if (!res.ok) throw new Error("submit failed");
       const q = new URLSearchParams();
       if (data.firstName.trim()) q.set("firstName", data.firstName.trim());
-      router.push(`/contact/thank-you${q.toString() ? `?${q}` : ""}`);
+      window.location.href = `/contact/thank-you${q.toString() ? `?${q}` : ""}`;
     } catch {
       setSubmitError(formCopy.submitError);
     } finally {
