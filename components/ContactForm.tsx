@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import contact from "@/content/contact.json";
 
 interface FormData {
@@ -67,6 +68,7 @@ const labelStyle: React.CSSProperties = {
 };
 
 export default function ContactForm() {
+  const router = useRouter();
   const [data, setData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -76,7 +78,6 @@ export default function ContactForm() {
     details: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
-  const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
@@ -101,27 +102,15 @@ export default function ContactForm() {
         body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error("submit failed");
-      setSubmitted(true);
+      const q = new URLSearchParams();
+      if (data.firstName.trim()) q.set("firstName", data.firstName.trim());
+      router.push(`/contact/thank-you${q.toString() ? `?${q}` : ""}`);
     } catch {
       setSubmitError(formCopy.submitError);
     } finally {
       setSubmitting(false);
     }
   };
-
-  if (submitted) {
-    const title = formCopy.successTitle.replace("{firstName}", data.firstName);
-    return (
-      <div style={{ textAlign: "left", padding: "3rem 2rem", background: "var(--color-canvas-soft)", borderRadius: "var(--radius-lg)", border: "1px solid var(--color-border)" }}>
-        <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>✓</div>
-        <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "1.5rem", marginBottom: "0.75rem" }}>{title}</h3>
-        <p style={{ color: "var(--color-ink-light)", lineHeight: 1.7 }}>
-          {formCopy.successBody}
-          <a href={contact.quickFacts[0].href ?? "tel:6464443120"} style={{ color: "var(--color-ink)", fontWeight: 500 }}>{formCopy.successPhoneDisplay}</a>.
-        </p>
-      </div>
-    );
-  }
 
   const L = formCopy.labels;
 

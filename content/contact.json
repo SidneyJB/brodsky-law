@@ -6,7 +6,7 @@
   "hero": {
     "sectionLabel": "Get in Touch",
     "title": "Free case estimate. No obligation.",
-    "lead": "Tell us a bit about your situation and we'll reply with estimated costs, timeline, payment options, and any questions we have, usually within a few hours."
+    "lead": "Tell us a bit about your situation and we'll reply with estimated costs, timeline, payment options, and any questions we have."
   },
   "formSectionTitle": "Tell us about your case",
   "servedCallout": {
@@ -56,9 +56,18 @@
     "formDisclaimer": "Submitting this form does not establish an attorney-client relationship. Do not include confidential information until an attorney-client relationship has been established.",
     "submitLabel": "Send Message",
     "submittingLabel": "Sending…",
-    "submitError": "Something went wrong and we could not send your message. Please try again or call us at 646-444-3120.",
-    "successTitle": "Thank you, {firstName}.",
-    "successBody": "We've received your information and will be in touch shortly, usually within a few hours. If your matter is urgent, please call or text us directly at ",
-    "successPhoneDisplay": "646-444-3120"
+    "submitError": "Something went wrong and we could not send your message. Please try again or call us at 646-444-3120."
+  },
+  "thankYou": {
+    "meta": {
+      "title": "Thank You",
+      "description": "Thank you for contacting Brodsky Law PLLC. We have received your message and will respond soon."
+    },
+    "titleWithName": "Thank you, {firstName}.",
+    "titleGeneric": "Thank you for contacting us.",
+    "body": "We've received your information and will be in touch shortly. If your matter is urgent, please call or text us directly at ",
+    "phoneDisplay": "646-444-3120",
+    "phoneTel": "6464443120",
+    "backLinkLabel": "← Back to home"
   }
 }
