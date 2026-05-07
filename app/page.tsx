@@ -7,6 +7,7 @@ import CTABanner from "../components/CTABanner";
 import SectionFadeIn from "../components/SectionFadeIn";
 import { services } from "../lib/services";
 import home from "@/content/home.json";
+import site from "@/content/site.json";
 
 const iconMap = {
   tag: Tag,
@@ -50,7 +51,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="hero-cta-row" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
-                <Link href="/contact" className="btn-primary" style={{ fontSize: "1.0625rem", padding: "1rem 2.5rem" }}>
+                <Link href={site.headerCta.href} className="btn-primary" style={{ fontSize: "1.0625rem", padding: "1rem 2.5rem" }}>
                   {hero.primaryCta}
                 </Link>
                 <Link href="/contact" className="btn-secondary" style={{ fontSize: "1.0625rem", padding: "1rem 2.5rem" }}>

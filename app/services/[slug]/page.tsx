@@ -109,6 +109,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           heading={service.ctaHeading}
           subtext={service.ctaSubtext}
           primaryLabel={cta.ctaPrimaryLabel}
+          primaryHref={site.headerCta.href}
           secondaryLabel={cta.ctaSecondaryLabel}
         />
       </>

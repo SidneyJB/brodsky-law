@@ -33,7 +33,7 @@
     { "href": "/contact", "label": "Contact" }
   ],
   "headerCta": {
-    "href": "/contact",
+    "href": "https://intake.brodskydivorcelaw.com/",
     "label": "Start Your Divorce"
   },
   "headerSecondaryCta": {
@@ -69,7 +69,7 @@
     "heading": "Ready to move forward?",
     "subtext": "Get your case started today. Payment plans available, as little as $400 down.",
     "primaryLabel": "Start Your Divorce",
-    "primaryHref": "/contact",
+    "primaryHref": "https://intake.brodskydivorcelaw.com/",
     "secondaryLabel": "Free Case Estimate",
     "secondaryHref": "/contact"
   }
