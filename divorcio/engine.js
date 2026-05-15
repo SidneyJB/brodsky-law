@@ -370,9 +370,6 @@ class DivorceInterviewEngine {
         // Handle multiple buttons as choices
         this.renderButtonChoices(page);
         
-        // Scroll to top
-        this.elements.questionCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        
         // Persist state to localStorage
         this.saveState();
     }
@@ -1605,7 +1602,6 @@ class DivorceInterviewEngine {
     showError(message) {
         this.elements.errorMessage.textContent = message;
         this.elements.errorMessage.style.display = 'block';
-        this.elements.errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
     
     hideError() {
