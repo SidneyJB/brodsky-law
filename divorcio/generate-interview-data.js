@@ -93,6 +93,22 @@ function shouldSkipPage(name, page) {
   // 09b removed — flow goes straight to ancillary relief (12a.1)
   if (name === '09b-Have marital property') return true;
 
+  // Pre-signed settlement agreement chain — Brodsky handles agreements in representation; skip LHI screens
+  const SKIP_SETTLEMENT_AGREEMENT_PAGES = new Set([
+    '04e.1-Written agreement',
+    '04e.3-File agreement',
+    '07a-Written agreement',
+    '07b-Get agreement.',
+    '07c-Date of written agreement',
+    '07d-Drafter',
+    '07e.1-Health Insurance',
+    '07e.2-Health Insurance',
+    '07f.1-Maintenance in agreement',
+    '07f.2-Maintenance amount',
+    '07f.3-Maintenance frequency'
+  ]);
+  if (SKIP_SETTLEMENT_AGREEMENT_PAGES.has(name)) return true;
+
   // Six-month check merged into marriage date page
   if (name === '12c-Marriage 6 month check') return true;
   
@@ -817,7 +833,7 @@ function mergeBrodskyVars(data) {
       name: 'Brodsky after children route MC',
       type: 'MC',
       repeating: false,
-      comment: 'settlement → 04e.1; about → 01-About Plaintiff (internal router)'
+      comment: 'settlement → 04f.1 marital property; about → 01-About Plaintiff (internal router)'
     },
     'brodsky plaintiff dob da': {
       name: 'Brodsky plaintiff DOB DA',
@@ -1069,8 +1085,14 @@ const BRODSKY_PRIOR_MARRIAGE_ENDED_LISTDATA =
   '<OPTION VALUE="annulment">Annulment</OPTION>' +
   '<OPTION VALUE="other">Other</OPTION>';
 
+/** Vars matching 04e.1-Written agreement when user has no pre-signed agreement (Brodsky skips those screens). */
+const BRODSKY_NO_WRITTEN_SETTLEMENT_INIT =
+  'SET [Parties have agreement TF] TO false\n' +
+  'SET [Ancillary relief sought TF] TO false\n' +
+  'SET [Print 255 addendum TF] TO false';
+
 /**
- * Brodsky-only screens: children gate (must run before spouse section or 04e settlement chain), employment/military (end of you/spouse block).
+ * Brodsky-only screens: children gate (must run before spouse section / marital property), employment/military (end of you/spouse block).
  */
 function injectBrodskyCustomPages(processedPages) {
   processedPages['BL-00-Disclaimer'] = {
@@ -1465,9 +1487,13 @@ function injectBrodskyCustomPages(processedPages) {
     ],
     buttons: [{ label: 'Continue', next: '01-About Plaintiff and Defendant' }],
     codeBefore:
-      'IF [Brodsky minor children MC] = "no"\nIF [Brodsky after children route MC] = "settlement"\nGOTO "04e.1-Written agreement"\nELSE\nGOTO "01-About Plaintiff and Defendant"\nEND IF\nEND IF',
+      'IF [Brodsky minor children MC] = "no"\nIF [Brodsky after children route MC] = "settlement"\n' +
+      BRODSKY_NO_WRITTEN_SETTLEMENT_INIT +
+      '\nGOTO "04f.1-Marital property"\nELSE\nGOTO "01-About Plaintiff and Defendant"\nEND IF\nEND IF',
     codeAfter:
-      'IF [Brodsky after children route MC] = "settlement"\n GOTO "04e.1-Written agreement"\nELSE\n GOTO "01-About Plaintiff and Defendant"\nEND IF'
+      'IF [Brodsky after children route MC] = "settlement"\n ' +
+      BRODSKY_NO_WRITTEN_SETTLEMENT_INIT +
+      '\n GOTO "04f.1-Marital property"\nELSE\n GOTO "01-About Plaintiff and Defendant"\nEND IF'
   };
 
   processedPages['BL-02-Employment military'] = {
@@ -1701,7 +1727,7 @@ function injectBrodskyCustomPages(processedPages) {
  * e.g. 08b → 08c into 08b → 09-Public assistance).
  */
 function patchBrodskyNavigationAfterRewire(filteredPages) {
-  // Children intake before settlement: 04d.1 Yes → BL-01 (route=settlement → 04e.1 after Continue)
+  // Children intake before marital-property branch: 04d.1 Yes → BL-01 (route=settlement → 04f.1 after Continue)
   const p04d = filteredPages["04d.1-Defendant's whereabouts"];
   if (p04d && p04d.buttons) {
     p04d.buttons = p04d.buttons.map((b) =>
@@ -1726,9 +1752,20 @@ function patchBrodskyNavigationAfterRewire(filteredPages) {
   patchPhoneToEmployment(filteredPages["08a-Defendant's phone number"]);
 }
 
+/** After "Issues that must be Settled" (06e), skip all pre-signed settlement-agreement screens → marital property. */
+function patchBrodskySkipSettlementAgreementScreens(filteredPages) {
+  const p06e = filteredPages['06e-Must agree'];
+  if (!p06e || !Array.isArray(p06e.buttons)) return;
+  p06e.buttons = p06e.buttons.map((b) =>
+    b.next === '07a-Written agreement' ? { ...b, next: '04f.1-Marital property' } : b
+  );
+  const init = BRODSKY_NO_WRITTEN_SETTLEMENT_INIT;
+  p06e.codeAfter = p06e.codeAfter ? `${p06e.codeAfter}\n${init}` : init;
+}
+
 /**
  * Main path (02a → … → 19a/19b/17) jumps straight to 01-About (step 2) and never hits 04d.1.
- * Force children screen first, then resume: settlement chain (04e.1) or start of spouse block (01-About).
+ * Force children screen first, then resume: marital property (04f.1) or start of spouse block (01-About).
  */
 function patchBrodskyChildrenBeforeSpouseSection(filteredPages) {
   const p19b = filteredPages['19b-Initiating papers'];
@@ -1826,7 +1863,7 @@ GOTO "02a-Plaintiff 2 years residency"`;
 
 /**
  * A2J labels these flows as step 0; for Brodsky UX they belong at the end of "Your Divorce" (step 1),
- * before "You and Your Spouse" (step 2): whereabouts → children → settlement → 04f/04g/04h chains.
+ * before "You and Your Spouse" (step 2): whereabouts → children → 04f/04g/04h chains (no pre-signed settlement screens).
  */
 function applyBrodskyYourDivorceStep(filteredPages) {
   const YOUR_DIVORCE = 1;
@@ -1899,6 +1936,7 @@ function main() {
     patchBrodskyNavigationAfterRewire(filteredPages);
     patchBrodskyChildrenBeforeSpouseSection(filteredPages);
     patchBrodskyPartyNameHistoryFlow(filteredPages);
+    patchBrodskySkipSettlementAgreementScreens(filteredPages);
     applyBrodskyYourDivorceStep(filteredPages);
 
     const p10a = filteredPages["10a-Defendant in military"];

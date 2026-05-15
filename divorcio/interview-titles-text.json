@@ -258,16 +258,6 @@
       "text": "This form is not for you.\nThe court papers must be personally delivered to the person you want to divorce. The Defendant's address is required to use this form."
     },
     {
-      "id": "04e.1-Written agreement",
-      "title": "Settlement Agreement",
-      "text": "Settlement Agreement\nDid you and the Defendant sign a written Settlement Agreement?\nSometimes the Settlement Agreement is called a Stipulation of Settlement or a Property Settlement and Separation Agreement."
-    },
-    {
-      "id": "04e.3-File agreement",
-      "title": "The written Settlement Agreement is filed with the court when the index number is issued. There is an additional fee of ",
-      "text": "The written Settlement Agreement is filed with the court when the index number is issued. There is an additional fee of about $35."
-    },
-    {
       "id": "04f.1-Marital property",
       "title": "Marital Property",
       "text": "Marital Property\nTo use the grounds of no fault, the division of marital property must be agreed to between you and the Defendant.\nThis means that you and the Defendant must agree between yourselves how the property and debt is divided."
@@ -523,11 +513,6 @@
       "text": "Do you know %%[Defendant current name TE]%%'s social security number?\n\nIf no, there may be extra fees for divorce by publication."
     },
     {
-      "id": "07a-Written agreement",
-      "title": "Settlement Agreement",
-      "text": "Settlement Agreement\nYou and %%[Defendant current name TE]%% signed a written Settlement Agreement."
-    },
-    {
       "id": "07a.1-Parties names",
       "title": "IMPORTANT",
       "text": "IMPORTANT\nYour name and the name of the person you want to divorce must be typed in exactly as it appears on your marriage certificate.\nIf the names on the paperwork are not correct, the court may not enter your judgment and your divorce will be delayed."
@@ -538,11 +523,6 @@
       "text": "IMPORTANT\nYour name and the name of the person you want to divorce must be typed in exactly as it appears in the papers already on file with the court.\nIf the names are not typed exactly as it appears in the papers already on file with the court, the court will not enter your judgment and your divorce will be delayed."
     },
     {
-      "id": "07b-Get agreement.",
-      "title": "It would be helpful if you have it with you to answer the following questions.",
-      "text": "It would be helpful if you have it with you to answer the following questions."
-    },
-    {
       "id": "07b.1-Defendant's SSN",
       "title": "What is %%[Defendant current name TE]%%'s social security number?",
       "text": "What is %%[Defendant current name TE]%%'s social security number?"
@@ -551,11 +531,6 @@
       "id": "07b.1-Plaintiff name",
       "title": "Type in your name exactly as it appears on the marriage certificate.",
       "text": "Type in your name exactly as it appears on the marriage certificate."
-    },
-    {
-      "id": "07c-Date of written agreement",
-      "title": "What is the date of the written Settlement Agreement?",
-      "text": "What is the date of the written Settlement Agreement?"
     },
     {
       "id": "07c-Defendant's SSN unknown",
@@ -578,19 +553,9 @@
       "text": "Include proof of any name change when the papers are filed.\nA proof of name change is a legal document that verifies that a person has legally changed their name, such as a court order granting the name change or a certificate of naturalization or citizenship."
     },
     {
-      "id": "07d-Drafter",
-      "title": "Who helped you and %%[Defendant current name TE]%% write the Settlement Agreement?",
-      "text": "Who helped you and %%[Defendant current name TE]%% write the Settlement Agreement?"
-    },
-    {
       "id": "07d-Photo ID",
       "title": "It is important that the name on the photo ID is the same as the name printed on the divorce papers or the notary may no",
       "text": "It is important that the name on the photo ID is the same as the name printed on the divorce papers or the notary may not notarize the papers.\nThe notary will check your identification to ensure that you are who you say you are. You may need to show a government-issued ID, such as a driver's license or passport."
-    },
-    {
-      "id": "07e.1-Health Insurance",
-      "title": "Health Insurance",
-      "text": "Health Insurance\nAccording to the written Settlement Agreement, is there a statement about future health care coverage for you and %%[Defendant current name TE]%%?"
     },
     {
       "id": "07e.1-Plaintiff in prison",
@@ -598,29 +563,9 @@
       "text": "Are you in prison?"
     },
     {
-      "id": "07e.2-Health Insurance",
-      "title": "There is a legal requirement that the written Settlement Agreement states an arrangement for future health care coverage",
-      "text": "There is a legal requirement that the written Settlement Agreement states an arrangement for future health care coverage for you and %%[Defendant current name TE]%%.\nAn addendum to the written Settlement Agreement which satisfies this legal requirement should be signed by you and %%[Defendant current name TE]%%, notarized and filed with your papers. This form will be printed with your other papers."
-    },
-    {
       "id": "07e.2-Plaintiff in prison",
       "title": "You are in prison.",
       "text": "You are in prison.\nTo use this form, you must know your identification number used in prison. This number is called the DIN, BOP, Book & Case number or register number depending on where you are incarcerated."
-    },
-    {
-      "id": "07f.1-Maintenance in agreement",
-      "title": "Maintenance",
-      "text": "Maintenance\nWhat does the written Settlement Agreement say about maintenance?"
-    },
-    {
-      "id": "07f.2-Maintenance amount",
-      "title": "According to the written Settlement Agreement, how much maintenance is to be paid?",
-      "text": "According to the written Settlement Agreement, how much maintenance is to be paid?"
-    },
-    {
-      "id": "07f.3-Maintenance frequency",
-      "title": "How often is the maintenance to be paid?",
-      "text": "How often is the maintenance to be paid?\nFor example: every 6 months, once a year on December 1st."
     },
     {
       "id": "08a-Defendant's phone number",

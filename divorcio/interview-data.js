@@ -2388,7 +2388,7 @@ export const VARIABLES = {
     "name": "Brodsky after children route MC",
     "type": "MC",
     "repeating": false,
-    "comment": "settlement → 04e.1; about → 01-About Plaintiff (internal router)"
+    "comment": "settlement → 04f.1 marital property; about → 01-About Plaintiff (internal router)"
   },
   "brodsky plaintiff dob da": {
     "name": "Brodsky plaintiff DOB DA",
@@ -4081,9 +4081,10 @@ const PAGES_RAW = {
     "buttons": [
       {
         "label": "Continue",
-        "next": "07a-Written agreement"
+        "next": "04f.1-Marital property"
       }
-    ]
+    ],
+    "codeAfter": "SET [Parties have agreement TF] TO false\nSET [Ancillary relief sought TF] TO false\nSET [Print 255 addendum TF] TO false"
   },
   "13a-HIDDEN SECTION: Spousal support  - IGNORE 13": {
     "learn": "What is spousal support?",
@@ -4282,25 +4283,6 @@ const PAGES_RAW = {
     "codeBefore": "IF [Parties have agreement TF] = true \n GOTO \"12a.1-Ancillary relief\"\nEND IF\n\nIF [Parties have property TF] = true \n GOTO \"12a.1-Ancillary relief\"\nEND IF",
     "codeAfter": "IF [Marital property none MC] = \"have_property\" \n GOTO \"12a.1-Ancillary relief\"\nEND IF"
   },
-  "07c-Date of written agreement": {
-    "learn": "Which date do you mean?",
-    "help": "Type in the date it was notarized.",
-    "step": 1,
-    "fields": [
-      {
-        "name": "Agreement signed DA",
-        "type": "datemdy",
-        "label": "Date:",
-        "required": true
-      }
-    ],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "07d-Drafter"
-      }
-    ]
-  },
   "06d-Not six months": {
     "step": 1,
     "fields": [],
@@ -4338,16 +4320,6 @@ const PAGES_RAW = {
       {
         "label": "Exit",
         "next": "FAIL"
-      }
-    ]
-  },
-  "07b-Get agreement.": {
-    "step": 1,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "07c-Date of written agreement"
       }
     ]
   },
@@ -4591,7 +4563,7 @@ const PAGES_RAW = {
         "next": "12a-Marriage date"
       }
     ],
-    "codeBefore": "IF HASANSWERED([Brodsky defendant military TF])\n SET [Defendant in military TF] TO [Brodsky defendant military TF]\nEND IF\nIF [Brodsky defendant military TF] = false \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Brodsky defendant military TF] = \"false\" \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Defendant in military TF] = false \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Defendant in military TF] = \"false\" \n GOTO \"10b-Defendant not in military\"\nEND IF"
+    "codeBefore": "IF HASANSWERED([Brodsky defendant military TF])\n SET [Defendant in military TF] TO [Brodsky defendant military TF]\nEND IF\nIF [Brodsky defendant military TF] = false \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Brodsky defendant military TF] = \"false\" \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Defendant in military TF] = false \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Defendant in military TF] = \"false\" \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Defendant in military TF] = false \n GOTO \"10b-Defendant not in military\"\nEND IF"
   },
   "04f.4-Have marital property": {
     "step": 1,
@@ -5018,83 +4990,6 @@ const PAGES_RAW = {
       }
     ]
   },
-  "07f.1-Maintenance in agreement": {
-    "learn": "What is \"maintenance\"?",
-    "help": "Maintenance (also called spousal support or alimony) is financial support that one ex-spouse give to another after they get divorce.",
-    "step": 1,
-    "fields": [
-      {
-        "name": "Maintenance payor MC",
-        "type": "radio",
-        "label": "Both %%[Defendant current name TE]%% and I will waive maintenance. This means that we have agreed not to ask each other for support now or in the future.",
-        "required": true,
-        "value": "waived"
-      },
-      {
-        "name": "Maintenance payor MC",
-        "type": "radio",
-        "label": "%%[Defendant current name TE]%% will pay me maintenance.",
-        "required": true,
-        "value": "defendant"
-      },
-      {
-        "name": "Maintenance payor MC",
-        "type": "radio",
-        "label": "I will pay %%[Defendant current name TE]%% maintenance.",
-        "required": true,
-        "value": "plaintiff"
-      }
-    ],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "07f.2-Maintenance amount"
-      }
-    ],
-    "codeAfter": "IF [Maintenance payor MC] = \"waived\" \n GOTO \"09a-Explain no marital property\"\nEND IF"
-  },
-  "07f.2-Maintenance amount": {
-    "step": 1,
-    "fields": [
-      {
-        "name": "Maintenance amount NU",
-        "type": "numberdollar",
-        "label": "How much? $",
-        "required": true
-      },
-      {
-        "name": "Maintenance frequency MC",
-        "type": "textpick",
-        "label": "How often?",
-        "required": true,
-        "listData": "<OPTION VALUE=\"every week\">every week</OPTION><OPTION VALUE=\"every two weeks\">every two weeks</OPTION><OPTION VALUE=\"every month\">every month</OPTION><OPTION VALUE=\"lump sum\">lump sum</OPTION><OPTION VALUE=\"other\">other</OPTION>"
-      }
-    ],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "07f.3-Maintenance frequency"
-      }
-    ]
-  },
-  "07f.3-Maintenance frequency": {
-    "step": 1,
-    "fields": [
-      {
-        "name": "Maintenance frequency TE",
-        "type": "text",
-        "label": "How often?:",
-        "required": true
-      }
-    ],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "09a-Explain no marital property"
-      }
-    ],
-    "codeBefore": "IF NOT ([Maintenance frequency MC] = \"other\") \n GOTO \"09a-Explain no marital property\"\nEND IF"
-  },
   "09-Public assistance": {
     "learn": "What do you mean by \"public assistance\"?",
     "help": "Public assistance are government benefits that help pay for food and shelter. In New York State, this could be programs such as SNAP and TANF.",
@@ -5135,45 +5030,6 @@ const PAGES_RAW = {
       }
     ]
   },
-  "07d-Drafter": {
-    "step": 1,
-    "fields": [
-      {
-        "name": "Agreement drafter MC",
-        "type": "radio",
-        "label": "Divorce mediator",
-        "required": true,
-        "value": "mediator"
-      },
-      {
-        "name": "Agreement drafter MC",
-        "type": "radio",
-        "label": "Lawyer",
-        "required": true,
-        "value": "lawyer"
-      },
-      {
-        "name": "Agreement drafter MC",
-        "type": "radio",
-        "label": "Someone else",
-        "required": true,
-        "value": "someone else"
-      },
-      {
-        "name": "Agreement drafter MC",
-        "type": "radio",
-        "label": "No one",
-        "required": true,
-        "value": "no one"
-      }
-    ],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "07e.1-Health Insurance"
-      }
-    ]
-  },
   "13f.3-Maintenance period": {
     "step": 1,
     "fields": [
@@ -5191,39 +5047,6 @@ const PAGES_RAW = {
       }
     ],
     "codeBefore": "IF NOT ([Maintenance period MC] = \"other\") \n GOTO \"13g.1-Income levels\"\nEND IF"
-  },
-  "07e.1-Health Insurance": {
-    "learn": "What do you mean?",
-    "help": "There is a legal requirement that the written Settlement Agreement states an arrangement for future health care coverage for you and %%[Defendant current name TE]%%.\nFor example, there could be a statement that says you and %%[Defendant current name TE]%% are aware that you will no longer be covered by the other's health care coverage after the divorce.",
-    "step": 1,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Yes",
-        "next": "07f.1-Maintenance in agreement",
-        "name": "Agreement insurance clause TF",
-        "value": "true"
-      },
-      {
-        "label": "No / Not sure",
-        "next": "07e.2-Health Insurance",
-        "name": "Agreement insurance clause TF",
-        "value": "false"
-      }
-    ],
-    "codeAfter": "IF  [Agreement insurance clause TF] = false \n SET [Print 255 addendum TF] TO true\nELSE\n SET [Print 255 addendum TF] TO false\nEND IF"
-  },
-  "07e.2-Health Insurance": {
-    "learn": "Where can I get more information about this requirement?",
-    "help": "For more information, go to New York State's Domestic Relations Law section 255.",
-    "step": 1,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "07f.1-Maintenance in agreement"
-      }
-    ]
   },
   "04d.1-Defendant's whereabouts": {
     "learn": "Why do I need to know this?",
@@ -5273,19 +5096,6 @@ const PAGES_RAW = {
         "next": "04f.2-Marital property explained"
       }
     ]
-  },
-  "07a-Written agreement": {
-    "learn": "What do you mean?",
-    "help": "Also called a Marital Settlement Agreement, Stipulation of Settlement or Property Settlement and Separation Agreement, this is a written contract that you and %%[Defendant current name TE]%% both signed that settles issues like division of property, debt, insurance, taxes, etc. once you are divorced. Each agreement is special and can address other issues such as custody of the pets. It is not the same thing as a prenuptial agreement.",
-    "step": 1,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "07b-Get agreement."
-      }
-    ],
-    "codeBefore": "IF [Parties have agreement TF] = false \n GOTO \"09a-Explain no marital property\"\nEND IF"
   },
   "14a-Order of protection": {
     "step": 1,
@@ -5549,27 +5359,6 @@ const PAGES_RAW = {
       }
     ],
     "codeBefore": "IF [Other court order NU] = 2 \n GOTO \"16a-Other relief\"\nEND IF"
-  },
-  "04e.1-Written agreement": {
-    "learn": "What is a Settlement Agreement?",
-    "help": "Also called a Marital Settlement Agreement, Stipulation of Settlement or Property Settlement and Separation Agreement, this is a written contract that you and the Defendant both signed that settles issues such as division of property, debt, insurance, taxes, etc. when you are divorced. Each agreement is special and can apply to many other issues that are personal to both of you. It is not the same thing as a prenuptial agreement.",
-    "step": 1,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Yes",
-        "next": "04e.3-File agreement",
-        "name": "Parties have agreement TF",
-        "value": "true"
-      },
-      {
-        "label": "No",
-        "next": "04f.1-Marital property",
-        "name": "Parties have agreement TF",
-        "value": "false"
-      }
-    ],
-    "codeAfter": "IF  [Parties have agreement TF] = true \n SET [Ancillary relief sought TF] TO true\nELSE\n SET [Ancillary relief sought TF] TO false\n SET [Print 255 addendum TF] TO false\nEND IF"
   },
   "13d.3-Support frequency": {
     "step": 1,
@@ -6597,16 +6386,6 @@ const PAGES_RAW = {
       {
         "label": "Continue",
         "next": "A04g.1-Affirmation signed before"
-      }
-    ]
-  },
-  "04e.3-File agreement": {
-    "step": 1,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "04g.1-Retirement accounts"
       }
     ]
   },
@@ -7668,8 +7447,8 @@ const PAGES_RAW = {
         "next": "01-About Plaintiff and Defendant"
       }
     ],
-    "codeBefore": "IF [Brodsky minor children MC] = \"no\"\nIF [Brodsky after children route MC] = \"settlement\"\nGOTO \"04e.1-Written agreement\"\nELSE\nGOTO \"01-About Plaintiff and Defendant\"\nEND IF\nEND IF",
-    "codeAfter": "IF [Brodsky after children route MC] = \"settlement\"\n GOTO \"04e.1-Written agreement\"\nELSE\n GOTO \"01-About Plaintiff and Defendant\"\nEND IF"
+    "codeBefore": "IF [Brodsky minor children MC] = \"no\"\nIF [Brodsky after children route MC] = \"settlement\"\nSET [Parties have agreement TF] TO false\nSET [Ancillary relief sought TF] TO false\nSET [Print 255 addendum TF] TO false\nGOTO \"04f.1-Marital property\"\nELSE\nGOTO \"01-About Plaintiff and Defendant\"\nEND IF\nEND IF",
+    "codeAfter": "IF [Brodsky after children route MC] = \"settlement\"\n SET [Parties have agreement TF] TO false\nSET [Ancillary relief sought TF] TO false\nSET [Print 255 addendum TF] TO false\n GOTO \"04f.1-Marital property\"\nELSE\n GOTO \"01-About Plaintiff and Defendant\"\nEND IF"
   },
   "BL-02-Employment military": {
     "step": 2,
