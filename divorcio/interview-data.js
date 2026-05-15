@@ -6474,7 +6474,7 @@ const PAGES_RAW = {
     "buttons": [
       {
         "label": "Yes",
-        "next": "04h.2-Maintenance exit"
+        "next": "07a.1-Parties names"
       },
       {
         "label": "No",
@@ -6482,18 +6482,6 @@ const PAGES_RAW = {
       }
     ],
     "codeBefore": "IF [Parties have agreement TF] = true \n GOTO \"07a.1-Parties names\"\nEND IF"
-  },
-  "04h.2-Maintenance exit": {
-    "learn": "What if I have a spousal support order from Family Court?",
-    "help": "I'm sorry. Even if you have a spousal support order from Family Court, this form will not work for you.\nIf you want to ask for maintenance after your divorce, use the court forms available on the NY Courts website.",
-    "step": 1,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "C00-EXIT forwardingstep"
-      }
-    ]
   },
   "04a.5-Children age": {
     "step": 0,

@@ -1673,7 +1673,8 @@ class DivorceInterviewEngine {
             '05e-Part B continue': '07a.1-Parties names',
             '05f-Part B continue': '07a.1-Parties names',
             '06a-Court fees': '07a.1-Parties names',
-            '06b-Useful information': '07a.1-Parties names'
+            '06b-Useful information': '07a.1-Parties names',
+            '04h.2-Maintenance exit': '07a.1-Parties names'
         };
         
         if (alternatives[missingPageName]) {

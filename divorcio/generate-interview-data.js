@@ -154,6 +154,9 @@ function shouldSkipPage(name, page) {
 
   if (BRODSKY_SKIP_DIY_PRO_SE_PAGE_NAMES.has(name)) return true;
 
+  // Pro se "maintenance + settlement only" exit — Brodsky; both Yes/No go to party names (07a.1)
+  if (name === '04h.2-Maintenance exit') return true;
+
   // Six-month check merged into marriage date page
   if (name === '12c-Marriage 6 month check') return true;
   
@@ -1975,7 +1978,8 @@ function main() {
       "10-Lawyer's fees": '12a.1-Ancillary relief',
       '12b-Marriage date check': '13a-Marriage place',
       '12c-Marriage 6 month check': '13a-Marriage place',
-      '12a.2-Other relief': '12c.1-Plaintiff prior surnames'
+      '12a.2-Other relief': '12c.1-Plaintiff prior surnames',
+      '04h.2-Maintenance exit': '07a.1-Parties names'
       // 08a→06a for 07b.2/07c applied in processPage
     };
     const confirmationCount = Object.keys(rewireMap).length;

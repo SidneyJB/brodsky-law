@@ -333,11 +333,6 @@
       "text": "Will you be asking for maintenance?"
     },
     {
-      "id": "04h.2-Maintenance exit",
-      "title": "This form is not for you.",
-      "text": "This form is not for you.\nthis form can only be used if you are asking for maintenance and there is a Settlement Agreement between you and your spouse."
-    },
-    {
       "id": "05-Public assistance",
       "title": "Do you get public assistance?",
       "text": "Do you get public assistance?"
