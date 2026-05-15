@@ -2190,6 +2190,13 @@ class DivorceInterviewEngine {
         return expr;
     }
     
+    /** Stringify for A2J comparisons; avoids (false || '') collapsing boolean false to empty string. */
+    scalarToCompareString(val) {
+        if (val === false || val === true) return String(val);
+        if (val === null || val === undefined) return '';
+        return String(val);
+    }
+
     compareValues(left, right, operator) {
         // Convert to appropriate types for comparison
         if (typeof left === 'string' && typeof right === 'string') {
@@ -2217,9 +2224,9 @@ class DivorceInterviewEngine {
                     default: return false;
                 }
             } else {
-                // Fallback to string comparison
-                const leftStr = (left || '').toString();
-                const rightStr = (right || '').toString();
+                // Fallback to string comparison (radio "true"/"false" vs literal true/false)
+                const leftStr = this.scalarToCompareString(left);
+                const rightStr = this.scalarToCompareString(right);
                 switch (operator) {
                     case '=': return leftStr === rightStr;
                     default: return false;

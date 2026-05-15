@@ -4591,7 +4591,7 @@ const PAGES_RAW = {
         "next": "12a-Marriage date"
       }
     ],
-    "codeBefore": "IF HASANSWERED([Brodsky defendant military TF])\n SET [Defendant in military TF] TO [Brodsky defendant military TF]\nEND IF\nIF [Defendant in military TF] = false \n GOTO \"10b-Defendant not in military\"\nEND IF"
+    "codeBefore": "IF HASANSWERED([Brodsky defendant military TF])\n SET [Defendant in military TF] TO [Brodsky defendant military TF]\nEND IF\nIF [Brodsky defendant military TF] = false \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Brodsky defendant military TF] = \"false\" \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Defendant in military TF] = false \n GOTO \"10b-Defendant not in military\"\nEND IF\nIF [Defendant in military TF] = \"false\" \n GOTO \"10b-Defendant not in military\"\nEND IF"
   },
   "04f.4-Have marital property": {
     "step": 1,

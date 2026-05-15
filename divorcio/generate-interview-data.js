@@ -1905,10 +1905,19 @@ function main() {
     if (p10a) {
       const syncMilitaryFromBrodskyIntake =
         'IF HASANSWERED([Brodsky defendant military TF])\n SET [Defendant in military TF] TO [Brodsky defendant military TF]\nEND IF';
-      if (p10a.codeBefore) {
-        p10a.codeBefore = `${syncMilitaryFromBrodskyIntake}\n${p10a.codeBefore}`;
+      const skipBranchWhenDefendantNotMilitary =
+        'IF [Brodsky defendant military TF] = false \n GOTO "10b-Defendant not in military"\nEND IF\n' +
+        'IF [Brodsky defendant military TF] = "false" \n GOTO "10b-Defendant not in military"\nEND IF\n' +
+        'IF [Defendant in military TF] = false \n GOTO "10b-Defendant not in military"\nEND IF\n' +
+        'IF [Defendant in military TF] = "false" \n GOTO "10b-Defendant not in military"\nEND IF';
+      let rest = (p10a.codeBefore || '').replace(
+        /^IF HASANSWERED\(\[Brodsky defendant military TF\]\)[\s\S]*?END IF\s*\n?/,
+        ''
+      );
+      if (rest) {
+        p10a.codeBefore = `${syncMilitaryFromBrodskyIntake}\n${skipBranchWhenDefendantNotMilitary}\n${rest}`.trim();
       } else {
-        p10a.codeBefore = syncMilitaryFromBrodskyIntake;
+        p10a.codeBefore = `${syncMilitaryFromBrodskyIntake}\n${skipBranchWhenDefendantNotMilitary}`;
       }
     }
 
