@@ -1,10 +1,11 @@
-import Script from "next/script";
 import PageLayout from "@/components/PageLayout";
+import IntakeEngineBootstrap from "./IntakeEngineBootstrap";
 import "@/divorcio/styles.css";
 
 export default function IntakePage() {
   return (
     <PageLayout>
+      <IntakeEngineBootstrap />
       <div className="intake-questionnaire">
         <div className="progress-container">
           <div className="progress-fill-track">
@@ -118,8 +119,6 @@ export default function IntakePage() {
           </button>
         </div>
       </div>
-
-      <Script id="divorcio-engine" src="/intake/engine.js" type="module" strategy="afterInteractive" />
     </PageLayout>
   );
 }

@@ -2791,29 +2791,6 @@ const PAGES_RAW = {
     ],
     "codeBefore": "SET [Residency requirement MC] TO \"grounds\""
   },
-  "02c-Program instructions": {
-    "learn": "What do you mean?",
-    "help": "If you click on \"Learn More\" you get information that helps you answer the question.",
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "02d-Disclaimer"
-      }
-    ]
-  },
-  "02d-Disclaimer": {
-    "learn": "What can the court clerk do?",
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Yes",
-        "next": "02e-Warning"
-      }
-    ]
-  },
   "04f.10-ADR exit": {
     "step": 1,
     "fields": [],
@@ -2835,17 +2812,6 @@ const PAGES_RAW = {
       }
     ],
     "codeAfter": "SET [Step 1 completed TF] TO true\nSET [Print Step 1 TF] TO true\nSET [Print Step 2 TF] TO false\nSET [Print exit sheet TF] TO false\nSET [A2J interview name TE] TO \"Divorce Part A: Starting\""
-  },
-  "02b-Introduction": {
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "02c-Program instructions"
-      }
-    ],
-    "codeAfter": "SET [Step 1 completed TF] TO false"
   },
   "A04b-Waiver signed": {
     "step": 0,
@@ -2924,40 +2890,10 @@ const PAGES_RAW = {
       },
       {
         "label": "No",
-        "next": "02a.1-Instructions for filing"
+        "next": "02g-No fault divorce"
       }
     ],
-    "codeBefore": "IF [Part A filed TF] = false \n GOTO \"02a.1-Instructions for filing\"\nEND IF"
-  },
-  "05a-Three steps": {
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "05b-Part A"
-      }
-    ]
-  },
-  "05d-Part B": {
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "05e-Part B continue"
-      }
-    ]
-  },
-  "05f-Part B continue": {
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "06a-Court fees"
-      }
-    ]
+    "codeBefore": "IF [Part A filed TF] = false \n GOTO \"02g-No fault divorce\"\nEND IF"
   },
   "01d-Saved answers": {
     "learn": "What do you mean?",
@@ -2971,7 +2907,7 @@ const PAGES_RAW = {
       },
       {
         "label": "No / Don't know",
-        "next": "02a.1-Instructions for filing"
+        "next": "02g-No fault divorce"
       }
     ]
   },
@@ -2987,7 +2923,7 @@ const PAGES_RAW = {
       },
       {
         "label": "Continue",
-        "next": "02a.1-Instructions for filing"
+        "next": "02g-No fault divorce"
       }
     ]
   },
@@ -3096,18 +3032,6 @@ const PAGES_RAW = {
     ],
     "codeBefore": "IF NOT (HASANSWERED([Plaintiff name first TE]))\nIF HASANSWERED([Brodsky client first name TE])\nSET [Plaintiff name first TE] TO [Brodsky client first name TE]\nEND IF\nEND IF\nIF NOT (HASANSWERED([Plaintiff name last TE]))\nIF HASANSWERED([Brodsky client last name TE])\nSET [Plaintiff name last TE] TO [Brodsky client last name TE]\nEND IF\nEND IF",
     "codeAfter": "IF NOT (HASANSWERED([Plaintiff name middle TE])) \n SET [Plaintiff name middle TE] TO NULL\nEND IF\n\nIF  [Plaintiff gender] = \"Male\" \nELSE\nEND IF"
-  },
-  "06b-Useful information": {
-    "learn": "What if I don't have a copy of my marriage certificate?",
-    "help": "You do not need a copy of your marriage certificate to answer the questions in this form or when you file for a divorce with the court. But, there is information in the certificate that can help when you answer the following questions.",
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "07a.1-Parties names"
-      }
-    ]
   },
   "12a.1-Ancillary relief": {
     "step": 1,
@@ -3619,17 +3543,6 @@ const PAGES_RAW = {
       }
     ]
   },
-  "06a-Court fees": {
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "06b-Useful information"
-      }
-    ],
-    "codeBefore": "IF [Part A filed TF] = true \n GOTO \"06c-Useful information returning\"\nEND IF"
-  },
   "04a.2-Age of parties exit": {
     "step": 0,
     "fields": [],
@@ -3745,16 +3658,6 @@ const PAGES_RAW = {
       }
     ]
   },
-  "05b-Part A": {
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "05c.1-Part A continue"
-      }
-    ]
-  },
   "A06a-Personally delivery": {
     "step": 0,
     "fields": [],
@@ -3804,28 +3707,6 @@ const PAGES_RAW = {
       }
     ],
     "codeBefore": "IF NOT ([Summons served by MC] = \"plaintiff\") \n GOTO \"A06e.1-Photo attached\"\nEND IF"
-  },
-  "05c.1-Part A continue": {
-    "learn": "What do you mean by \"properly delivered\"?",
-    "help": "The court papers must be properly delivered to or \"served on\" the Defendant. The Summons With Notice or the Summons and Complaint must be personally delivered to the Defendant by someone, but not you.\nThe person who personally delivered the papers to the Defendant must be at least 18 years old. This person must fill out an Affirmation of Service which is written proof that the papers were delivered to the Defendant.",
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "05c.2-Part A continue"
-      }
-    ]
-  },
-  "05e-Part B continue": {
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "05f-Part B continue"
-      }
-    ]
   },
   "19a-Initiating papers": {
     "step": 1,
@@ -4386,18 +4267,6 @@ const PAGES_RAW = {
       }
     ],
     "codeAfter": "SET [Print Step 1 TF] TO false\nSET [Print Step 2 TF] TO true\nSET [Print exit sheet TF] TO false\nSET [Step 2 completed TF] TO true\nSET [Step 1 completed TF] TO true\nSET [A2J interview name TE] TO \"Divorce Part B: Calendaring\""
-  },
-  "01a-Two-part program": {
-    "learn": "Who is this form for?",
-    "help": "If your case is too complicated, this form may not be for you.",
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "01b-Case started"
-      }
-    ]
   },
   "A06b-Not personally served": {
     "step": 0,
@@ -6489,28 +6358,6 @@ const PAGES_RAW = {
     ],
     "codeAfter": "IF [Relief marital home TF] = true \n SET [Marital home party MC] TO \"defendant\"\nEND IF"
   },
-  "02e-Warning": {
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "02f-Warning"
-      }
-    ]
-  },
-  "02f-Warning": {
-    "learn": "What do you mean?",
-    "help": "This means that you can be charged with a second degree Class A misdemeanor if you sign a statement knowing that the information in the document is not true. [ New York Penal Law Article 210 ]",
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "02g-No fault divorce"
-      }
-    ]
-  },
   "A06f-LOGIC WINDOW": {
     "step": 0,
     "fields": [],
@@ -6615,7 +6462,7 @@ const PAGES_RAW = {
     "buttons": [
       {
         "label": "Continue",
-        "next": "02b-Introduction"
+        "next": "02g-No fault divorce"
       }
     ]
   },
@@ -6631,10 +6478,10 @@ const PAGES_RAW = {
       },
       {
         "label": "No",
-        "next": "05a-Three steps"
+        "next": "07a.1-Parties names"
       }
     ],
-    "codeBefore": "IF [Parties have agreement TF] = true \n GOTO \"05a-Three steps\"\nEND IF"
+    "codeBefore": "IF [Parties have agreement TF] = true \n GOTO \"07a.1-Parties names\"\nEND IF"
   },
   "04h.2-Maintenance exit": {
     "learn": "What if I have a spousal support order from Family Court?",
@@ -6722,16 +6569,6 @@ const PAGES_RAW = {
       }
     ]
   },
-  "05c.2-Part A continue": {
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "05d-Part B"
-      }
-    ]
-  },
   "04a.8-No minor children": {
     "learn": "What do you mean by \"children of the marriage\"?",
     "help": "\"Children of the marriage\" are children who are 20 years old or younger and were born or adopted by both you and the Defendant before or during the marriage. These children have a right to get child support.",
@@ -6797,18 +6634,6 @@ const PAGES_RAW = {
       {
         "label": "Continue",
         "next": "A04f.1-When signed"
-      }
-    ]
-  },
-  "02a.1-Instructions for filing": {
-    "learn": "How much does it cost?",
-    "help": "Using this form to make your papers is free.\nThe total court filing fees are about $335 (Part A fee is $210 and Part B fee is $125). If you do not have the money to pay the court fees, you can apply for a fee waiver during the form.",
-    "step": 0,
-    "fields": [],
-    "buttons": [
-      {
-        "label": "Continue",
-        "next": "02b-Introduction"
       }
     ]
   },

@@ -18,11 +18,6 @@
       "text": "ABOUT YOU AND YOUR SPOUSE\nThe following questions are about you and %%[Defendant current name TE]%%."
     },
     {
-      "id": "01a-Two-part program",
-      "title": "About this form",
-      "text": "About this form\nThis form has two (2) steps.\n1. Part A: Starting the Divorce Case and\n2. Part B: Getting Your Divorce Case on the Court Calendar.\nYou must complete the paper work from Part A first and then come back to complete the paper work for Part B."
-    },
-    {
       "id": "01b-Case started",
       "title": "Do you have an index number for your divorce case?",
       "text": "Do you have an index number for your divorce case?\nThis means an index number was obtained from the court (about $210), a fee waiver was approved, or court fees were not required, and a Summons With Notice or a Summons and Verified Complaint to start your case."
@@ -53,11 +48,6 @@
       "text": "Your Information\nWhat is your address?"
     },
     {
-      "id": "02a.1-Instructions for filing",
-      "title": "When you finish this form, you will be able to print Instructions and the papers you need for your uncontested divorce. ",
-      "text": "When you finish this form, you will be able to print Instructions and the papers you need for your uncontested divorce. Print on only one side of the paper.\nCourt filing is handled by Brodsky Law; you do not file these papers yourself."
-    },
-    {
       "id": "02a.2-Backspace issue",
       "title": "In some browsers the backspace button will not work to delete or change an answer.",
       "text": "In some browsers the backspace button will not work to delete or change an answer.\nIf this happens, use your mouse to highlight the information you need to change and then use the delete key to remove the letters before changing the information."
@@ -68,39 +58,14 @@
       "text": "Has %%[Defendant current name TE]%% lived in New York State continuously for at least two years?"
     },
     {
-      "id": "02b-Introduction",
-      "title": "Please continue.",
-      "text": "Please continue."
-    },
-    {
       "id": "02c-Plaintiff's prison address",
       "title": "Your Information",
       "text": "Your Information\nWhat is your address in prison?"
     },
     {
-      "id": "02c-Program instructions",
-      "title": "How to Use this form",
-      "text": "How to Use this form\nYou can click on any word that is in BLUE for a definition. You can also click on \"Learn More\" for more information.\nYou can click \"Back\" in the top left corner to go back and change your answers."
-    },
-    {
-      "id": "02d-Disclaimer",
-      "title": "This form will help you complete the uncontested divorce forms.",
-      "text": "This form will help you complete the uncontested divorce forms."
-    },
-    {
-      "id": "02e-Warning",
-      "title": "IMPORTANT",
-      "text": "IMPORTANT\nIt is very important that you enter all of your information correctly. Be very careful that all names, addresses and dates are right.\nCorrecting this information after your case is filed is a complicated process and will delay your divorce."
-    },
-    {
       "id": "02e.1-Federal prison",
       "title": "What is your BOP number in %%[Plaintiff prison name TE]%%?",
       "text": "What is your BOP number in %%[Plaintiff prison name TE]%%?\nThe Bureau of Prison Register Number format is 99999-999"
-    },
-    {
-      "id": "02f-Warning",
-      "title": "IMPORTANT",
-      "text": "IMPORTANT\nTell the truth when you answer these questions.\nMost of the documents for a divorce are sworn statements. That means you swear the information in it is the truth. It is crime to lie or make a \"sworn false statement.\" This crime is called perjury."
     },
     {
       "id": "02f.1-NYS prison",
@@ -383,54 +348,14 @@
       "text": "Did the breakdown of the marriage happen in New York State?"
     },
     {
-      "id": "05a-Three steps",
-      "title": "About Getting a Divorce",
-      "text": "About Getting a Divorce\nThere are 2 parts to getting a divorce and this form will help you with the papers and procedures in each part."
-    },
-    {
       "id": "05b-Current residents",
       "title": "Do both you and %%[Defendant current name TE]%% live in New York State right now?",
       "text": "Do both you and %%[Defendant current name TE]%% live in New York State right now?"
     },
     {
-      "id": "05b-Part A",
-      "title": "Part A: Starting the Divorce Case",
-      "text": "Part A: Starting the Divorce Case\nTo start a case, an index number is obtained from the court ($210) and counsel files the Summons With Notice or the Summons and Verified Complaint with the court.\nThe person you want to divorce is called the Defendant."
-    },
-    {
       "id": "05c-Residency exit",
       "title": "This form is not for you.",
       "text": "This form is not for you.\nYou do not meet any of the residency requirements needed to file for a divorce in New York State."
-    },
-    {
-      "id": "05c.1-Part A continue",
-      "title": "If the Defendant signs and returns the Affirmation of Defendant to you, you can continue on to Part B and get your divor",
-      "text": "If the Defendant signs and returns the Affirmation of Defendant to you, you can continue on to Part B and get your divorce case on the court calendar.\nIf the Defendant does not sign and return the Affirmation of Defendant to you, the paperwork must be personally delivered to (\"served on\") the Defendant by someone, but not you."
-    },
-    {
-      "id": "05c.2-Part A continue",
-      "title": "From the date the Defendant was served, s/he has 20 days or 30 days to answer. If the Defendant answers and does not agr",
-      "text": "From the date the Defendant was served, s/he has 20 days or 30 days to answer. If the Defendant answers and does not agree to the divorce, it is no longer an uncontested matter. If the Defendant does not answer during this time, s/he has defaulted and you can go on to Part B."
-    },
-    {
-      "id": "05d-Part B",
-      "title": "Part B: Getting Your Divorce Case on the Court Calendar",
-      "text": "Part B: Getting Your Divorce Case on the Court Calendar\nAfter the Defendant returns the Affirmation of Defendant to you or after 40 days from the date of service, your attorney files a second set of forms with the court.\nThese papers are stamped by a clerk and your case is assigned to a Judge or a Special Referee. There is a $125 court fee at this time."
-    },
-    {
-      "id": "05e-Part B continue",
-      "title": "It may take some time for the Judge to look at your case.",
-      "text": "It may take some time for the Judge to look at your case.\nIf the Judge finds that there is something wrong or incomplete with the papers, the court will let you know so that you can come in and correct them."
-    },
-    {
-      "id": "05f-Part B continue",
-      "title": "If the Judge signs the Judgment of Divorce, the court will contact you. The Judgment must be filed with the court.",
-      "text": "If the Judge signs the Judgment of Divorce, the court will contact you. The Judgment must be filed with the court."
-    },
-    {
-      "id": "06a-Court fees",
-      "title": "It costs at least $335 to file for divorce.",
-      "text": "It costs at least $335 to file for divorce.\nIf you do not have the money to pay the court fees, you may be able to request a fee waiver from the court."
     },
     {
       "id": "06a-Defendant's address",
@@ -446,11 +371,6 @@
       "id": "06b-Define no fault",
       "title": "Irretrievable Breakdown of Marriage",
       "text": "Irretrievable Breakdown of Marriage\nIn the papers, you must swear that your relationship has \"broken down irretrievably\" for at least six months.\nThis means that it is impossible for you and %%[Defendant current name TE]%% to save or fix the marriage and stay together."
-    },
-    {
-      "id": "06b-Useful information",
-      "title": "Have the following with you while you are answering the questions:",
-      "text": "Have the following with you while you are answering the questions:\n1. Marriage certificate\n2. Date when you were married\n3. Place where you were married\n4. Your social security number\n5. The Defendant's address\n6. The Defendant's social security number"
     },
     {
       "id": "06c-Defendant's prison address",

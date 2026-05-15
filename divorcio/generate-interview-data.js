@@ -38,6 +38,49 @@ function buildConfirmationRewireMap(pages) {
   return rewire;
 }
 
+/** LHI DIY / pro se explainer pages — attorney-handled; drop from client-facing flow */
+const BRODSKY_SKIP_DIY_PRO_SE_PAGE_NAMES = new Set([
+  '01a-Two-part program',
+  '02a.1-Instructions for filing',
+  '02b-Introduction',
+  '02c-Program instructions',
+  '02d-Disclaimer',
+  '02e-Warning',
+  '02f-Warning',
+  '05a-Three steps',
+  '05b-Part A',
+  '05c.1-Part A continue',
+  '05c.2-Part A continue',
+  '05d-Part B',
+  '05e-Part B continue',
+  '05f-Part B continue',
+  '06a-Court fees',
+  '06b-Useful information'
+]);
+
+/** Rewire any navigation into skipped DIY screens → next substantive question pages */
+const BRODSKY_DIY_REWIRE_TO_NO_FAULT = {
+  '01a-Two-part program': '01b-Case started',
+  '02a.1-Instructions for filing': '02g-No fault divorce',
+  '02b-Introduction': '02g-No fault divorce',
+  '02c-Program instructions': '02g-No fault divorce',
+  '02d-Disclaimer': '02g-No fault divorce',
+  '02e-Warning': '02g-No fault divorce',
+  '02f-Warning': '02g-No fault divorce'
+};
+
+const BRODSKY_DIY_REWIRE_TO_PARTIES_NAMES = {
+  '05a-Three steps': '07a.1-Parties names',
+  '05b-Part A': '07a.1-Parties names',
+  '05c.1-Part A continue': '07a.1-Parties names',
+  '05c.2-Part A continue': '07a.1-Parties names',
+  '05d-Part B': '07a.1-Parties names',
+  '05e-Part B continue': '07a.1-Parties names',
+  '05f-Part B continue': '07a.1-Parties names',
+  '06a-Court fees': '07a.1-Parties names',
+  '06b-Useful information': '07a.1-Parties names'
+};
+
 function rewirePage(page, rewireMap) {
   const out = JSON.parse(JSON.stringify(page));
   if (out.buttons) {
@@ -108,6 +151,8 @@ function shouldSkipPage(name, page) {
     '07f.3-Maintenance frequency'
   ]);
   if (SKIP_SETTLEMENT_AGREEMENT_PAGES.has(name)) return true;
+
+  if (BRODSKY_SKIP_DIY_PRO_SE_PAGE_NAMES.has(name)) return true;
 
   // Six-month check merged into marriage date page
   if (name === '12c-Marriage 6 month check') return true;
@@ -1763,6 +1808,21 @@ function patchBrodskySkipSettlementAgreementScreens(filteredPages) {
   p06e.codeAfter = p06e.codeAfter ? `${p06e.codeAfter}\n${init}` : init;
 }
 
+/** After maintenance gate, skip DIY Part A/B lecture → party names (same destination old 06b chain used). */
+function patchBrodskySkipProSeDIYExplainerChain(filteredPages) {
+  const target = '07a.1-Parties names';
+  const p04h = filteredPages['04h.1-Maintenance'];
+  if (!p04h) return;
+  if (Array.isArray(p04h.buttons)) {
+    p04h.buttons = p04h.buttons.map((b) =>
+      b.next === '05a-Three steps' ? { ...b, next: target } : b
+    );
+  }
+  if (p04h.codeBefore) {
+    p04h.codeBefore = p04h.codeBefore.replace(/GOTO "05a-Three steps"/g, `GOTO "${target}"`);
+  }
+}
+
 /**
  * Main path (02a → … → 19a/19b/17) jumps straight to 01-About (step 2) and never hits 04d.1.
  * Force children screen first, then resume: marital property (04f.1) or start of spouse block (01-About).
@@ -1904,6 +1964,8 @@ function main() {
     // Build rewire map for confirmation pages + manually removed pages
     const rewireMap = {
       ...buildConfirmationRewireMap(processedPages),
+      ...BRODSKY_DIY_REWIRE_TO_NO_FAULT,
+      ...BRODSKY_DIY_REWIRE_TO_PARTIES_NAMES,
       '09b-Have marital property': '12a.1-Ancillary relief',
       '01-About no fault': '02a-Plaintiff 2 years residency',
       'A02-Public computer': 'SUCCESS',
@@ -1937,6 +1999,7 @@ function main() {
     patchBrodskyChildrenBeforeSpouseSection(filteredPages);
     patchBrodskyPartyNameHistoryFlow(filteredPages);
     patchBrodskySkipSettlementAgreementScreens(filteredPages);
+    patchBrodskySkipProSeDIYExplainerChain(filteredPages);
     applyBrodskyYourDivorceStep(filteredPages);
 
     const p10a = filteredPages["10a-Defendant in military"];

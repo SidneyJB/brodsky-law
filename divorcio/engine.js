@@ -233,21 +233,47 @@ class DivorceInterviewEngine {
     }
     
     bindEvents() {
-        // Navigation buttons
-        this.elements.backBtn.addEventListener('click', () => this.goBack());
-        this.elements.continueBtn.addEventListener('click', () => this.continue());
-        
+        if (this._shellEventsAbort) {
+            try {
+                this._shellEventsAbort.abort();
+            } catch (_) {}
+        }
+        this._shellEventsAbort = new AbortController();
+        const sig = { signal: this._shellEventsAbort.signal };
+
+        this.elements.backBtn.addEventListener('click', () => this.goBack(), sig);
+        this.elements.continueBtn.addEventListener('click', () => this.continue(), sig);
+
         // Learn more toggle`
-        this.elements.learnMoreBtn?.addEventListener('click', () => this.toggleLearnMore());
-        
+        this.elements.learnMoreBtn?.addEventListener('click', () => this.toggleLearnMore(), sig);
+
         // Submit button (no download; just feedback)
-        this.elements.submitBtn.addEventListener('click', () => this.submitResults());
-        
+        this.elements.submitBtn.addEventListener('click', () => this.submitResults(), sig);
+
         // Form submission
-        this.elements.questionForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            this.continue();
-        });
+        this.elements.questionForm.addEventListener(
+            'submit',
+            (e) => {
+                e.preventDefault();
+                this.continue();
+            },
+            sig
+        );
+    }
+
+    /** Remove shell listeners (client navigations re-mount / re-bootstrap the engine). */
+    destroy() {
+        try {
+            if (this._shellEventsAbort) {
+                this._shellEventsAbort.abort();
+                this._shellEventsAbort = null;
+            }
+            const form = this.elements?.questionForm;
+            if (form && this._boundDepTfFollowup) {
+                form.removeEventListener('change', this._boundDepTfFollowup);
+                this._boundDepTfFollowup = null;
+            }
+        } catch (_) {}
     }
     
     startInterview() {
@@ -1630,7 +1656,24 @@ class DivorceInterviewEngine {
             '01-Save & Exit': 'SUCCESS', // Exit pages go to success
             'EXIT': 'SUCCESS',
             'FAIL': 'SUCCESS',
-            'A01a.1-Welcome back LOGGED IN': 'A01a.2-Edit A or go to B' // Logged-in Part B entry; use Edit/go to B
+            'A01a.1-Welcome back LOGGED IN': 'A01a.2-Edit A or go to B', // Logged-in Part B entry; use Edit/go to B
+            // DIY / pro se explainer pages removed in Brodsky generate-interview-data.js
+            '01a-Two-part program': '01b-Case started',
+            '02a.1-Instructions for filing': '02g-No fault divorce',
+            '02b-Introduction': '02g-No fault divorce',
+            '02c-Program instructions': '02g-No fault divorce',
+            '02d-Disclaimer': '02g-No fault divorce',
+            '02e-Warning': '02g-No fault divorce',
+            '02f-Warning': '02g-No fault divorce',
+            '05a-Three steps': '07a.1-Parties names',
+            '05b-Part A': '07a.1-Parties names',
+            '05c.1-Part A continue': '07a.1-Parties names',
+            '05c.2-Part A continue': '07a.1-Parties names',
+            '05d-Part B': '07a.1-Parties names',
+            '05e-Part B continue': '07a.1-Parties names',
+            '05f-Part B continue': '07a.1-Parties names',
+            '06a-Court fees': '07a.1-Parties names',
+            '06b-Useful information': '07a.1-Parties names'
         };
         
         if (alternatives[missingPageName]) {
@@ -2232,16 +2275,29 @@ class DivorceInterviewEngine {
     }
 }
 
-// Start the interview when the script runs (DOM may already be ready, e.g. Next.js <Script>)
-function startDivorceInterview() {
-    if (typeof window !== 'undefined' && window.__divorcioInterviewBooted) return;
-    if (typeof window !== 'undefined') window.__divorcioInterviewBooted = true;
-    window.interview = new DivorceInterviewEngine();
+/**
+ * Tear down the running engine (Next.js client navigations call bootstrap again).
+ */
+export function teardownDivorcioInterview() {
+    if (typeof window === 'undefined') return;
+    try {
+        if (window.__brodskyDivorcioEngine && typeof window.__brodskyDivorcioEngine.destroy === 'function') {
+            window.__brodskyDivorcioEngine.destroy();
+        }
+    } catch (_) {}
+    window.__brodskyDivorcioEngine = null;
+    window.interview = null;
 }
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', startDivorceInterview);
-} else {
-    startDivorceInterview();
+
+/**
+ * Create and start the interview. Safe to call on every /intake mount (SPA or standalone).
+ */
+export function bootstrapDivorcioInterview() {
+    if (typeof window === 'undefined') return;
+    teardownDivorcioInterview();
+    const engine = new DivorceInterviewEngine();
+    window.__brodskyDivorcioEngine = engine;
+    window.interview = engine;
 }
 
 export { DivorceInterviewEngine };
