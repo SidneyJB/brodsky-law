@@ -54,12 +54,12 @@
   ],
   "paymentStrip": {
     "heading": "Payment plans that work for you.",
-    "body": "Get your case started with as little as $400 down. If you earn less than your spouse, New York law may require them to cover your legal fees; ask us how.",
+    "body": "If you earn less than your spouse, New York law may require them to cover your legal fees; ask us how.",
     "cta": "Get a Free Estimate"
   },
   "ctaBanner": {
     "heading": "Meet Jonah. Get your case moving.",
-    "subtext": "Reach out for a free, no-obligation case estimate. We'll outline your options, timeline, and costs, usually the same day.",
+    "subtext": "Reach out for a free, no-obligation case estimate. We'll outline your options, timeline, and costs. Same day response time.",
     "primaryLabel": "Contact Us",
     "secondaryLabel": "See Our Services"
   }

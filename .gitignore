@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# divorcio ES modules copied for /intake (scripts/sync-divorcio-to-public.mjs)
+/public/intake/
+
+# divorcio — court templates & heavy exports (keep locally; not needed for /intake runtime)
+/divorcio/*.docx
+/divorcio/*.pdf
+/divorcio/a2j.json
+/divorcio/e2e-snapshots.log
+/divorcio/LHI_*.md

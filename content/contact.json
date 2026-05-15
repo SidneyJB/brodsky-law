@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Contact: Free Case Estimate",
-    "description": "Contact Brodsky Law PLLC for a free, no-obligation case estimate. Tell us about your situation and we'll respond with options, pricing, and timeline, usually the same day."
+    "description": "Contact Brodsky Law PLLC for a free, no-obligation case estimate. Tell us about your situation and we'll respond with options, pricing, and timeline. Same day response time."
   },
   "hero": {
     "sectionLabel": "Get in Touch",
@@ -19,7 +19,7 @@
     { "label": "Phone / Text", "value": "646-444-3120", "href": "tel:6464443120" },
     { "label": "Uncontested Divorce", "value": "From $895 + court fees" },
     { "label": "Payment Plans", "value": "As little as $400 down" },
-    { "label": "Response Time", "value": "Usually same business day" }
+    { "label": "Response Time", "value": "Same day response time" }
   ],
   "sidebarDisclaimer": "The information provided on this website does not constitute legal advice and does not create an attorney-client relationship. Contacting us through this form does not establish an attorney-client relationship. Do not send confidential information until an attorney-client relationship has been established.",
   "form": {

@@ -36,6 +36,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Must appear before Next-injected default favicon or the browser picks the wrong tab icon */}
+        <link rel="icon" href="/icon.png" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
+      </head>
+      <body>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-18038979712"
           strategy="beforeInteractive"
@@ -46,8 +52,6 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'AW-18038979712');
         `}</Script>
-      </head>
-      <body>
         {children}
       </body>
     </html>

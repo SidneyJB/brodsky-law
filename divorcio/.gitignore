@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv_swn/
+
+# Local doc-merge scratch (variables + one-off SWN runs)
+tmp_swn_gen/
+tmp_dolan_packet/
+tmp_williams_packet/
+SWN_filled_from_intake.docx
+# Client-specific merge inputs/outputs (PII)
+dolan_packet*.json
+dolan_divorce_packet.docx
+williams_packet*.json
+williams_divorce_packet.docx
+
+# E2E snapshot output (optional local artifact)
+e2e-form-data.json
+
+# Test outputs
+test_combined.docx
+combined_divorce_docs.docx
+*_combined.docx
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+.vercel

@@ -21,7 +21,7 @@
     {
       "icon": "tag",
       "title": "Payment plans available",
-      "body": "Get your case started with as little as $400 down. If you make less than your spouse, the law may require them to pay your legal fees; ask us how this works."
+      "body": "If you make less than your spouse, the law may require them to pay your legal fees; ask us how this works."
     },
     {
       "icon": "shield",
@@ -55,7 +55,7 @@
       },
       {
         "title": "We review and quote",
-        "body": "We contact you with pricing, timeline, and payment options, usually the same day."
+        "body": "We contact you with pricing, timeline, and payment options. Same day response time."
       },
       {
         "title": "We file and coordinate",
@@ -70,7 +70,7 @@
   },
   "ctaBanner": {
     "heading": "Ready to move forward?",
-    "subtext": "Get your case started today. Payment plans available, as little as $400 down.",
+    "subtext": "Get your case started today. Payment plans available.",
     "primaryLabel": "Start Your Divorce",
     "secondaryLabel": "Free Case Estimate"
   }

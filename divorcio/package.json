@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "serve": "python3 -m http.server 9999",
+    "test": "node test-interview.js",
+    "test:headed": "node test-interview.js",
+    "test:headless": "HEADLESS=1 node test-interview.js",
+    "interview:graph": "node ./scripts/interview-graph.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2"
+  }
+}

@@ -1,0 +1,1356 @@
+{
+  "source": "http://127.0.0.1:9999/",
+  "title": "Brodsky Law PLLC — Divorce Questionnaire",
+  "pages": [
+    {
+      "id": "BL-00-Disclaimer",
+      "title": "Disclaimer",
+      "text": "Disclaimer\n\nDISCLAIMER: Unless you have already signed a Retainer Agreement with our firm, filling out this questionnaire does not create an attorney-client relationship. The information provided in this questionnaire will allow us to review your case and give you a quote. Should you wish to retain us after we review your information and contact you, any representation is subject to a signed Retainer Agreement."
+    },
+    {
+      "id": "00-Introduction",
+      "title": "Brodsky Law PLLC",
+      "text": "Brodsky Law PLLC\nDivorce questionnaire\nWelcome! These questions will help us collect the information needed for your divorce case."
+    },
+    {
+      "id": "01-About Plaintiff and Defendant",
+      "title": "ABOUT YOU AND YOUR SPOUSE",
+      "text": "ABOUT YOU AND YOUR SPOUSE\nThe following questions are about you and %%[Defendant current name TE]%%."
+    },
+    {
+      "id": "01a-Two-part program",
+      "title": "About this form",
+      "text": "About this form\nThis form has two (2) steps.\n1. Part A: Starting the Divorce Case and\n2. Part B: Getting Your Divorce Case on the Court Calendar.\nYou must complete the paper work from Part A first and then come back to complete the paper work for Part B."
+    },
+    {
+      "id": "01b-Case started",
+      "title": "Do you have an index number for your divorce case?",
+      "text": "Do you have an index number for your divorce case?\nThis means an index number was obtained from the court (about $210), a fee waiver was approved, or court fees were not required, and a Summons With Notice or a Summons and Verified Complaint to start your case."
+    },
+    {
+      "id": "01c-Previous user",
+      "title": "Did you use this form before to make your divorce papers?",
+      "text": "Did you use this form before to make your divorce papers?"
+    },
+    {
+      "id": "01d-Saved answers",
+      "title": "Did you save your answers the last time you used this form?",
+      "text": "Did you save your answers the last time you used this form?"
+    },
+    {
+      "id": "01e-Exit for saved answers",
+      "title": "You can use your answers from your last visit for this part. \"Exit\" the form and Log In.",
+      "text": "You can use your answers from your last visit for this part. \"Exit\" the form and Log In.\nClick \"Continue\" if you don't remember your log in information, if you didn't save your answers, or you are having trouble with getting to your saved answers."
+    },
+    {
+      "id": "02a-Plaintiff 2 years residency",
+      "title": "Residency Requirement",
+      "text": "Residency Requirement\nTo file for a divorce in New York, you must meet a residency requirement.\nHave you lived in New York State continuously for at least 2 years?"
+    },
+    {
+      "id": "02a-Plaintiff's address",
+      "title": "Your Information",
+      "text": "Your Information\nWhat is your address?"
+    },
+    {
+      "id": "02a.1-Instructions for filing",
+      "title": "When you finish this form, you will be able to print Instructions and the papers you need for your uncontested divorce. ",
+      "text": "When you finish this form, you will be able to print Instructions and the papers you need for your uncontested divorce. Print on only one side of the paper.\nCourt filing is handled by Brodsky Law; you do not file these papers yourself."
+    },
+    {
+      "id": "02a.2-Backspace issue",
+      "title": "In some browsers the backspace button will not work to delete or change an answer.",
+      "text": "In some browsers the backspace button will not work to delete or change an answer.\nIf this happens, use your mouse to highlight the information you need to change and then use the delete key to remove the letters before changing the information."
+    },
+    {
+      "id": "02b-Defendant 2 years residency",
+      "title": "Has %%[Defendant current name TE]%% lived in New York State continuously for at least two years?",
+      "text": "Has %%[Defendant current name TE]%% lived in New York State continuously for at least two years?"
+    },
+    {
+      "id": "02b-Introduction",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "02c-Plaintiff's prison address",
+      "title": "Your Information",
+      "text": "Your Information\nWhat is your address in prison?"
+    },
+    {
+      "id": "02c-Program instructions",
+      "title": "How to Use this form",
+      "text": "How to Use this form\nYou can click on any word that is in BLUE for a definition. You can also click on \"Learn More\" for more information.\nYou can click \"Back\" in the top left corner to go back and change your answers."
+    },
+    {
+      "id": "02d-Disclaimer",
+      "title": "This form will help you complete the uncontested divorce forms.",
+      "text": "This form will help you complete the uncontested divorce forms."
+    },
+    {
+      "id": "02e-Warning",
+      "title": "IMPORTANT",
+      "text": "IMPORTANT\nIt is very important that you enter all of your information correctly. Be very careful that all names, addresses and dates are right.\nCorrecting this information after your case is filed is a complicated process and will delay your divorce."
+    },
+    {
+      "id": "02e.1-Federal prison",
+      "title": "What is your BOP number in %%[Plaintiff prison name TE]%%?",
+      "text": "What is your BOP number in %%[Plaintiff prison name TE]%%?\nThe Bureau of Prison Register Number format is 99999-999"
+    },
+    {
+      "id": "02f-Warning",
+      "title": "IMPORTANT",
+      "text": "IMPORTANT\nTell the truth when you answer these questions.\nMost of the documents for a divorce are sworn statements. That means you swear the information in it is the truth. It is crime to lie or make a \"sworn false statement.\" This crime is called perjury."
+    },
+    {
+      "id": "02f.1-NYS prison",
+      "title": "What is your DIN number in %%[Plaintiff prison name TE]%%?",
+      "text": "What is your DIN number in %%[Plaintiff prison name TE]%%?\nThe DIN has a format of\n99-A-9999."
+    },
+    {
+      "id": "02g-No fault divorce",
+      "title": "Is this form For Me?",
+      "text": "Is this form For Me?\nYou can use this form if:\n(1) there are no children under 21 years of age that were born or adopted by you and the Defendant before or during the marriage AND\n(2) your marriage has \"broken down irretrievably\" for at least six months and the marriage can't be saved, also known as no fault, AND\n(3) all issues have been settled"
+    },
+    {
+      "id": "02g.1-Local facility",
+      "title": "What is your identification number in %%[Plaintiff prison name TE]%%?",
+      "text": "What is your identification number in %%[Plaintiff prison name TE]%%?\nThis number can be called the book & case number, register number, etc"
+    },
+    {
+      "id": "02h.1-Marital home",
+      "title": "Is this the address where you and %%[Defendant current name TE]%% lived together while you were married?",
+      "text": "Is this the address where you and %%[Defendant current name TE]%% lived together while you were married?"
+    },
+    {
+      "id": "02h.2-Own or rent",
+      "title": "Do you and %%[Defendant current name TE]%% own this home together or are both of your names on the rental lease?",
+      "text": "Do you and %%[Defendant current name TE]%% own this home together or are both of your names on the rental lease?"
+    },
+    {
+      "id": "02h.3-Marital home",
+      "title": "You can ask the Judge to give you \"exclusive occupancy of the marital residence\". The Judge will make the decision as pa",
+      "text": "You can ask the Judge to give you \"exclusive occupancy of the marital residence\". The Judge will make the decision as part of the divorce Judgment.\nThis means that you want to stay in your home and you want %%[Defendant current name TE]%% to leave.\nDo you want to ask for \"exclusive occupancy of the marital residence\"?"
+    },
+    {
+      "id": "03-LOGIC EXIT TF",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "03a-Domestic violence",
+      "title": "WARNING:",
+      "text": "WARNING:\nDO NOT USE this form if you want to keep your address or social security number private.\nThis means that you want to hide your address or social security number from the person you are divorcing.\nYour address and social security number are printed on these papers. Speak to a Supreme Court Clerk's Office for help on how to keep this information private."
+    },
+    {
+      "id": "03a-Plaintiff 1 year residency",
+      "title": "Have you lived in New York State continuously for at least one year?",
+      "text": "Have you lived in New York State continuously for at least one year?"
+    },
+    {
+      "id": "03a-Plaintiff's phone",
+      "title": "What is your phone number and email address?",
+      "text": "What is your phone number and email address?"
+    },
+    {
+      "id": "03b-Defendant 1 year residency",
+      "title": "Has %%[Defendant current name TE]%% lived in New York State continuously for at least one year?",
+      "text": "Has %%[Defendant current name TE]%% lived in New York State continuously for at least one year?"
+    },
+    {
+      "id": "03b-Order of protection",
+      "title": "Order of Protection",
+      "text": "Order of Protection\nIf you need an Order of Protection from the Defendant, Exit this form and go to the Family Court in your county. You can get a temporary Order of Protection to protect yourself immediately."
+    },
+    {
+      "id": "03c-Common law marriage",
+      "title": "If your marriage is a common law marriage, you can't use this form.",
+      "text": "If your marriage is a common law marriage, you can't use this form.\nExit this form and contact the Supreme Court Clerk's Office for more information."
+    },
+    {
+      "id": "03d-Plaintiff in prison",
+      "title": "Are you incarcerated?",
+      "text": "Are you incarcerated?\nThis means that you are in prison right now."
+    },
+    {
+      "id": "04a-Married in NY",
+      "title": "Did you and %%[Defendant current name TE]%% get married in New York State?",
+      "text": "Did you and %%[Defendant current name TE]%% get married in New York State?"
+    },
+    {
+      "id": "04a-Plaintiff's SSN",
+      "title": "Do you have a social security number?",
+      "text": "Do you have a social security number?"
+    },
+    {
+      "id": "04a.1-Age of parties",
+      "title": "Are both you and the Defendant over 18 years of age?",
+      "text": "Are both you and the Defendant over 18 years of age?"
+    },
+    {
+      "id": "04a.2-Age of parties exit",
+      "title": "This form is not for you.",
+      "text": "This form is not for you.\nYou and the person you want to divorce must be at least 18 years old to use this form."
+    },
+    {
+      "id": "04a.3-How many children",
+      "title": "How many children do you and the Defendant have together?",
+      "text": "How many children do you and the Defendant have together?\nCount all children who were born or adopted by both of you before or during the marriage."
+    },
+    {
+      "id": "04a.5-Children age",
+      "title": "%%[Is your child/ren TE]%% 20 years old or younger?",
+      "text": "%%[Is your child/ren TE]%% 20 years old or younger?"
+    },
+    {
+      "id": "04a.6-Emancipated children",
+      "title": "%%[Is your child/ren TE]%% emancipated?",
+      "text": "%%[Is your child/ren TE]%% emancipated?\nThis means that %%[all child/ren TE]%% in the military or married, or 17 years old or younger and self-supporting."
+    },
+    {
+      "id": "04a.7-Children exit",
+      "title": "This form is not for you.",
+      "text": "This form is not for you.\nthis form can only be used if you and the person you want to divorce don't have children."
+    },
+    {
+      "id": "04a.8-No minor children",
+      "title": "In a divorce case, the court is only interested in \"children of the marriage.\"",
+      "text": "In a divorce case, the court is only interested in \"children of the marriage.\"\nYour %%[child/ren TE]%% %%[child/ren is/are TE]%% 21 years old or older or emancipated. For a divorce case, this means that you have no “children of the marriage” and the papers will say that \"There are no children of the marriage.\""
+    },
+    {
+      "id": "04b-Lived in NY as married couple",
+      "title": "Did you and %%[Defendant current name TE]%% live in New York State while you were married?",
+      "text": "Did you and %%[Defendant current name TE]%% live in New York State while you were married?"
+    },
+    {
+      "id": "04b-Plaintiff SSN",
+      "title": "What is your social security number?",
+      "text": "What is your social security number?"
+    },
+    {
+      "id": "04b.1-Address abroad",
+      "title": "Do both you and the Defendant live in the United States?",
+      "text": "Do both you and the Defendant live in the United States?"
+    },
+    {
+      "id": "04b.2-Address abroad exit",
+      "title": "This form is not for you.",
+      "text": "This form is not for you.\nTo use this form, both you and the person you want to divorce must live in the United States."
+    },
+    {
+      "id": "04c.1-Previous application",
+      "title": "Do you or the Defendant already have a divorce case waiting for a decision in this court or any other court?",
+      "text": "Do you or the Defendant already have a divorce case waiting for a decision in this court or any other court?"
+    },
+    {
+      "id": "04c.2-Previous application",
+      "title": "This form is not for you.",
+      "text": "This form is not for you.\nIf you and the person you want to divorce have a divorce case pending in this court or in any other court, you can't use this form."
+    },
+    {
+      "id": "04d.1-Defendant's whereabouts",
+      "title": "Do you know where the Defendant lives or works right now?",
+      "text": "Do you know where the Defendant lives or works right now?"
+    },
+    {
+      "id": "04d.2-Unknown whereabouts",
+      "title": "This form is not for you.",
+      "text": "This form is not for you.\nThe court papers must be personally delivered to the person you want to divorce. The Defendant's address is required to use this form."
+    },
+    {
+      "id": "04e.1-Written agreement",
+      "title": "Settlement Agreement",
+      "text": "Settlement Agreement\nDid you and the Defendant sign a written Settlement Agreement?\nSometimes the Settlement Agreement is called a Stipulation of Settlement or a Property Settlement and Separation Agreement."
+    },
+    {
+      "id": "04e.3-File agreement",
+      "title": "The written Settlement Agreement is filed with the court when the index number is issued. There is an additional fee of ",
+      "text": "The written Settlement Agreement is filed with the court when the index number is issued. There is an additional fee of about $35."
+    },
+    {
+      "id": "04f.1-Marital property",
+      "title": "Marital Property",
+      "text": "Marital Property\nTo use the grounds of no fault, the division of marital property must be agreed to between you and the Defendant.\nThis means that you and the Defendant must agree between yourselves how the property and debt is divided."
+    },
+    {
+      "id": "04f.10-ADR exit",
+      "title": "This form is not for you at this time.",
+      "text": "This form is not for you at this time.\nFor a no fault divorce, you must both agree on all marital property issues."
+    },
+    {
+      "id": "04f.2-Marital property explained",
+      "title": "Marital property is anything that was earned or acquired during your marriage. It does not matter if you own it together",
+      "text": "Marital property is anything that was earned or acquired during your marriage. It does not matter if you own it together or alone.\nExamples of marital property: pension, annuity, real estate like a house, condo or co-op, retirement account, 401(k), 403(b), IRA, bank accounts, savings account, debt (credit cards, store cards, car payments, etc.), car, boat, etc."
+    },
+    {
+      "id": "04f.3-Any marital property",
+      "title": "Do you and the Defendant have any marital property?",
+      "text": "Do you and the Defendant have any marital property?"
+    },
+    {
+      "id": "04f.4-Have marital property",
+      "title": "Have you and the Defendant talked about the marital property and already divided the property?",
+      "text": "Have you and the Defendant talked about the marital property and already divided the property?"
+    },
+    {
+      "id": "04f.5-Plaintiff contest",
+      "title": "Are you going to contest any marital property?",
+      "text": "Are you going to contest any marital property?\nThis means that you will not agree with the Defendant on how the property or debt will be divided between you."
+    },
+    {
+      "id": "04f.6-Defendant contest",
+      "title": "Is the Defendant going to contest any marital property?",
+      "text": "Is the Defendant going to contest any marital property?\nThis means that the Defendant will not agree on how the property or debt will be divided between you."
+    },
+    {
+      "id": "04f.7-ADR exit",
+      "title": "This form is not for you at this time.",
+      "text": "This form is not for you at this time.\nBefore you can use this form, you and the Defendant must agree on what will happen to the marital property after you get your divorce."
+    },
+    {
+      "id": "04f.8-ADR exit",
+      "title": "You can use alternate dispute resolution (ADR) or any form of mediation (assistance) to help you and the Defendant divid",
+      "text": "You can use alternate dispute resolution (ADR) or any form of mediation (assistance) to help you and the Defendant divide your property.\nADR is a way of ending conflict without going to court. There are different types of ADR such as Collaborative Family Law and divorce mediation."
+    },
+    {
+      "id": "04f.9-ADR exit",
+      "title": "Collaborative Family Law is a type of ADR where each person in a divorce has a specially trained lawyer to end a marriag",
+      "text": "Collaborative Family Law is a type of ADR where each person in a divorce has a specially trained lawyer to end a marriage respectfully and without going to court.\nIn divorce mediation, a person called a \"mediator\" helps a couple work out the issues of their divorce to reach a settlement they both agree on. Mediation is not for everyone.\nThere is a fee for ADR services but sometimes, depending on your income, there is a reduced fee."
+    },
+    {
+      "id": "04g.1-Retirement accounts",
+      "title": "Retirement Plans",
+      "text": "Retirement Plans\nDuring the marriage, did you or the Defendant put money into a retirement account?\nThis means that you and/or the Defendant contributed to a \"defined contribution plan,\" such as a public or private pension plan, IRA, 401(k) plans, 403(b) plans, 457 plans, Thrift Savings Plans, employee stock ownership plans, or profit-sharing plans."
+    },
+    {
+      "id": "04g.10-Default continue",
+      "title": "If the Defendant does not sign the Affirmation of Defendant and return it to you then he or she will \"default\".",
+      "text": "If the Defendant does not sign the Affirmation of Defendant and return it to you then he or she will \"default\".\nIf the Defendant defaults, the Judge may not sign the divorce Judgment because the retirement account issue has not been agreed on by both of you."
+    },
+    {
+      "id": "04g.11-Default continue",
+      "title": "You are welcome to continue. However, if the Defendant does not sign the Affirmation of Defendant and return it to you t",
+      "text": "You are welcome to continue. However, if the Defendant does not sign the Affirmation of Defendant and return it to you then he or she will \"default\".\nIf the Defendant defaults, the Judge may not sign the divorce Judgment because the retirement account issue, if there is one, has not been agreed on by both of you."
+    },
+    {
+      "id": "04g.2-New York law",
+      "title": "Under New York law, the portion of some retirement accounts earned during the marriage are considered marital property.",
+      "text": "Under New York law, the portion of some retirement accounts earned during the marriage are considered marital property.\nThis means that the retirement accounts can be divided no matter whose name is on it when the marriage ends."
+    },
+    {
+      "id": "04g.3-DRO",
+      "title": "Do you have a Domestic Relations Order or Qualified Domestic Relations Order (\"DRO\" or \"QDRO\")?",
+      "text": "Do you have a Domestic Relations Order or Qualified Domestic Relations Order (\"DRO\" or \"QDRO\")?"
+    },
+    {
+      "id": "04g.4-Written stipulation",
+      "title": "Do you and the Defendant have any kind of written agreement (like a written stipulation or written Settlement Agreement)",
+      "text": "Do you and the Defendant have any kind of written agreement (like a written stipulation or written Settlement Agreement) that says if the retirement accounts will be divided and how?"
+    },
+    {
+      "id": "04g.5-Submit DRO",
+      "title": "If you have a written agreement or stipulation, file it when you submit the divorce papers.",
+      "text": "If you have a written agreement or stipulation, file it when you submit the divorce papers.\nIf you have a DRO or QDRO, it can be filed when you file the divorce papers. The Judge will sign it at the time the divorce judgment is signed, if you are given a divorce. After the Judge signs the DRO or QDRO, it must be filed with your plan administrator."
+    },
+    {
+      "id": "04g.6-Party with pension",
+      "title": "Who has a retirement account?",
+      "text": "Who has a retirement account?"
+    },
+    {
+      "id": "04g.7-Defendant has pension",
+      "title": "Do you \"waive\" your rights to the Defendant's retirement accounts (if any)?",
+      "text": "Do you \"waive\" your rights to the Defendant's retirement accounts (if any)?\nThis means that you will not ask for any part of the Defendant's retirement account in the future."
+    },
+    {
+      "id": "04g.8-Plaintiff has pension",
+      "title": "Will the Defendant \"waive\" his or her rights to your retirement accounts (if any)?",
+      "text": "Will the Defendant \"waive\" his or her rights to your retirement accounts (if any)?\nThis means that the Defendant will not ask for any part of your retirement account in the future."
+    },
+    {
+      "id": "04g.9-Pension exit",
+      "title": "The issue of what will happen to the retirement accounts must be agreed on by you and the person you are divorcing befor",
+      "text": "The issue of what will happen to the retirement accounts must be agreed on by you and the person you are divorcing before you use this form.\nIf you or the Defendant will not come to a written agreement about your retirement accounts or \"waive\" your rights to each other's accounts, the case will no longer be an uncontested matter. This means that you can't use this form."
+    },
+    {
+      "id": "04h.1-Maintenance",
+      "title": "Will you be asking for maintenance?",
+      "text": "Will you be asking for maintenance?"
+    },
+    {
+      "id": "04h.2-Maintenance exit",
+      "title": "This form is not for you.",
+      "text": "This form is not for you.\nthis form can only be used if you are asking for maintenance and there is a Settlement Agreement between you and your spouse."
+    },
+    {
+      "id": "05-Public assistance",
+      "title": "Do you get public assistance?",
+      "text": "Do you get public assistance?"
+    },
+    {
+      "id": "05a-Cause of action in NY",
+      "title": "Did the breakdown of the marriage happen in New York State?",
+      "text": "Did the breakdown of the marriage happen in New York State?"
+    },
+    {
+      "id": "05a-Three steps",
+      "title": "About Getting a Divorce",
+      "text": "About Getting a Divorce\nThere are 2 parts to getting a divorce and this form will help you with the papers and procedures in each part."
+    },
+    {
+      "id": "05b-Current residents",
+      "title": "Do both you and %%[Defendant current name TE]%% live in New York State right now?",
+      "text": "Do both you and %%[Defendant current name TE]%% live in New York State right now?"
+    },
+    {
+      "id": "05b-Part A",
+      "title": "Part A: Starting the Divorce Case",
+      "text": "Part A: Starting the Divorce Case\nTo start a case, an index number is obtained from the court ($210) and counsel files the Summons With Notice or the Summons and Verified Complaint with the court.\nThe person you want to divorce is called the Defendant."
+    },
+    {
+      "id": "05c-Residency exit",
+      "title": "This form is not for you.",
+      "text": "This form is not for you.\nYou do not meet any of the residency requirements needed to file for a divorce in New York State."
+    },
+    {
+      "id": "05c.1-Part A continue",
+      "title": "If the Defendant signs and returns the Affirmation of Defendant to you, you can continue on to Part B and get your divor",
+      "text": "If the Defendant signs and returns the Affirmation of Defendant to you, you can continue on to Part B and get your divorce case on the court calendar.\nIf the Defendant does not sign and return the Affirmation of Defendant to you, the paperwork must be personally delivered to (\"served on\") the Defendant by someone, but not you."
+    },
+    {
+      "id": "05c.2-Part A continue",
+      "title": "From the date the Defendant was served, s/he has 20 days or 30 days to answer. If the Defendant answers and does not agr",
+      "text": "From the date the Defendant was served, s/he has 20 days or 30 days to answer. If the Defendant answers and does not agree to the divorce, it is no longer an uncontested matter. If the Defendant does not answer during this time, s/he has defaulted and you can go on to Part B."
+    },
+    {
+      "id": "05d-Part B",
+      "title": "Part B: Getting Your Divorce Case on the Court Calendar",
+      "text": "Part B: Getting Your Divorce Case on the Court Calendar\nAfter the Defendant returns the Affirmation of Defendant to you or after 40 days from the date of service, your attorney files a second set of forms with the court.\nThese papers are stamped by a clerk and your case is assigned to a Judge or a Special Referee. There is a $125 court fee at this time."
+    },
+    {
+      "id": "05e-Part B continue",
+      "title": "It may take some time for the Judge to look at your case.",
+      "text": "It may take some time for the Judge to look at your case.\nIf the Judge finds that there is something wrong or incomplete with the papers, the court will let you know so that you can come in and correct them."
+    },
+    {
+      "id": "05f-Part B continue",
+      "title": "If the Judge signs the Judgment of Divorce, the court will contact you. The Judgment must be filed with the court.",
+      "text": "If the Judge signs the Judgment of Divorce, the court will contact you. The Judgment must be filed with the court."
+    },
+    {
+      "id": "06a-Court fees",
+      "title": "It costs at least $335 to file for divorce.",
+      "text": "It costs at least $335 to file for divorce.\nIf you do not have the money to pay the court fees, you may be able to request a fee waiver from the court."
+    },
+    {
+      "id": "06a-Defendant's address",
+      "title": "Your Spouse's Information",
+      "text": "Your Spouse's Information\n\nWhat is your spouse's address?\n\n*If you do not know your spouse's current address, please provide their last known address*"
+    },
+    {
+      "id": "06a-Grounds for divorce",
+      "title": "Your Grounds for the Divorce",
+      "text": "Your Grounds for the Divorce\nTo file for divorce in New York State, you must have a legal reason for the divorce. This is called the \"grounds\" for your divorce.\nNew York is a 'no-fault' divorce state, meaning that neither spouse necessarily be 'at fault' for the divorce. Rather, the grounds for divorce is the marriage being 'broken down irretrievably' for at least 6 months."
+    },
+    {
+      "id": "06b-Define no fault",
+      "title": "Irretrievable Breakdown of Marriage",
+      "text": "Irretrievable Breakdown of Marriage\nIn the papers, you must swear that your relationship has \"broken down irretrievably\" for at least six months.\nThis means that it is impossible for you and %%[Defendant current name TE]%% to save or fix the marriage and stay together."
+    },
+    {
+      "id": "06b-Useful information",
+      "title": "Have the following with you while you are answering the questions:",
+      "text": "Have the following with you while you are answering the questions:\n1. Marriage certificate\n2. Date when you were married\n3. Place where you were married\n4. Your social security number\n5. The Defendant's address\n6. The Defendant's social security number"
+    },
+    {
+      "id": "06c-Defendant's prison address",
+      "title": "%%[Defendant current name TE]%%'s Information",
+      "text": "%%[Defendant current name TE]%%'s Information\nWhat is %%[Defendant current name TE]%%'s address in prison?"
+    },
+    {
+      "id": "06c-Six months' breakdown",
+      "title": "Irretrievable Breakdown of Marriage",
+      "text": "Irretrievable Breakdown of Marriage\n\nHas your relationship with %%[Defendant current name TE]%% \"broken down irretrievably\" for at least 6 months?\n\nThis means that your marriage to %%[Defendant current name TE]%% has been over for at least 6 months and your relationship can't be saved."
+    },
+    {
+      "id": "06c-Useful information returning",
+      "title": "It is useful to have a Copy of the Summons with Notice or the Summons and Complaint with you while you are answering the",
+      "text": "It is useful to have a Copy of the Summons with Notice or the Summons and Complaint with you while you are answering the questions."
+    },
+    {
+      "id": "06d-Not six months",
+      "title": "This form is not for you at this time.",
+      "text": "This form is not for you at this time.\nYour marriage with %%[Defendant current name TE]%% must have \"broken down irretrievably\" for at least 6 months before your case can proceed using this questionnaire. That means that your relationship can't be fixed.\nYou can exit this form or continue. If you continue, the case cannot be filed until it has been 6 months since your relationship ended."
+    },
+    {
+      "id": "06e-Must agree",
+      "title": "Issues that must be Settled",
+      "text": "Issues that must be Settled\n1. the distribution of marital property, if any;\n2. custody and visitation rights;\n3. spousal maintenance (alimony); and\n4. the payment of attorney and/or experts' fees and expenses."
+    },
+    {
+      "id": "06e.1-Federal prison",
+      "title": "What is %%[Defendant current name TE]%%'s BOP number in %%[Defendant prison name TE]%%?",
+      "text": "What is %%[Defendant current name TE]%%'s BOP number in %%[Defendant prison name TE]%%?\nThe Bureau of Prison Register Number format is 99999-999"
+    },
+    {
+      "id": "06f.1-NYS prison",
+      "title": "What is %%[Defendant current name TE]%%'s DIN number in %%[Defendant prison name TE]%%?",
+      "text": "What is %%[Defendant current name TE]%%'s DIN number in %%[Defendant prison name TE]%%?\nThe DIN has a format of\n99-A-9999."
+    },
+    {
+      "id": "06g.1-Local facility",
+      "title": "What is %%[Defendant current name TE]%%'s identification number in %%[Defendant prison name TE]%%?",
+      "text": "What is %%[Defendant current name TE]%%'s identification number in %%[Defendant prison name TE]%%?\nThis number can be called the book & case number, register number, etc"
+    },
+    {
+      "id": "06h.1-Marital home",
+      "title": "Is this the address where you and %%[Defendant current name TE]%% lived together while you were married?",
+      "text": "Is this the address where you and %%[Defendant current name TE]%% lived together while you were married?"
+    },
+    {
+      "id": "06h.2-Own or rent",
+      "title": "Do you and %%[Defendant current name TE]%% own this home together or are both of your names on the rental lease?",
+      "text": "Do you and %%[Defendant current name TE]%% own this home together or are both of your names on the rental lease?"
+    },
+    {
+      "id": "06h.3-Marital home",
+      "title": "You can ask the Judge to give you \"exclusive occupancy of the marital residence\". The Judge will make the decision as pa",
+      "text": "You can ask the Judge to give you \"exclusive occupancy of the marital residence\". The Judge will make the decision as part of the divorce Judgment.\nThis means that you want to return to your home and you want %%[Defendant current name TE]%% to leave.\nDo you want to ask for \"exclusive occupancy of the marital residence\"?"
+    },
+    {
+      "id": "07a-Defendant's SSN",
+      "title": "Do you know %%[Defendant current name TE]%%'s social security number?",
+      "text": "Do you know %%[Defendant current name TE]%%'s social security number?\n\nIf no, there may be extra fees for divorce by publication."
+    },
+    {
+      "id": "07a-Written agreement",
+      "title": "Settlement Agreement",
+      "text": "Settlement Agreement\nYou and %%[Defendant current name TE]%% signed a written Settlement Agreement."
+    },
+    {
+      "id": "07a.1-Parties names",
+      "title": "IMPORTANT",
+      "text": "IMPORTANT\nYour name and the name of the person you want to divorce must be typed in exactly as it appears on your marriage certificate.\nIf the names on the paperwork are not correct, the court may not enter your judgment and your divorce will be delayed."
+    },
+    {
+      "id": "07a.2-Parties names already filed",
+      "title": "IMPORTANT",
+      "text": "IMPORTANT\nYour name and the name of the person you want to divorce must be typed in exactly as it appears in the papers already on file with the court.\nIf the names are not typed exactly as it appears in the papers already on file with the court, the court will not enter your judgment and your divorce will be delayed."
+    },
+    {
+      "id": "07b-Get agreement.",
+      "title": "It would be helpful if you have it with you to answer the following questions.",
+      "text": "It would be helpful if you have it with you to answer the following questions."
+    },
+    {
+      "id": "07b.1-Defendant's SSN",
+      "title": "What is %%[Defendant current name TE]%%'s social security number?",
+      "text": "What is %%[Defendant current name TE]%%'s social security number?"
+    },
+    {
+      "id": "07b.1-Plaintiff name",
+      "title": "Type in your name exactly as it appears on the marriage certificate.",
+      "text": "Type in your name exactly as it appears on the marriage certificate."
+    },
+    {
+      "id": "07c-Date of written agreement",
+      "title": "What is the date of the written Settlement Agreement?",
+      "text": "What is the date of the written Settlement Agreement?"
+    },
+    {
+      "id": "07c-Defendant's SSN unknown",
+      "title": "Why can't you supply your spouse's social security number?",
+      "text": "Why can't you supply your spouse's social security number?"
+    },
+    {
+      "id": "07c.1-Plaintiff name change",
+      "title": "Did you get a legal name change while you were married?",
+      "text": "Did you get a legal name change while you were married?\nThis means that during the marriage you changed your name from the name on the marriage certificate."
+    },
+    {
+      "id": "07c.2-Plaintiff new name",
+      "title": "You got a legal name change during the marriage.",
+      "text": "You got a legal name change during the marriage.\nWhat is your current legal name?"
+    },
+    {
+      "id": "07c.4-Proof of new name",
+      "title": "Include proof of any name change when the papers are filed.",
+      "text": "Include proof of any name change when the papers are filed.\nA proof of name change is a legal document that verifies that a person has legally changed their name, such as a court order granting the name change or a certificate of naturalization or citizenship."
+    },
+    {
+      "id": "07d-Drafter",
+      "title": "Who helped you and %%[Defendant current name TE]%% write the Settlement Agreement?",
+      "text": "Who helped you and %%[Defendant current name TE]%% write the Settlement Agreement?"
+    },
+    {
+      "id": "07d-Photo ID",
+      "title": "It is important that the name on the photo ID is the same as the name printed on the divorce papers or the notary may no",
+      "text": "It is important that the name on the photo ID is the same as the name printed on the divorce papers or the notary may not notarize the papers.\nThe notary will check your identification to ensure that you are who you say you are. You may need to show a government-issued ID, such as a driver's license or passport."
+    },
+    {
+      "id": "07e.1-Health Insurance",
+      "title": "Health Insurance",
+      "text": "Health Insurance\nAccording to the written Settlement Agreement, is there a statement about future health care coverage for you and %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "07e.1-Plaintiff in prison",
+      "title": "Are you in prison?",
+      "text": "Are you in prison?"
+    },
+    {
+      "id": "07e.2-Health Insurance",
+      "title": "There is a legal requirement that the written Settlement Agreement states an arrangement for future health care coverage",
+      "text": "There is a legal requirement that the written Settlement Agreement states an arrangement for future health care coverage for you and %%[Defendant current name TE]%%.\nAn addendum to the written Settlement Agreement which satisfies this legal requirement should be signed by you and %%[Defendant current name TE]%%, notarized and filed with your papers. This form will be printed with your other papers."
+    },
+    {
+      "id": "07e.2-Plaintiff in prison",
+      "title": "You are in prison.",
+      "text": "You are in prison.\nTo use this form, you must know your identification number used in prison. This number is called the DIN, BOP, Book & Case number or register number depending on where you are incarcerated."
+    },
+    {
+      "id": "07f.1-Maintenance in agreement",
+      "title": "Maintenance",
+      "text": "Maintenance\nWhat does the written Settlement Agreement say about maintenance?"
+    },
+    {
+      "id": "07f.2-Maintenance amount",
+      "title": "According to the written Settlement Agreement, how much maintenance is to be paid?",
+      "text": "According to the written Settlement Agreement, how much maintenance is to be paid?"
+    },
+    {
+      "id": "07f.3-Maintenance frequency",
+      "title": "How often is the maintenance to be paid?",
+      "text": "How often is the maintenance to be paid?\nFor example: every 6 months, once a year on December 1st."
+    },
+    {
+      "id": "08a-Defendant's phone number",
+      "title": "Do you know %%[Defendant current name TE]%%'s phone number?",
+      "text": "Do you know %%[Defendant current name TE]%%'s phone number?"
+    },
+    {
+      "id": "08a.1-Defendant name",
+      "title": "Type in the name of the person you want to divorce as it appears on the marriage certificate.",
+      "text": "Type in the name of the person you want to divorce as it appears on the marriage certificate."
+    },
+    {
+      "id": "08b-Defendant's phone",
+      "title": "What is %%[Defendant current name TE]%%'s phone number and email address?",
+      "text": "What is %%[Defendant current name TE]%%'s phone number and email address?"
+    },
+    {
+      "id": "08b.1-Defendant name change",
+      "title": "Did %%[Defendant current name TE]%% get a legal name change while you were married?",
+      "text": "Did %%[Defendant current name TE]%% get a legal name change while you were married?\nThis means that during the marriage %%[Defendant current name TE]%% changed their name from the name on the marriage certificate."
+    },
+    {
+      "id": "08b.2-Defendant new name",
+      "title": "%%[Defendant current name TE]%% got a legal name change during the marriage.",
+      "text": "%%[Defendant current name TE]%% got a legal name change during the marriage.\nWhat is %%[Defendant current name TE]%%'s current legal name?"
+    },
+    {
+      "id": "08b.4-Proof of new name",
+      "title": "You will have to show the court proof that %%[Defendant current name TE]%% got a legal name change during the marriage.",
+      "text": "You will have to show the court proof that %%[Defendant current name TE]%% got a legal name change during the marriage.\nIf you can, include a copy of the signed Name Change Order or their Naturalization Certificate with your papers."
+    },
+    {
+      "id": "08e.1-Defendant military",
+      "title": "Is %%[Defendant current name TE]%% in the military and on active duty?",
+      "text": "Is %%[Defendant current name TE]%% in the military and on active duty?"
+    },
+    {
+      "id": "08e.3-Defendant military",
+      "title": "Military law protects service members. Because %%[Defendant current name TE]%% is on active duty, the judge can postpone",
+      "text": "Military law protects service members. Because %%[Defendant current name TE]%% is on active duty, the judge can postpone the case until %%HESHE([Defendant gender])%% returns.\nHowever, %%[Defendant current name TE]%% can let the divorce case go forward without delay if %%HESHE([Defendant gender])%% signs the Affirmation of Defendant and returns it to you.\nDo you think %%[Defendant current name TE]%% will sign the Affirmation of Defendant?"
+    },
+    {
+      "id": "08e.4-Defendant military exit",
+      "title": "It is important that papers are delivered in a certain time period after filing or you will have to start over and buy a",
+      "text": "It is important that papers are delivered in a certain time period after filing or you will have to start over and buy another index number.\nIf you are not sure if %%[Defendant current name TE]%% will sign the Affirmation of Defendant, speak to the Supreme Court Clerk's Office for more information."
+    },
+    {
+      "id": "08f.1-Defendant in prison",
+      "title": "Is %%[Defendant current name TE]%% in prison?",
+      "text": "Is %%[Defendant current name TE]%% in prison?\nThis means that %%[Defendant current name TE]%% is in a federal, state or local correctional institution."
+    },
+    {
+      "id": "08f.2-Defendant in prison SKIP",
+      "title": "%%[Defendant current name TE]%% is in prison.",
+      "text": "%%[Defendant current name TE]%% is in prison.\nTo use this form, you must know %%[Defendant current name TE]%%'s identification number used in prison. This number is called the DIN, BOP, Book & Case number or register number depending on where %%HESHE([Defendant gender])%% is incarcerated."
+    },
+    {
+      "id": "08f.3-Defendant in prison service",
+      "title": "The court papers must be \"served on\" %%[Defendant current name TE]%%. This means that the papers must be personally deli",
+      "text": "The court papers must be \"served on\" %%[Defendant current name TE]%%. This means that the papers must be personally delivered to %%[Defendant current name TE]%% in prison.\nContact the prison where %%HESHE([Defendant gender])%% is incarcerated for more information about how to do this."
+    },
+    {
+      "id": "09-FORWARDING STEP",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "09-Public assistance",
+      "title": "As far as you know, does %%[Defendant current name TE]%% get public assistance?",
+      "text": "As far as you know, does %%[Defendant current name TE]%% get public assistance?"
+    },
+    {
+      "id": "09a-Explain no marital property",
+      "title": "Marital Property",
+      "text": "Marital Property\nPick one:"
+    },
+    {
+      "id": "10a-Defendant in military",
+      "title": "%%[Defendant current name TE]%% is serving in the military.",
+      "text": "%%[Defendant current name TE]%% is serving in the military.\nWhich military service branch is %%[Defendant current name TE]%% serving with?"
+    },
+    {
+      "id": "10b-Defendant not in military",
+      "title": "%%[Defendant current name TE]%% is not serving in the military. How do you know this?",
+      "text": "%%[Defendant current name TE]%% is not serving in the military. How do you know this?"
+    },
+    {
+      "id": "10c-Defendant non-military",
+      "title": "On what date did you ask %%[Defendant current name TE]%% whether or not %%HESHE([Defendant Gender])%% is serving in the ",
+      "text": "On what date did you ask %%[Defendant current name TE]%% whether or not %%HESHE([Defendant Gender])%% is serving in the military?"
+    },
+    {
+      "id": "12a-Marriage date",
+      "title": "About Your Marriage",
+      "text": "About Your Marriage\nWhen were you and %%[Defendant current name TE]%% married?"
+    },
+    {
+      "id": "12a.1-Ancillary relief",
+      "title": "12a.1-Ancillary relief",
+      "text": ""
+    },
+    {
+      "id": "12a.3-Other relief",
+      "title": "Ancillary Relief",
+      "text": "Ancillary Relief\nYou may have asked the Judge to decide other things as part of your divorce case when you filed your %%[Initiating papers TE]%%.\nIt would be helpful if you had the %%[Initiating papers TE]%% with you to answer the following questions."
+    },
+    {
+      "id": "12c.1-Plaintiff prior surnames",
+      "title": "Your Last Name",
+      "text": "Your Last Name\nWhen you got married, you may have changed your last name.\nDid your last name change when you got married?"
+    },
+    {
+      "id": "12c.2-Plaintiff prior surname",
+      "title": "List your other last name before you got married:",
+      "text": "List your other last name before you got married:\n\n(If you have more than one, enter one now. We will add the rest later.)"
+    },
+    {
+      "id": "12d.1-Defendant prior surnames",
+      "title": "%%[Defendant current name TE]%%'s Last Name",
+      "text": "%%[Defendant current name TE]%%'s Last Name\nWhen %%[Defendant current name TE]%% got married, %%HESHE([Defendant gender])%% may have changed %%HISHER([Defendant gender])%% last name.\nDid %%[Defendant current name TE]%% change %%HISHER([Defendant gender])%% last name when %%HESHE([Defendant gender])%% married you?"
+    },
+    {
+      "id": "12d.2-Defendant prior surnames",
+      "title": "List %%[Defendant current name TE]%%'s other last name before marriage:",
+      "text": "List %%[Defendant current name TE]%%'s other last name before marriage:"
+    },
+    {
+      "id": "13a-HIDDEN SECTION: Spousal support  - IGNORE 13",
+      "title": "Spousal Support",
+      "text": "Spousal Support\nIs there a spousal support court order between you and %%[Defendant current name TE]%% at this time?\nIn New York, this court order would be from Family Court."
+    },
+    {
+      "id": "13a-Marriage place",
+      "title": "Were you and %%[Defendant current name TE]%% married in the United States?",
+      "text": "Were you and %%[Defendant current name TE]%% married in the United States?"
+    },
+    {
+      "id": "13b-Continue order",
+      "title": "Spousal support is paid and received only while you are married. The support order ends when you get divorced.",
+      "text": "Spousal support is paid and received only while you are married. The support order ends when you get divorced.\nSupport payments after you are divorced is called maintenance. The Judge decides if maintenance will be paid and for how long.\nAre you asking the Judge for spousal support to continue as maintenance after the divorce?"
+    },
+    {
+      "id": "13b-Married in US",
+      "title": "Where were you and %%[Defendant current name TE]%% married?",
+      "text": "Where were you and %%[Defendant current name TE]%% married?"
+    },
+    {
+      "id": "13c-Married abroad",
+      "title": "Where were you and %%[Defendant current name TE]%% married?",
+      "text": "Where were you and %%[Defendant current name TE]%% married?"
+    },
+    {
+      "id": "13c.1-Support order court",
+      "title": "Which court is the spousal support order from?",
+      "text": "Which court is the spousal support order from?"
+    },
+    {
+      "id": "13c.2-Support order court",
+      "title": "The spousal support is from another court. I need some information about the court order.",
+      "text": "The spousal support is from another court. I need some information about the court order."
+    },
+    {
+      "id": "13c.3-NY court order",
+      "title": "I need more information about the spousal support order.",
+      "text": "I need more information about the spousal support order.\nWhere is the %%[Spousal support court MC]%% Court located and what was the docket number?"
+    },
+    {
+      "id": "13d.1-Support payor",
+      "title": "According to the spousal support order, who pays the spousal support?",
+      "text": "According to the spousal support order, who pays the spousal support?"
+    },
+    {
+      "id": "13d.2-Support amount",
+      "title": "According to the spousal support order, how much support is paid and how often?",
+      "text": "According to the spousal support order, how much support is paid and how often?"
+    },
+    {
+      "id": "13d.3-Support frequency",
+      "title": "According to the spousal support order, how often is the support to be paid?",
+      "text": "According to the spousal support order, how often is the support to be paid?\nFor example: once a year on December 1st, every six months, etc."
+    },
+    {
+      "id": "13e.1-Maintenance amount",
+      "title": "The Judge decides if maintenance is paid and for how long.",
+      "text": "The Judge decides if maintenance is paid and for how long.\nAfter you are divorced, how much maintenance are you asking for?"
+    },
+    {
+      "id": "13e.2-Maintenance frequency",
+      "title": "How often would you like the maintenance to be paid?",
+      "text": "How often would you like the maintenance to be paid?\nFor example: once a year on December 1st, every six months, etc."
+    },
+    {
+      "id": "13f.1-Maintenance termination",
+      "title": "Maintenance is usually for a set period of time. How long should the maintenance be paid?",
+      "text": "Maintenance is usually for a set period of time. How long should the maintenance be paid?"
+    },
+    {
+      "id": "13f.3-Maintenance period",
+      "title": "How long would you like the maintenance be paid?",
+      "text": "How long would you like the maintenance be paid?\nFrom the date of divorce, maintenance should be paid"
+    },
+    {
+      "id": "13g.1-Income levels",
+      "title": "Since you are asking for maintenance to be paid, the Judge will want to know about your income and %%[Defendant current ",
+      "text": "Since you are asking for maintenance to be paid, the Judge will want to know about your income and %%[Defendant current name TE]%%'s income.\nWhat is your income every month?"
+    },
+    {
+      "id": "13g.2-Income levels",
+      "title": "Where does your monthly income come from?",
+      "text": "Where does your monthly income come from?\nFor example: from work, unemployment, disability, etc."
+    },
+    {
+      "id": "14a-Married by clergy",
+      "title": "Were you married in a religious ceremony?",
+      "text": "Were you married in a religious ceremony?"
+    },
+    {
+      "id": "14a-Order of protection",
+      "title": "Order of Protection",
+      "text": "Order of Protection\nDo you have an Order of Protection against %%[Defendant current name TE]%%?\nThis means that there is an Order of Protection where you are named as the Petitioner and %%[Defendant current name TE]%% is named as the Respondent."
+    },
+    {
+      "id": "14b-About the OP",
+      "title": "Tell me about the Order of Protection. Give the following information: county and court it is from, date of the order an",
+      "text": "Tell me about the Order of Protection. Give the following information: county and court it is from, date of the order and the index or docket number."
+    },
+    {
+      "id": "14b-Defendant's remarriage",
+      "title": "The court requires that you do everything needed by the religion so that %%[Defendant current name TE]%% can remarry aft",
+      "text": "The court requires that you do everything needed by the religion so that %%[Defendant current name TE]%% can remarry after the divorce.\nIn some religions, you may not have to do anything but the court still requires that you swear before the court's final judgment."
+    },
+    {
+      "id": "14c-OP against plaintiff",
+      "title": "Does %%[Defendant current name TE]%% have an Order of Protection against you?",
+      "text": "Does %%[Defendant current name TE]%% have an Order of Protection against you?\nThis means that there is an Order of Protection where %%[Defendant current name TE]%% is named as the Petitioner and you are named as the Respondent."
+    },
+    {
+      "id": "14d-About the OP",
+      "title": "Tell me about the Order of Protection. Give the following information: county and court it is from, date of the order an",
+      "text": "Tell me about the Order of Protection. Give the following information: county and court it is from, date of the order and the index or docket number."
+    },
+    {
+      "id": "15-FORWARDING STEP",
+      "title": "Preparing your next steps...",
+      "text": "Preparing your next steps..."
+    },
+    {
+      "id": "15a-Other court orders",
+      "title": "Other Court Orders",
+      "text": "Other Court Orders\nAre there any other court orders (that is not a spousal support order or an order of protection) between you and %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "15b-How many court orders?",
+      "title": "How many other court orders are there between you and %%[Defendant current name TE]%%?",
+      "text": "How many other court orders are there between you and %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "15c-Court order 1",
+      "title": "Tell me about the first court order.",
+      "text": "Tell me about the first court order.\nGive the following information: What the court order is for, name of court, county where the court is located, the date the order was signed and the index or docket number of the file."
+    },
+    {
+      "id": "15d-Court order 2",
+      "title": "Tell me about the next court order.",
+      "text": "Tell me about the next court order.\nGive the following information: What the court order is for, name of court, county where the court is located, the date the order was signed and the index or docket number of the file."
+    },
+    {
+      "id": "15e-Court order 3",
+      "title": "Tell me about the next court order.",
+      "text": "Tell me about the next court order.\nGive the following information: What the court order is for, name of court, county where the court is located, the date the order was signed and the index or docket number of the file."
+    },
+    {
+      "id": "16a-Other relief",
+      "title": "16a-Other relief",
+      "text": ""
+    },
+    {
+      "id": "16b-Other relief",
+      "title": "What else would you like to ask for?",
+      "text": "What else would you like to ask for?"
+    },
+    {
+      "id": "16c-Other relief RETURNING",
+      "title": "Other Relief",
+      "text": "Other Relief\nLook at the %%[Initiating papers TE]%%. There is a section about Ancillary Relief.\nDid you ask the court for anything else?"
+    },
+    {
+      "id": "16d-Other relief",
+      "title": "What else did you ask for?",
+      "text": "What else did you ask for?"
+    },
+    {
+      "id": "17-FORWARDING STEP",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "18a-Jurisdiction",
+      "title": "Filing County",
+      "text": "Filing County\n\nIn what county are you filing for divorce?"
+    },
+    {
+      "id": "18b-Jurisdiction",
+      "title": "Who lives in %%[Jurisdiction county MC]%% County?",
+      "text": "Who lives in %%[Jurisdiction county MC]%% County?"
+    },
+    {
+      "id": "19a-Initiating papers",
+      "title": "Initiating Papers",
+      "text": "Initiating Papers\nYou have the choice to start your divorce case with Summons and Verified Complaint or with a Summons With Notice.\nOne difference between starting your case with a Summons and Verified Complaint and Summons With Notice is the amount of details you want to bring to the court at the beginning of your case.\nMost counties require that you file a Verified Complaint at some point."
+    },
+    {
+      "id": "19b-Initiating papers",
+      "title": "How do you want to start your uncontested divorce case?",
+      "text": "How do you want to start your uncontested divorce case?\nPick one:"
+    },
+    {
+      "id": "A01a-Part A Finished",
+      "title": "Finished",
+      "text": "Finished\nYou have finished Part A: Starting the Divorce Case."
+    },
+    {
+      "id": "A01a.2-Edit A or go to B",
+      "title": "What would you like to do?",
+      "text": "What would you like to do?"
+    },
+    {
+      "id": "A02-Initiating papers user",
+      "title": "What papers did you file with to start your case?",
+      "text": "What papers did you file with to start your case?"
+    },
+    {
+      "id": "A02-Residency with Complaint",
+      "title": "You must meet the residency requirement to file for a divorce in New York State.",
+      "text": "You must meet the residency requirement to file for a divorce in New York State.\nLook at your Verified Complaint in the paragraph that starts with \"Second\"."
+    },
+    {
+      "id": "A03a-Has index number",
+      "title": "Do you have an index number for your divorce case?",
+      "text": "Do you have an index number for your divorce case?\nThis means an index number was obtained from the court (about $210), a fee waiver was approved, or court fees were not required, and a %%[Initiating papers TE]%% to start your case."
+    },
+    {
+      "id": "A03a.1-Residency for 2 years",
+      "title": "Is the following in the SECOND paragraph of the Verified Complaint?",
+      "text": "Is the following in the SECOND paragraph of the Verified Complaint?\n\"The Plaintiff has resided in New York State for a continuous period of at least two years immediately preceding the commencement of this divorce action.\""
+    },
+    {
+      "id": "A03a.2-Residency for 2 years",
+      "title": "Is the following in the SECOND paragraph of the Verified Complaint?",
+      "text": "Is the following in the SECOND paragraph of the Verified Complaint?\n\"The Defendant has resided in New York State for a continuous period of at least two years immediately preceding the commencement of this divorce action.\""
+    },
+    {
+      "id": "A03b.1-Part A but no index number",
+      "title": "To start a divorce case, an index number is required and the %%[Initiating papers TE]%% is filed with the court.",
+      "text": "To start a divorce case, an index number is required and the %%[Initiating papers TE]%% is filed with the court.\nWould you like to print the Part A: Starting Your Divorce papers again?"
+    },
+    {
+      "id": "A03b.1-Residency married in NY",
+      "title": "Is the following in the SECOND paragraph of the Verified Complaint?",
+      "text": "Is the following in the SECOND paragraph of the Verified Complaint?\n\"The Plaintiff resided in New York State on the date of commencement of this divorce action and for a continuous period of one year immediately preceding the commencement of this divorce action and the parties were married in New York State.\""
+    },
+    {
+      "id": "A03b.2-No index number",
+      "title": "To start a divorce case, an index number is required and the %%[Initiating papers TE]%% is filed with the court.",
+      "text": "To start a divorce case, an index number is required and the %%[Initiating papers TE]%% is filed with the court.\nWould you like to make the Part A: Starting Your Divorce papers again?"
+    },
+    {
+      "id": "A03b.2-Residency married in NY",
+      "title": "Is the following in the SECOND paragraph of the Verified Complaint?",
+      "text": "Is the following in the SECOND paragraph of the Verified Complaint?\n\"The Defendant resided in New York State on the date of commencement of this divorce action and for a continuous period of one year immediately preceding the commencement of this divorce action and the parties were married in New York State.\""
+    },
+    {
+      "id": "A03c-Filing date",
+      "title": "On what date were the %%[Initiating papers TE]%% filed with the court?",
+      "text": "On what date were the %%[Initiating papers TE]%% filed with the court?\nThe court clerk \"time-stamped\" the %%[Initiating papers TE]%% with the time and date when you filed the papers."
+    },
+    {
+      "id": "A03c.1-Residency married people",
+      "title": "Is the following in the SECOND paragraph of the Verified Complaint?",
+      "text": "Is the following in the SECOND paragraph of the Verified Complaint?\n\"The Plaintiff resided in New York State on the date of commencement of this divorce action and for a continuous period of one year immediately preceding the commencement of this divorce action and the parties have resided as married people in New York State.\""
+    },
+    {
+      "id": "A03c.2-Residency married people",
+      "title": "Is the following in the SECOND paragraph of the Verified Complaint?",
+      "text": "Is the following in the SECOND paragraph of the Verified Complaint?\n\"The Defendant resided in New York State on the date of commencement of this divorce action and for a continuous period of one year immediately preceding the commencement of this divorce action and the parties have resided as married people in New York State.\""
+    },
+    {
+      "id": "A03d-Filing date and purchase date",
+      "title": "Were the papers filed on the same day you received your index number?",
+      "text": "Were the papers filed on the same day you received your index number?"
+    },
+    {
+      "id": "A03d.1-Residency grounds",
+      "title": "Is the following in the SECOND paragraph of the Verified Complaint?",
+      "text": "Is the following in the SECOND paragraph of the Verified Complaint?\n\"The cause of action occurred in New York State and both parties were residents at the time of commencement of this divorce action.\""
+    },
+    {
+      "id": "A03d.2-Residency grounds",
+      "title": "Is the following in the SECOND paragraph of the Verified Complaint?",
+      "text": "Is the following in the SECOND paragraph of the Verified Complaint?\n\"The cause of action occurred in New York State and Plaintiff resided in New York State for a continuous period of at least one year immediately preceding the commencement of this divorce action.\""
+    },
+    {
+      "id": "A03d.3-Residency grounds",
+      "title": "Is the following in the SECOND paragraph of the Verified Complaint?",
+      "text": "Is the following in the SECOND paragraph of the Verified Complaint?\n\"The cause of action occurred in New York State and Defendant resided in New York State for a continuous period of at least one year immediately preceding the commencement of this divorce action.\""
+    },
+    {
+      "id": "A03e-Residency restart",
+      "title": "You must meet the residency requirement to file for a divorce in New York State.",
+      "text": "You must meet the residency requirement to file for a divorce in New York State.\nLook at your Verified Complaint again and the paragraph that starts with \"SECOND\"."
+    },
+    {
+      "id": "A03e.1-Purchase date",
+      "title": "On what day did you get your index number?",
+      "text": "On what day did you get your index number?"
+    },
+    {
+      "id": "A04-FORWARDING STEP",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "A04a-Affirmation of defendant",
+      "title": "Was the Affirmation of Defendant form and instructions given to %%[Defendant current name TE]%%?",
+      "text": "Was the Affirmation of Defendant form and instructions given to %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "A04b-Waiver signed",
+      "title": "Did %%[Defendant current name TE]%% return the Affirmation of Defendant signed to you?",
+      "text": "Did %%[Defendant current name TE]%% return the Affirmation of Defendant signed to you?"
+    },
+    {
+      "id": "A04c-Affirmation of Defendant",
+      "title": "The divorce procedure is easier if %%[Defendant current name TE]%% returns the Affirmation of Defendant signed to you.",
+      "text": "The divorce procedure is easier if %%[Defendant current name TE]%% returns the Affirmation of Defendant signed to you.\nIf %%[Defendant current name TE]%% does not return the Affirmation of Defendant to you, then the %%[Initiating papers TE]%%, the Notice of Automatic Orders, and the Notice Concerning Continuation of Health Care Coverage must be served on %%[Defendant current name TE]%%."
+    },
+    {
+      "id": "A04d.1-Where given",
+      "title": "Was the Affirmation of Defendant given to %%[Defendant current name TE]%% somewhere in New York State?",
+      "text": "Was the Affirmation of Defendant given to %%[Defendant current name TE]%% somewhere in New York State?"
+    },
+    {
+      "id": "A04e.1-When given",
+      "title": "On what date were the papers given to %%[Defendant current name TE]%%?",
+      "text": "On what date were the papers given to %%[Defendant current name TE]%%?\nThe date is found on the Affirmation of Defendant, in the second paragraph."
+    },
+    {
+      "id": "A04f.1-When signed",
+      "title": "On what date did %%[Defendant current name TE]%% sign the Affirmation of Defendant?",
+      "text": "On what date did %%[Defendant current name TE]%% sign the Affirmation of Defendant?"
+    },
+    {
+      "id": "A04g.1-Affirmation signed before",
+      "title": "The papers were filed with the court on %%DATE([Summons filed DA])%% and that %%[Defendant current name TE]%% signed the",
+      "text": "The papers were filed with the court on %%DATE([Summons filed DA])%% and that %%[Defendant current name TE]%% signed the Affirmation of Defendant on %%DATE([Affidavit signed DA])%%.\nBefore %%[Defendant current name TE]%% can sign the Affirmation of Defendant, the papers must be filed with the court first. This means that the date %%[Defendant current name TE]%% signs the Affirmation should always be after the date of filing."
+    },
+    {
+      "id": "A04g.2-Affirmation signed before exit",
+      "title": "%%[Defendant current name TE]%% will have to sign the Affirmation of Defendant again.",
+      "text": "%%[Defendant current name TE]%% will have to sign the Affirmation of Defendant again.\nAfter the Affirmation of Defendant has been signed and returned to you, you can come back and continue onto Part B: Getting Your Case on the Court Calendar."
+    },
+    {
+      "id": "A05a.1-Service",
+      "title": "Were the %%[Initiating papers TE]%%, Notice of Automatic Orders, and Notice Concerning Continuation of Health Care Cover",
+      "text": "Were the %%[Initiating papers TE]%%, Notice of Automatic Orders, and Notice Concerning Continuation of Health Care Coverage \"served\" on %%[Defendant current name TE]%%?\nThis means that somebody (not you) personally delivered the papers to %%[Defendant current name TE]%%."
+    },
+    {
+      "id": "A05a.2i-Date of service",
+      "title": "On what date were the %%[Initiating papers TE]%%, Notice of Automatic Orders, and Notice Concerning Continuation of Heal",
+      "text": "On what date were the %%[Initiating papers TE]%%, Notice of Automatic Orders, and Notice Concerning Continuation of Health Care Coverage \"served\" on %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "A05a.3i-Service after filing",
+      "title": "The papers were filed with the court on %%DATE([Summons filed DA])%% and that you served (delivered) the papers on %%DAT",
+      "text": "The papers were filed with the court on %%DATE([Summons filed DA])%% and that you served (delivered) the papers on %%DATE([Summons served DA])%%.\nBefore you can serve the papers, they must be filed with the court first. This means that the date of service should always be after the date of filing."
+    },
+    {
+      "id": "A05a.3ii-Service after filing exit",
+      "title": "You will have to serve the papers on %%[Defendant current name TE]%% again.",
+      "text": "You will have to serve the papers on %%[Defendant current name TE]%% again.\nYou have until %%DATE([Summons filed DA]+120)%% to serve the papers.\nAfter the papers have been served on %%[Defendant current name TE]%% return to this form to continue onto Part B: Getting Your Case on the Court Calendar."
+    },
+    {
+      "id": "A05a.5-Not yet served",
+      "title": "Before you can continue, these papers must be personally delivered to (\"served on\") %%[Defendant current name TE]%%.",
+      "text": "Before you can continue, these papers must be personally delivered to (\"served on\") %%[Defendant current name TE]%%.\nYou have until %%DATE([Summons served by DA])%%, 120 days from the date you filed the %%[Initiating papers TE]%%, to serve the papers on %%[Defendant current name TE]%%.\nAfter the papers have been served on %%[Defendant current name TE]%% return to this form to continue onto Part B: Getting Your Case on the Court Calendar."
+    },
+    {
+      "id": "A05b.1-More than 120 days",
+      "title": "There is a time limit for the service of the %%[Initiating papers TE]%% on a Defendant. The %%[Initiating papers TE]%% m",
+      "text": "There is a time limit for the service of the %%[Initiating papers TE]%% on a Defendant. The %%[Initiating papers TE]%% must be served within 120 days from the date the divorce case was filed with the court.\nYour case was filed with the court on %%DATE([Summons filed DA])%%. This means that %%[Defendant current name TE]%% should have been served with the %%[Initiating papers TE]%% before %%DATE([Summons filed DA]+120)%%."
+    },
+    {
+      "id": "A05b.2-More than 120 days",
+      "title": "Did you get permission from the Court to have more time to serve the papers on %%[Defendant current name TE]%%?",
+      "text": "Did you get permission from the Court to have more time to serve the papers on %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "A05b.4-Extend time to serve",
+      "title": "On what date did the judge sign the Order to Extend Time to Serve?",
+      "text": "On what date did the judge sign the Order to Extend Time to Serve?"
+    },
+    {
+      "id": "A05b.6-Extend time to serve",
+      "title": "You should include a copy of the Order that the Judge signed with your papers.",
+      "text": "You should include a copy of the Order that the Judge signed with your papers."
+    },
+    {
+      "id": "A05b.7-More than 120 days Exit",
+      "title": "Because you did not have the papers personally delivered to %%[Defendant current name TE]%% in time, you will have to ge",
+      "text": "Because you did not have the papers personally delivered to %%[Defendant current name TE]%% in time, you will have to get permission from the Court to extend the time for service or buy another index number and file for divorce again.\nContact Brodsky Law or the court for more information."
+    },
+    {
+      "id": "A06a-Personally delivery",
+      "title": "Were the %%[Initiating papers TE]%%, the Notice of Automatic Orders, and the Notice Concerning Continuation of Health Ca",
+      "text": "Were the %%[Initiating papers TE]%%, the Notice of Automatic Orders, and the Notice Concerning Continuation of Health Care Coverage personally delivered to %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "A06b-Not personally served",
+      "title": "The %%[Initiating papers TE]%% in a divorce case must be personally delivered to %%[Defendant current name TE]%%.",
+      "text": "The %%[Initiating papers TE]%% in a divorce case must be personally delivered to %%[Defendant current name TE]%%.\nYou have until %%DATE([Summons served by DA])%% to serve %%[Defendant current name TE]%% with the divorce papers from Part A: Starting Your Divorce Case. Remember that someone, not you, must serve the papers.\nClick Exit and return after %%[Defendant current name TE]%% has been served."
+    },
+    {
+      "id": "A06c-Who served",
+      "title": "Who personally delivered the papers to %%[Defendant current name TE]%%?",
+      "text": "Who personally delivered the papers to %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "A06d-Service error",
+      "title": "The %%[Initiating papers TE]%% must be served by someone, but not you.",
+      "text": "The %%[Initiating papers TE]%% must be served by someone, but not you.\nFrom the date that you filed in court, you have 120 days to have the papers personally delivered to %%[Defendant current name TE]%%. This means that you have until %%DATE([Summons filed DA]+120)%%."
+    },
+    {
+      "id": "A06e.1-Photo attached",
+      "title": "Did you give the person who personally delivered the papers a fair and accurate photo of %%[Defendant current name TE]%%",
+      "text": "Did you give the person who personally delivered the papers a fair and accurate photo of %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "A06e.2-Photo attached",
+      "title": "Remember to attach the photo of %%[Defendant current name TE]%% to the Affirmation of Service.",
+      "text": "Remember to attach the photo of %%[Defendant current name TE]%% to the Affirmation of Service."
+    },
+    {
+      "id": "A06f-LOGIC WINDOW",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "A07a-Service in New York",
+      "title": "Where was %%[Defendant current name TE]%% when the papers were personally delivered to %%[him/her Defendant TE]%%?",
+      "text": "Where was %%[Defendant current name TE]%% when the papers were personally delivered to %%[him/her Defendant TE]%%?"
+    },
+    {
+      "id": "A07b.1-Before 20 or 30 days",
+      "title": "%%[Defendant current name TE]%% has %%[20/30 days TE]%%, until %%DATE([Defendant answer by DA])%%, to respond to the pap",
+      "text": "%%[Defendant current name TE]%% has %%[20/30 days TE]%%, until %%DATE([Defendant answer by DA])%%, to respond to the papers that were personally delivered.\nHave you received a notice of appearance from %%[Defendant current name TE]%% or %%HISHER([Defendant gender])%% lawyer or from the court?"
+    },
+    {
+      "id": "A07b.2-Before 20 or 30 days",
+      "title": "%%[Defendant current name TE]%% has %%[20/30 days TE]%% to answer the summons from the date that the papers were persona",
+      "text": "%%[Defendant current name TE]%% has %%[20/30 days TE]%% to answer the summons from the date that the papers were personally delivered.\nThis means that %%[Defendant current name TE]%% has until %%DATE([Defendant answer by DA])%% to return the Affirmation of Defendant to you or file an answer. If %%HESHE([Defendant gender])%% does nothing by %%DATE([Defendant answer by DA])%% then %%HESHE([Defendant gender])%% has defaulted and you can go to the next step."
+    },
+    {
+      "id": "A07b.3-Before 20 or 30 days",
+      "title": "At this point, you can either:",
+      "text": "At this point, you can either:\n1. Wait until %%DATE([Defendant answer by DA])%% for %%[Defendant current name TE]%% to return the Affirmation of Defendant to you and then return here OR\n2. If you think that %%[Defendant current name TE]%% will do nothing and default, you can print out the papers for the next step now. But, if you print out the papers for the next step now and %%[Defendant current name TE]%% does return the Affirmation of Defendant to you, you will have to return here and print out the papers again.\nWould you like to Exit and return after %%DATE([Defendant answer by DA])%% or Continue and print out the papers for the next step?"
+    },
+    {
+      "id": "A07c-After 20 or 30 days",
+      "title": "%%[Defendant current name TE]%% had %%[20/30 days TE]%% to answer the Summons.",
+      "text": "%%[Defendant current name TE]%% had %%[20/30 days TE]%% to answer the Summons.\nBecause %%HESHE([Defendant gender])%% did not answer the Summons by %%DATE([Defendant answer by DA])%%, %%[Defendant current name TE]%% has defaulted.\nYou are ready for Part B: Getting Your Case on the Court Calendar. %%[Step 2 file date TE]%%"
+    },
+    {
+      "id": "A07d-Contested divorce",
+      "title": "I'm sorry but this form is no longer for you.",
+      "text": "I'm sorry but this form is no longer for you.\nBecause %%[Defendant current name TE]%% or %%HISHER([Defendant gender])%% lawyer filed a Notice of Appearance, it is possible that you will not be able to get an uncontested divorce. You may want to contact the Supreme Court Clerk for more information."
+    },
+    {
+      "id": "A08a-Affirmation of service",
+      "title": "Do you have an Affirmation of Service filled out by the person who served the papers on %%[Defendant current name TE]%%?",
+      "text": "Do you have an Affirmation of Service filled out by the person who served the papers on %%[Defendant current name TE]%%?"
+    },
+    {
+      "id": "A08b-Verified Complaint",
+      "title": "You started your case with a Summons With Notice.",
+      "text": "You started your case with a Summons With Notice.\nDo you have a completed Verified Complaint?"
+    },
+    {
+      "id": "A09a-Index number",
+      "title": "What is the index number for your case?",
+      "text": "What is the index number for your case?"
+    },
+    {
+      "id": "A10-FORWARDING STEP",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "A11a-Jurisdiction",
+      "title": "In what county did you file for divorce?",
+      "text": "In what county did you file for divorce?\nThis can be found on the top of the %%[Initiating papers TE]%%."
+    },
+    {
+      "id": "A11b-Jurisdiction",
+      "title": "What was the basis of venue?",
+      "text": "What was the basis of venue?\nThis information can be found at the top of the %%[Initiating papers TE]%% under \"The basis of venue is:\""
+    },
+    {
+      "id": "A12-FORWARDING STEP",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "B01a.1-Part B Finished",
+      "title": "Finished",
+      "text": "Finished\nYou have finished Part B: Getting Your Divorce Case on the Court Calendar."
+    },
+    {
+      "id": "B01a.10-Health insurance",
+      "title": "Also, after the divorce judgment is signed, both you and %%[Defendant current name TE]%% may or may not be eligible for ",
+      "text": "Also, after the divorce judgment is signed, both you and %%[Defendant current name TE]%% may or may not be eligible for coverage under each other's health insurance plans."
+    },
+    {
+      "id": "B01a.2-Contempt of Court",
+      "title": "Here are a few things to remember:",
+      "text": "Here are a few things to remember:\nWhile the divorce is pending, both you and %%[Defendant current name TE]%% are under a court order that says that you can't do certain things."
+    },
+    {
+      "id": "B01a.3-Contempt of Court",
+      "title": "You or %%[Defendant current name TE]%% can't sell, mortgage or give away any property without permission from the court ",
+      "text": "You or %%[Defendant current name TE]%% can't sell, mortgage or give away any property without permission from the court or the other person."
+    },
+    {
+      "id": "B01a.4-Contempt of Court",
+      "title": "You or %%[Defendant current name TE]%% can't transfer, give away or withdraw money from any retirement accounts or inves",
+      "text": "You or %%[Defendant current name TE]%% can't transfer, give away or withdraw money from any retirement accounts or investment accounts without permission from the court or the other person."
+    },
+    {
+      "id": "B01a.5-Contempt of Court",
+      "title": "You or %%[Defendant current name TE]%% can't go into unreasonable debt by borrowing money or using credit cards or cash ",
+      "text": "You or %%[Defendant current name TE]%% can't go into unreasonable debt by borrowing money or using credit cards or cash advances."
+    },
+    {
+      "id": "B01a.6-Contempt of Court",
+      "title": "You or %%[Defendant current name TE]%% can't take each other off any existing medical, hospital and dental insurance cov",
+      "text": "You or %%[Defendant current name TE]%% can't take each other off any existing medical, hospital and dental insurance coverage and must keep the coverage you have current;"
+    },
+    {
+      "id": "B01a.7-Contempt of Court",
+      "title": "You or %%[Defendant current name TE]%% can't change the beneficiaries of any existing life insurance policies and must k",
+      "text": "You or %%[Defendant current name TE]%% can't change the beneficiaries of any existing life insurance policies and must keep existing life insurance, automobile insurance, homeowners and renters insurance current."
+    },
+    {
+      "id": "B01a.8-Contempt of Court",
+      "title": "If you or %%[Defendant current name TE]%% get a notice of a tax lien, foreclosure, bankruptcy, or lawsuit or notice that",
+      "text": "If you or %%[Defendant current name TE]%% get a notice of a tax lien, foreclosure, bankruptcy, or lawsuit or notice that one has been filed, or that a bankruptcy stay has ended, the other person must be sent written notice about it within 10 days."
+    },
+    {
+      "id": "B01a.9-Guideline maintenance step",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "B02-Public computer",
+      "title": "If you are at a public computer, remember to close this form and your document before leaving to protect your privacy. I",
+      "text": "If you are at a public computer, remember to close this form and your document before leaving to protect your privacy. If you don't know how, ask someone to help you. It is very important."
+    },
+    {
+      "id": "B03-One side",
+      "title": "IMPORTANT",
+      "text": "IMPORTANT\nPrint on only one-side of the paper."
+    },
+    {
+      "id": "B04-Spanish instructions",
+      "title": "Do you want a copy of the instructions printed in Spanish?",
+      "text": "Do you want a copy of the instructions printed in Spanish?"
+    },
+    {
+      "id": "B05-Submit Part B",
+      "title": "When you finish, your Part B papers will be ready for download. Follow the on-screen instructions.",
+      "text": "When you finish, your Part B papers will be ready for download. Follow the on-screen instructions."
+    },
+    {
+      "id": "BL-00-Your name",
+      "title": "Your name",
+      "text": "Your name\n\nPlease enter your first and last name. This helps us identify your questionnaire when you submit."
+    },
+    {
+      "id": "BL-01-Children information",
+      "title": "Children",
+      "text": "Children\n\nDo you have children from this marriage?\n\nIf yes, add each child's name, Social Security number, date of birth, and home address. Use + Add another child for additional children."
+    },
+    {
+      "id": "BL-01a-Children health plan",
+      "title": "Children's health coverage",
+      "text": "Children's health coverage\n\nIf you have minor children from this marriage, answer whether they are covered by health insurance."
+    },
+    {
+      "id": "BL-01b-Group health plan",
+      "title": "Health coverage (you and spouse)",
+      "text": "Health coverage (you and spouse)\n\nIf you or your spouse has coverage through an employer or union group health plan, provide the plan details below. If not applicable, enter N/A."
+    },
+    {
+      "id": "BL-01c-Children custody and support",
+      "title": "Children — residence, custody, and support",
+      "text": "Children — residence, custody, and support\n\nAnswer about children from this marriage. If any answer is Yes, complete the matching follow-up."
+    },
+    {
+      "id": "BL-02-Employment military",
+      "title": "Employment and military",
+      "text": "Employment and military\n\nAnswer for yourself and your spouse. Estimates for annual income are fine."
+    },
+    {
+      "id": "BL-03-Party history",
+      "title": "Birth, education, and prior marriages",
+      "text": "Birth, education, and prior marriages\n\nThese details are often required on court forms. Enter your best answers; estimates are fine for dates."
+    },
+    {
+      "id": "C00-EXIT forwardingstep",
+      "title": "Please continue.",
+      "text": "Please continue."
+    },
+    {
+      "id": "C01-EXIT screen",
+      "title": "This form is not for you. A sheet will be printed with more information.",
+      "text": "This form is not for you. A sheet will be printed with more information.\nIn what county do you want to file for divorce?"
+    },
+    {
+      "id": "C03-Submit Exit sheet",
+      "title": "When you finish, your Information Sheet will be ready for download. Follow the on-screen instructions.",
+      "text": "When you finish, your Information Sheet will be ready for download. Follow the on-screen instructions."
+    }
+  ]
+}
